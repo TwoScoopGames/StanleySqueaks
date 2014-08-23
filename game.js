@@ -50,8 +50,13 @@ function buildLevel(level, scene) {
 			var block = new Splat.AnimatedEntity(obj.x, obj.y, img.width, img.height, img, 0, 0);
 			scene.blocks.push(block);
 		} else if (obj.type === "spawn") {
+			scene.spawn.x = obj.x;
+			scene.spawn.y = obj.y;
 			scene.player.x = obj.x;
 			scene.player.y = obj.y;
+		} else if (obj.type === "goal") {
+			scene.goal.x = obj.x;
+			scene.goal.y = obj.y;
 		}
 	}
 }
@@ -99,6 +104,18 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0); //hamster jones
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
+
+	this.spawn = new Splat.Entity(0, 0, 100, 100);
+	this.spawn.draw = function(context) {
+		context.fillStyle = "blue";
+		context.fillRect(this.x, this.y, this.width, this.height);
+	};
+
+	this.goal = new Splat.Entity(0, 0, 100, 100);
+	this.goal.draw = function(context) {
+		context.fillStyle = "green";
+		context.fillRect(this.x, this.y, this.width, this.height);
+	};
 
 	buildLevel(levels[0], this);
 /*
@@ -156,7 +173,9 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	for(var i=0; i<this.blocks.length; i++) {
 		this.blocks[i].draw(context);
 	}
-	
+
+	this.spawn.draw(context);
+	this.goal.draw(context);
 	this.player.draw(context);
 }));
 

@@ -7,6 +7,11 @@ module.exports = [
 				"x": 500,
 				"y": 100,
 			},
+			{
+				"type": "goal",
+				"x": 100,
+				"y": 400,
+			},
 			//platform
 			{
 				"type": "block",
