@@ -61,8 +61,17 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	};
 }, function(elapsedMillis) {
 	// simulation
-	var movement = 0.3;
+	var movement = 1.0;
 
+	if (game.keyboard.consumePressed("r")) {
+		this.player.x = 100;
+		this.player.y = 100;
+		this.player.vx = 0;
+		this.player.vy = 0;
+	}
+	if (game.keyboard.isPressed("space")) {
+		this.player.vy = -1.0;
+	}
 	if(game.keyboard.isPressed("right")) {
 		this.player.vx = movement; //how fast he moves
 	} else if(game.keyboard.isPressed("left")) {
