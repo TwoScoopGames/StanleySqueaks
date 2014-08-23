@@ -72,9 +72,9 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	if (game.keyboard.isPressed("space")) {
 		this.player.vy = -1.0;
 	}
-	if(game.keyboard.isPressed("right")) {
+	if (game.keyboard.isPressed("right")) {
 		this.player.vx = movement; //how fast he moves
-	} else if(game.keyboard.isPressed("left")) {
+	} else if (game.keyboard.isPressed("left")) {
 		this.player.vx = -movement; //how fast he moves
 	} else {
 		this.player.vx = 0;
@@ -83,13 +83,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player.vy += 0.1;
 
 	this.player.move(elapsedMillis);
-
-	for(var i=0; i<this.blocks.length; i++) {
-		var block = this.blocks[i];
-		if(this.player.collides(block)){
-			this.player.resolveCollisionWith(block);
-		}
-	}
+	this.player.solveCollisions(this.blocks);
 
 }, function(context) {
 	// draw
@@ -108,5 +102,3 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 }));
 
 game.scenes.switchTo("loading"); //going to title scene
-
-
