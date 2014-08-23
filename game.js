@@ -136,10 +136,12 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player.vy += 0.1;
 
 	this.player.move(elapsedMillis);
-	var involved = this.player.solveCollisions(this.blocks);
-	for (var i = 0; i < involved.length; i++) {
-		involved[i].touched = true;
+	for (var i = 0; i < this.blocks.length; i++) {
+		if (this.player.collides(this.blocks[i])) {
+			this.blocks[i].touched = true;
+		}
 	}
+	this.player.solveCollisions(this.blocks);
 
 	if (this.hitGoal) {
 		if (this.player.collides(this.spawn)) {
