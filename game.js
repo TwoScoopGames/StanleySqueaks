@@ -1,7 +1,6 @@
 "use strict";
 
 var levels = require("./levels");
-
 var Splat = require("splatjs");
 var canvas = document.getElementById("canvas");
 
@@ -57,23 +56,52 @@ function buildLevel(level, scene) {
 	}
 }
 
+
+function addBlock(scene, imageName, x, y) {
+	var block;
+	var blockSize = 32;
+	var img = game.images.get(imageName);
+	var gridX = Math.floor(x / blockSize) * blockSize;
+	var gridY = Math.floor(y / blockSize) * blockSize;
+
+	block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, 0);
+	scene.blocks.push(block);
+}
+
+function removeBlock(scene, x, y) {
+	var blockSize = 32;
+	var gridX = Math.floor(x / blockSize) * blockSize;
+	var gridY = Math.floor(y / blockSize) * blockSize;
+	var blockArray = scene.blocks;
+
+	for (var i = 0; i < blockArray.length; i++) {
+		var blockEntity = blockArray[i];
+		var blockX = blockEntity.x;
+		var blockY = blockEntity.y;
+		
+		if(gridX === blockX && gridY === blockY) {
+			blockArray.splice(i, 1);
+		}
+	}
+}
+
 //this refers to current scene
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// initialization
-	var blockSize = 32;
-	var blocksWide = Math.floor(canvas.width / blockSize) - 1;
-	this.blocks = [];
+	//var blockSize = 32;
+	//var blocksWide = Math.floor(canvas.width / blockSize) - 1;
+	//this.blocks = [];
 
-	var bottomY = canvas.height - blockSize;
-	var block;
-	var img = game.images.get("block-sand");
+	//var bottomY = canvas.height - blockSize;
+	//var block;
+	//var img = game.images.get("block-sand");
 
 	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0); //hamster jones
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
 
 	buildLevel(levels[0], this);
-
+/*
 	for (var y = bottomY; y > 0; y -= blockSize) {
 		block = new Splat.AnimatedEntity(0, y, blockSize, blockSize, img, 0, 0);
 		this.blocks.push(block);
@@ -81,7 +109,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		block = new Splat.AnimatedEntity(blockSize * blocksWide, y, blockSize, blockSize, img, 0, 0);
 		this.blocks.push(block);
 	}
-
+*/
 }, function(elapsedMillis) {
 	// simulation
 	var movement = 1.0;
@@ -89,7 +117,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	if (game.keyboard.consumePressed("r")) {
 		game.scenes.switchTo("title");
 	}
-	if (game.keyboard.isPressed("space")) {
+	if (game.keyboard.consumePressed("space")) {
 		this.player.vy = -1.0;
 	}
 	if (game.keyboard.isPressed("right")) {
@@ -111,6 +139,14 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player.solveCollisions(this.blocks);
 	if (!this.player.moved()) {
 		this.player.sprite.reset();
+	}
+
+	if(game.mouse.consumePressed(0)) {
+		addBlock(this, "block-sand", game.mouse.x, game.mouse.y);
+	}
+	
+	if(game.mouse.consumePressed(2)) {
+		removeBlock(this, game.mouse.x, game.mouse.y);
 	}
 
 }, function(context) {
