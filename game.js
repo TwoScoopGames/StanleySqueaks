@@ -3,6 +3,11 @@
 var level = {
 	"name": "Level 1",
 	"objects": [
+		{
+			"x": 500,
+			"y": 100,
+			"type": "spawn",
+		},
 		//platform
 		{
 			"x": 500,
@@ -129,17 +134,19 @@ var manifest = {
 //asset loading test
 var game = new Splat.Game(canvas, manifest);
 
-function drawLevel(context) {
-
-	var block;
-	var levelArray = level.objects;
-	var blockSize = 32;
+function buildLevel(level, scene) {
 	var img = game.images.get("block-sand");
-	context.blocks = [];
-	
-	for (var i = 0; i < levelArray.length; i++) {
-		block = new Splat.AnimatedEntity(levelArray[i].x, levelArray[i].y, blockSize, blockSize, img, 0, 0);
-		context.blocks.push(block);
+
+	scene.blocks = [];
+	for (var i = 0; i < level.objects.length; i++) {
+		var obj = level.objects[i];
+		if (obj.type === "block") {
+			var block = new Splat.AnimatedEntity(obj.x, obj.y, img.width, img.height, img, 0, 0);
+			scene.blocks.push(block);
+		} else if (obj.type === "spawn") {
+			scene.player.x = obj.x;
+			scene.player.y = obj.y;
+		}
 	}
 }
 
@@ -154,7 +161,11 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	var block;
 	var img = game.images.get("block-sand");
 
-	drawLevel(this);
+	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0); //hamster jones
+	this.player.direction = "left";
+	this.player.frictionX = 0.3;
+
+	buildLevel(level, this);
 
 	for (var y = bottomY; y > 0; y -= blockSize) {
 		block = new Splat.AnimatedEntity(0, y, blockSize, blockSize, img, 0, 0);
@@ -164,18 +175,12 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.blocks.push(block);
 	}
 
-	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0); //hamster jones
-	this.player.direction = "left";
-	this.player.frictionX = 0.3;
 }, function(elapsedMillis) {
 	// simulation
 	var movement = 1.0;
 
 	if (game.keyboard.consumePressed("r")) {
-		this.player.x = 100;
-		this.player.y = 100;
-		this.player.vx = 0;
-		this.player.vy = 0;
+		game.scenes.switchTo("title");
 	}
 	if (game.keyboard.isPressed("space")) {
 		this.player.vy = -1.0;
