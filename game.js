@@ -96,9 +96,11 @@ function editLevel(scene) {
 	if (game.keyboard.isPressed("1")) {
 		scene.spawn.x = x;
 		scene.spawn.y = y;
+		game.mouse.consumePressed(0);
 	} else if (game.keyboard.isPressed("2")) {
 		scene.goal.x = x;
 		scene.goal.y = y;
+		game.mouse.consumePressed(0);
 	} else if (game.keyboard.isPressed("shift")) {
 		if (index < 0) {
 			return;
