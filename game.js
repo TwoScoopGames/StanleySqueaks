@@ -89,6 +89,28 @@ function removeBlock(scene, x, y) {
 	}
 }
 
+function exportBlockDesign(scene, name) {
+	console.log(scene.blocks);
+	var blockArray = scene.blocks;
+	var levelObject = {};
+
+	levelObject.name = name;
+	levelObject.objects = [];
+	
+	for (var i = 0; i < blockArray.length; i++) {
+		var blockEntity = blockArray[i];
+		
+		levelObject.objects.push({
+			x: blockEntity.x,
+			y: blockEntity.y,
+			type: "block"
+		});
+	}
+	
+	console.log(levelObject);
+	return levelObject;
+}
+
 var currentLevel = 0;
 
 //this refers to current scene
@@ -134,6 +156,10 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// simulation
 	var movement = 1.0;
 
+	if (game.keyboard.consumePressed("x")) {
+		exportBlockDesign(this, "Level Name");
+	}
+	
 	if (game.keyboard.consumePressed("r")) {
 		game.scenes.switchTo("title");
 	}
