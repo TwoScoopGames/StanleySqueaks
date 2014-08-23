@@ -92,14 +92,27 @@ function editLevel(scene) {
 
 	var x = game.mouse.x;
 	var y = game.mouse.y;
+	var oldX, oldY;
 	var index = findBlockIndex(scene, x, y);
 	if (game.keyboard.isPressed("1")) {
+		oldX = scene.spawn.x;
+		oldY = scene.spawn.y;
 		scene.spawn.x = x;
 		scene.spawn.y = y;
+		if (scene.spawn.getCollisions(scene.blocks).length > 0) {
+			scene.spawn.x = oldX;
+			scene.spawn.y = oldY;
+		}
 		game.mouse.consumePressed(0);
 	} else if (game.keyboard.isPressed("2")) {
+		oldX = scene.goal.x;
+		oldY = scene.goal.y;
 		scene.goal.x = x;
 		scene.goal.y = y;
+		if (scene.goal.getCollisions(scene.blocks).length > 0) {
+			scene.goal.x = oldX;
+			scene.goal.y = oldY;
+		}
 		game.mouse.consumePressed(0);
 	} else if (game.keyboard.isPressed("shift")) {
 		if (index < 0) {
@@ -111,7 +124,7 @@ function editLevel(scene) {
 			return;
 		}
 		var block = addBlock(scene, "block-sand", x, y);
-		if (scene.player.collides(block)) {
+		if (scene.player.collides(block) || block.collides(scene.spawn) || block.collides(scene.goal)) {
 			scene.blocks.pop();
 		}
 	}
@@ -156,7 +169,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 	this.hitGoal = false;
 
-	this.spawn = new Splat.Entity(0, 0, 100, 100);
+	this.spawn = new Splat.Entity(0, 0, this.player.width, this.player.height);
 	this.spawn.draw = function(context) {
 		context.fillStyle = "blue";
 		context.fillRect(this.x, this.y, this.width, this.height);
