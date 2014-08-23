@@ -33,11 +33,23 @@ var drawBlock = function(context) {
 //this refers to current scene
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// initialization
-	var blockSize = 20;
+	var blockSize = 32;
+	var blocksWide = Math.floor(canvas.width / blockSize) - 1;
 	this.blocks = [];
 
-	for(var x=0; x<canvas.width; x+=blockSize) {
-		var block = new Splat.Entity(x, canvas.height-blockSize, blockSize, blockSize);
+	var bottomY = canvas.height - blockSize;
+	var block;
+	for (var x = 0; x < blocksWide; x++) {
+		block = new Splat.Entity(x * blockSize, bottomY, blockSize, blockSize);
+		block.draw = drawBlock;
+		this.blocks.push(block);
+	}
+	for (var y = bottomY; y > 0; y -= blockSize) {
+		block = new Splat.Entity(0, y, blockSize, blockSize);
+		block.draw = drawBlock;
+		this.blocks.push(block);
+
+		block = new Splat.Entity(blockSize * blocksWide, y, blockSize, blockSize);
 		block.draw = drawBlock;
 		this.blocks.push(block);
 	}
