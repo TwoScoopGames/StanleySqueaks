@@ -61,64 +61,79 @@ function buildLevel(level, scene) {
 }
 
 function addBlock(scene, imageName, x, y) {
-	var block;
 	var blockSize = 32;
 	var img = game.images.get(imageName);
 	var gridX = Math.floor(x / blockSize) * blockSize;
 	var gridY = Math.floor(y / blockSize) * blockSize;
 
-	block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, 0);
+	var block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, 0);
 	scene.blocks.push(block);
+	return block;
 }
-function removeBlock(scene, x, y) {
-	var blockSize = 32;
-	var gridX = Math.floor(x / blockSize) * blockSize;
-	var gridY = Math.floor(y / blockSize) * blockSize;
-	var blockArray = scene.blocks;
 
-	for (var i = 0; i < blockArray.length; i++) {
-		var blockEntity = blockArray[i];
-		var blockX = blockEntity.x;
-		var blockY = blockEntity.y;
-		
-		if (gridX === blockX && gridY === blockY) {
-			blockArray.splice(i, 1);
+function containsPoint(entity, x, y) {
+	return x >= entity.x && x <= entity.x + entity.width && y >= entity.y && y <= entity.y + entity.height;
+}
+
+function findBlockIndex(scene, x, y) {
+	for (var i = 0; i < scene.blocks.length; i++) {
+		var block = scene.blocks[i];
+		if (containsPoint(block, x, y)) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+function editLevel(scene) {
+	if (!game.mouse.isPressed(0)) {
+		return;
+	}
+
+	var x = game.mouse.x;
+	var y = game.mouse.y;
+	var index = findBlockIndex(scene, x, y);
+	if (game.keyboard.isPressed("1")) {
+		scene.spawn.x = x;
+		scene.spawn.y = y;
+	} else if (game.keyboard.isPressed("2")) {
+		scene.goal.x = x;
+		scene.goal.y = y;
+	} else if (game.keyboard.isPressed("shift")) {
+		if (index < 0) {
+			return;
+		}
+		scene.blocks.splice(index, 1);
+	} else {
+		if (index >= 0) {
+			return;
+		}
+		var block = addBlock(scene, "block-sand", x, y);
+		if (scene.player.collides(block)) {
+			scene.blocks.pop();
 		}
 	}
 }
+
 function exportBlockDesign(scene, name) {
 	var blockArray = scene.blocks;
 	var levelObject = {};
 
 	levelObject.name = name;
 	levelObject.objects = [];
-	
+
 	for (var i = 0; i < blockArray.length; i++) {
 		var blockEntity = blockArray[i];
-		
+
 		levelObject.objects.push({
 			x: blockEntity.x,
 			y: blockEntity.y,
 			type: "block"
 		});
 	}
-	
+
 	console.log(levelObject);
 	return levelObject;
-}
-function placeSpawnPosition(scene, x, y) {
-	console.log(scene.spawn);
-	
-	scene.spawn = new Splat.Entity(0, 0, 100, 100);
-	scene.spawn.draw = function(context) {
-		context.fillStyle = "blue";
-		context.fillRect(x, y, this.width, this.height);
-	};
-}
-function placeGoalPosition(scene, x, y) {
-	console.log(scene.goal);
-	console.log(x);
-	console.log(y);
 }
 
 var currentLevel = 0;
@@ -208,24 +223,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.player.sprite.reset();
 	}
 
-	//left click only will add blocks
-	//left click + 1 key will place spawn position
-	if (game.mouse.consumePressed(0)) {
-		if (game.keyboard.isPressed("1")) {
-			placeSpawnPosition(this, game.mouse.x, game.mouse.y);
-		} else {
-			addBlock(this, "block-sand", game.mouse.x, game.mouse.y);
-		}
-	}
-	
-	if (game.mouse.consumePressed(2)) {
-		if (game.keyboard.isPressed("1")) {
-			placeGoalPosition(this, game.mouse.x, game.mouse.y);
-		} else {
-			removeBlock(this, game.mouse.x, game.mouse.y);
-		}
-	}
-
+	editLevel(this);
 }, function(context) {
 	// draw
 	context.drawImage(game.images.get("background"), 0, 0);
