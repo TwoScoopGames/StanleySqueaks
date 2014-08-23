@@ -1,99 +1,6 @@
 "use strict";
 
-var level = {
-	"name": "Level 1",
-	"objects": [
-		{
-			"x": 500,
-			"y": 100,
-			"type": "spawn",
-		},
-		//platform
-		{
-			"x": 500,
-			"y": 500,
-			"type": "block"
-		},
-		{
-			"x": 532,
-			"y": 500,
-			"type": "block"
-		},
-		{
-			"x": 564,
-			"y": 500,
-			"type": "block"
-		},
-		{
-			"x": 596,
-			"y": 500,
-			"type": "block"
-		},
-		//platform 2
-		{
-			"x": 800,
-			"y": 436,
-			"type": "block"
-		},
-		{
-			"x": 832,
-			"y": 436,
-			"type": "block"
-		},
-		{
-			"x": 864,
-			"y": 436,
-			"type": "block"
-		},
-		{
-			"x": 896,
-			"y": 436,
-			"type": "block"
-		},
-		//platform 3
-		{
-			"x": 1007,
-			"y": 372,
-			"type": "block"
-		},
-		{
-			"x": 1039,
-			"y": 372,
-			"type": "block"
-		},
-		//floor
-		{
-			"x": 32,
-			"y": 608,
-			"type": "block"
-		},
-		{
-			"x": 64,
-			"y": 608,
-			"type": "block"
-		},
-		{
-			"x": 96,
-			"y": 608,
-			"type": "block"
-		},
-		{
-			"x": 128,
-			"y": 608,
-			"type": "block"
-		},
-		{
-			"x": 160,
-			"y": 608,
-			"type": "block"
-		},
-		{
-			"x": 192,
-			"y": 608,
-			"type": "block"
-		}
-	]
-};
+var levels = require("./levels");
 
 var Splat = require("splatjs");
 var canvas = document.getElementById("canvas");
@@ -165,7 +72,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
 
-	buildLevel(level, this);
+	buildLevel(levels[0], this);
 
 	for (var y = bottomY; y > 0; y -= blockSize) {
 		block = new Splat.AnimatedEntity(0, y, blockSize, blockSize, img, 0, 0);
