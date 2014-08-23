@@ -5,7 +5,8 @@ var canvas = document.getElementById("canvas");
 
 var manifest = {
 	"images": {
-		"background": "img/background.png"
+		"background": "img/background.png",
+		"block-sand": "img/block-sand.png"
 	},
 	"sounds": {
 	},
@@ -26,11 +27,6 @@ function centerText(context, text, offsetX, offsetY) {
 	context.fillText(text, x, y);
 }
 
-var drawBlock = function(context) {
-	context.strokeStyle = "blue";
-	context.strokeRect(this.x, this.y, this.width, this.height);
-};
-
 //this refers to current scene
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// initialization
@@ -40,18 +36,16 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 	var bottomY = canvas.height - blockSize;
 	var block;
+	var img = game.images.get("block-sand");
 	for (var x = 0; x < blocksWide; x++) {
-		block = new Splat.Entity(x * blockSize, bottomY, blockSize, blockSize);
-		block.draw = drawBlock;
+		block = new Splat.AnimatedEntity(x * blockSize, bottomY, blockSize, blockSize, img, 0, 0);
 		this.blocks.push(block);
 	}
 	for (var y = bottomY; y > 0; y -= blockSize) {
-		block = new Splat.Entity(0, y, blockSize, blockSize);
-		block.draw = drawBlock;
+		block = new Splat.AnimatedEntity(0, y, blockSize, blockSize, img, 0, 0);
 		this.blocks.push(block);
 
-		block = new Splat.Entity(blockSize * blocksWide, y, blockSize, blockSize);
-		block.draw = drawBlock;
+		block = new Splat.AnimatedEntity(blockSize * blocksWide, y, blockSize, blockSize, img, 0, 0);
 		this.blocks.push(block);
 	}
 
