@@ -223,7 +223,7 @@ function draw(context, entity, color) {
 	context.strokeRect(entity.x, entity.y, entity.width, entity.height);
 }
 
-var currentLevel = 0;
+var currentLevel = 1;
 
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0);
