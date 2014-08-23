@@ -61,7 +61,6 @@ function buildLevel(level, scene) {
 	}
 }
 
-
 function addBlock(scene, imageName, x, y) {
 	var block;
 	var blockSize = 32;
@@ -90,6 +89,8 @@ function removeBlock(scene, x, y) {
 	}
 }
 
+var currentLevel = 0;
+
 //this refers to current scene
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// initialization
@@ -105,6 +106,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
 
+	this.hitGoal = false;
+
 	this.spawn = new Splat.Entity(0, 0, 100, 100);
 	this.spawn.draw = function(context) {
 		context.fillStyle = "blue";
@@ -117,7 +120,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		context.fillRect(this.x, this.y, this.width, this.height);
 	};
 
-	buildLevel(levels[0], this);
+	buildLevel(levels[currentLevel], this);
 /*
 	for (var y = bottomY; y > 0; y -= blockSize) {
 		block = new Splat.AnimatedEntity(0, y, blockSize, blockSize, img, 0, 0);
@@ -154,6 +157,24 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 	this.player.move(elapsedMillis);
 	this.player.solveCollisions(this.blocks);
+	if (this.hitGoal) {
+		if (this.player.collides(this.spawn)) {
+			console.log("win");
+			currentLevel++;
+			if (currentLevel === levels.length) {
+				game.scenes.switchTo("win");
+				return;
+			}
+			game.scenes.switchTo("title");
+			return;
+		}
+	} else {
+		if (this.player.collides(this.goal)) {
+			console.log("goal");
+			this.hitGoal = true;
+		}
+	}
+
 	if (!this.player.moved()) {
 		this.player.sprite.reset();
 	}
@@ -177,6 +198,17 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.spawn.draw(context);
 	this.goal.draw(context);
 	this.player.draw(context);
+}));
+
+game.scenes.add("win", new Splat.Scene(canvas, function() {
+}, function() {
+}, function(context) {
+	context.fillStyle = "white";
+	context.fillRect(0, 0, canvas.width, canvas.height);
+
+	context.font = "50px sans-serif";
+	context.fillStyle = "black";
+	context.fillText("You win!", 200, 200);
 }));
 
 game.scenes.switchTo("loading"); //going to title scene
