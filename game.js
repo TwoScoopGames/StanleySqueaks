@@ -37,7 +37,6 @@ var manifest = {
 	}
 };
 
-//asset loading test
 var game = new Splat.Game(canvas, manifest);
 
 function buildLevel(level, scene) {
@@ -83,7 +82,7 @@ function removeBlock(scene, x, y) {
 		var blockX = blockEntity.x;
 		var blockY = blockEntity.y;
 		
-		if(gridX === blockX && gridY === blockY) {
+		if (gridX === blockX && gridY === blockY) {
 			blockArray.splice(i, 1);
 		}
 	}
@@ -91,18 +90,8 @@ function removeBlock(scene, x, y) {
 
 var currentLevel = 0;
 
-//this refers to current scene
 game.scenes.add("title", new Splat.Scene(canvas, function() {
-	// initialization
-	//var blockSize = 32;
-	//var blocksWide = Math.floor(canvas.width / blockSize) - 1;
-	//this.blocks = [];
-
-	//var bottomY = canvas.height - blockSize;
-	//var block;
-	//var img = game.images.get("block-sand");
-
-	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0); //hamster jones
+	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0);
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
 
@@ -121,15 +110,6 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	};
 
 	buildLevel(levels[currentLevel], this);
-/*
-	for (var y = bottomY; y > 0; y -= blockSize) {
-		block = new Splat.AnimatedEntity(0, y, blockSize, blockSize, img, 0, 0);
-		this.blocks.push(block);
-
-		block = new Splat.AnimatedEntity(blockSize * blocksWide, y, blockSize, blockSize, img, 0, 0);
-		this.blocks.push(block);
-	}
-*/
 }, function(elapsedMillis) {
 	// simulation
 	var movement = 1.0;
