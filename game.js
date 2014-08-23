@@ -230,7 +230,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// draw
 	context.drawImage(game.images.get("background"), 0, 0);
 
-	for(var i=0; i<this.blocks.length; i++) {
+	for (var i = 0; i < this.blocks.length; i++) {
 		this.blocks[i].draw(context);
 	}
 
