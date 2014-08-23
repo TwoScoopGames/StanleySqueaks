@@ -14,7 +14,7 @@ var manifest = {
 	}
 };
 
-//asset loading
+//asset loading test
 var game = new Splat.Game(canvas, manifest);
 
 
@@ -58,7 +58,18 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	} else {
 		this.player.vx = 0;
 	}
+
+	this.player.vy += 0.1;
+
 	this.player.move(elapsedMillis);
+
+	for(var i=0; i<this.blocks.length; i++) {
+		var block = this.blocks[i];
+		if(this.player.collides(block)){
+			this.player.resolveCollisionWith(block);
+		}
+	}
+
 }, function(context) {
 	// draw
 	context.fillStyle = "#092227";
