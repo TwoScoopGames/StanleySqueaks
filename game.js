@@ -19,14 +19,6 @@ var manifest = {
 //asset loading test
 var game = new Splat.Game(canvas, manifest);
 
-
-function centerText(context, text, offsetX, offsetY) {
-	var w = context.measureText(text).width;
-	var x = offsetX + (canvas.width / 2) - (w / 2) | 0;
-	var y = offsetY | 0;
-	context.fillText(text, x, y);
-}
-
 //this refers to current scene
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// initialization
@@ -83,10 +75,6 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 }, function(context) {
 	// draw
 	context.drawImage(game.images.get("background"), 0, 0);
-
-	context.fillStyle = "#fff";
-	context.font = "25px helvetica";
-	centerText(context, "Blank SplatJS Project", 0, canvas.height / 2 - 13);
 
 	for(var i=0; i<this.blocks.length; i++) {
 		this.blocks[i].draw(context);
