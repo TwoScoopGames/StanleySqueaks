@@ -103,11 +103,26 @@ var manifest = {
 	"fonts": {
 	},
 	"animations": {
-		"player-left": {
+		"player-run-left": {
 			"strip": "img/hamster-run-left.png",
 			"frames": 22,
 			"msPerFrame": 20
-		}
+		},
+		"player-run-right": {
+			"strip": "img/hamster-run-right.png",
+			"frames": 22,
+			"msPerFrame": 20
+		},
+		"player-jump-left": {
+			"strip": "img/hamster-jump-left.png",
+			"frames": 19,
+			"msPerFrame": 20
+		},
+		"player-jump-right": {
+			"strip": "img/hamster-jump-right.png",
+			"frames": 19,
+			"msPerFrame": 20
+		},
 	}
 };
 
@@ -149,7 +164,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.blocks.push(block);
 	}
 
-	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-left"), 0, 0); //hamster jones
+	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0); //hamster jones
+	this.player.direction = "left";
 	this.player.frictionX = 0.3;
 }, function(elapsedMillis) {
 	// simulation
@@ -166,8 +182,15 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	}
 	if (game.keyboard.isPressed("right")) {
 		this.player.vx = movement; //how fast he moves
+		this.player.direction = "right";
 	} else if (game.keyboard.isPressed("left")) {
 		this.player.vx = -movement; //how fast he moves
+		this.player.direction = "left";
+	}
+	if (this.player.direction === "left") {
+		this.player.sprite = game.animations.get("player-run-left");
+	} else {
+		this.player.sprite = game.animations.get("player-run-right");
 	}
 
 	this.player.vy += 0.1;
