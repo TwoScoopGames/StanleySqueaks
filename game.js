@@ -115,25 +115,34 @@ function editLevel(scene) {
 	}
 }
 
-function exportBlockDesign(scene, name) {
+function exportLevel(scene, name) {
 	var blockArray = scene.blocks;
-	var levelObject = {};
 
-	levelObject.name = name;
-	levelObject.objects = [];
+	var level = {
+		name: name,
+		objects: []
+	};
 
-	for (var i = 0; i < blockArray.length; i++) {
-		var blockEntity = blockArray[i];
+	level.objects = blockArray.map(function(block) {
+		return {
+			type: "block",
+			x: block.x,
+			y: block.y,
+		};
+	});
+	level.objects.push({
+		type: "spawn",
+		x: scene.spawn.x,
+		y: scene.spawn.y,
+	});
+	level.objects.push({
+		type: "goal",
+		x: scene.goal.x,
+		y: scene.goal.y,
+	});
 
-		levelObject.objects.push({
-			x: blockEntity.x,
-			y: blockEntity.y,
-			type: "block"
-		});
-	}
-
-	console.log(levelObject);
-	return levelObject;
+	console.log(JSON.stringify(level, null, 4));
+	return level;
 }
 
 var currentLevel = 0;
@@ -163,7 +172,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	var movement = 1.0;
 
 	if (game.keyboard.consumePressed("x")) {
-		exportBlockDesign(this, "Level Name");
+		levels[currentLevel] = exportLevel(this, levels[currentLevel].name);
 	}
 	
 	if (game.keyboard.consumePressed("r")) {
