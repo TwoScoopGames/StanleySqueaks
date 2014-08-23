@@ -5,6 +5,7 @@ var canvas = document.getElementById("canvas");
 
 var manifest = {
 	"images": {
+		"background": "img/background.png"
 	},
 	"sounds": {
 	},
@@ -87,8 +88,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 }, function(context) {
 	// draw
-	context.fillStyle = "#092227";
-	context.fillRect(0, 0, canvas.width, canvas.height);
+	context.drawImage(game.images.get("background"), 0, 0);
 
 	context.fillStyle = "#fff";
 	context.font = "25px helvetica";
