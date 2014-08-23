@@ -13,6 +13,11 @@ var manifest = {
 	"fonts": {
 	},
 	"animations": {
+		"player-left": {
+			"strip": "img/hamster-run-left.png",
+			"frames": 22,
+			"msPerFrame": 20
+		}
 	}
 };
 
@@ -41,11 +46,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.blocks.push(block);
 	}
 
-	this.player = new Splat.Entity(100, 100, 40, 50); //hamster jones
-	this.player.draw = function(context) {
-		context.fillStyle = "red";
-		context.fillRect(this.x, this.y, this.width, this.height);
-	};
+	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-left"), 0, 0); //hamster jones
+	this.player.frictionX = 0.9;
 }, function(elapsedMillis) {
 	// simulation
 	var movement = 1.0;
@@ -63,14 +65,15 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.player.vx = movement; //how fast he moves
 	} else if (game.keyboard.isPressed("left")) {
 		this.player.vx = -movement; //how fast he moves
-	} else {
-		this.player.vx = 0;
 	}
 
 	this.player.vy += 0.1;
 
 	this.player.move(elapsedMillis);
 	this.player.solveCollisions(this.blocks);
+	if (!this.player.moved()) {
+		this.player.sprite.reset();
+	}
 
 }, function(context) {
 	// draw
