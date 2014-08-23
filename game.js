@@ -156,7 +156,11 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player.vy += 0.1;
 
 	this.player.move(elapsedMillis);
-	this.player.solveCollisions(this.blocks);
+	var involved = this.player.solveCollisions(this.blocks);
+	for (var i = 0; i < involved.length; i++) {
+		involved[i].touched = true;
+	}
+
 	if (this.hitGoal) {
 		if (this.player.collides(this.spawn)) {
 			console.log("win");
@@ -172,6 +176,12 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		if (this.player.collides(this.goal)) {
 			console.log("goal");
 			this.hitGoal = true;
+			for (i = 0; i < this.blocks.length; i++) {
+				if (this.blocks[i].touched) {
+					this.blocks.splice(i, 1);
+					i--;
+				}
+			}
 		}
 	}
 
@@ -179,11 +189,11 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.player.sprite.reset();
 	}
 
-	if(game.mouse.consumePressed(0)) {
+	if (game.mouse.consumePressed(0)) {
 		addBlock(this, "block-sand", game.mouse.x, game.mouse.y);
 	}
 	
-	if(game.mouse.consumePressed(2)) {
+	if (game.mouse.consumePressed(2)) {
 		removeBlock(this, game.mouse.x, game.mouse.y);
 	}
 
