@@ -71,7 +71,6 @@ function addBlock(scene, imageName, x, y) {
 	block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, 0);
 	scene.blocks.push(block);
 }
-
 function removeBlock(scene, x, y) {
 	var blockSize = 32;
 	var gridX = Math.floor(x / blockSize) * blockSize;
@@ -88,9 +87,7 @@ function removeBlock(scene, x, y) {
 		}
 	}
 }
-
 function exportBlockDesign(scene, name) {
-	console.log(scene.blocks);
 	var blockArray = scene.blocks;
 	var levelObject = {};
 
@@ -109,6 +106,20 @@ function exportBlockDesign(scene, name) {
 	
 	console.log(levelObject);
 	return levelObject;
+}
+function placeSpawnPosition(scene, x, y) {
+	console.log(scene.spawn);
+	
+	scene.spawn = new Splat.Entity(0, 0, 100, 100);
+	scene.spawn.draw = function(context) {
+		context.fillStyle = "blue";
+		context.fillRect(x, y, this.width, this.height);
+	};
+}
+function placeGoalPosition(scene, x, y) {
+	console.log(scene.goal);
+	console.log(x);
+	console.log(y);
 }
 
 var currentLevel = 0;
@@ -215,12 +226,22 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.player.sprite.reset();
 	}
 
+	//left click only will add blocks
+	//left click + 1 key will place spawn position
 	if (game.mouse.consumePressed(0)) {
-		addBlock(this, "block-sand", game.mouse.x, game.mouse.y);
+		if (game.keyboard.isPressed("1")) {
+			placeSpawnPosition(this, game.mouse.x, game.mouse.y);
+		} else {
+			addBlock(this, "block-sand", game.mouse.x, game.mouse.y);
+		}
 	}
 	
 	if (game.mouse.consumePressed(2)) {
-		removeBlock(this, game.mouse.x, game.mouse.y);
+		if (game.keyboard.isPressed("1")) {
+			placeGoalPosition(this, game.mouse.x, game.mouse.y);
+		} else {
+			removeBlock(this, game.mouse.x, game.mouse.y);
+		}
 	}
 
 }, function(context) {
