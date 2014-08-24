@@ -22,7 +22,16 @@ var manifest = {
 		"crumble2": "audio/crumble2.mp3",
 		"crumble3": "audio/crumble3.mp3",
 		"crumble4": "audio/crumble4.mp3",
-		"podium": "audio/podium.mp3"
+		"hamster-fall": "audio/hamster-fall.mp3",
+		"jump": "audio/jump.mp3",
+		"podium": "audio/podium.mp3",
+		"squeak1": "audio/squeak1.mp3",
+		"squeak2": "audio/squeak2.mp3",
+		"step1": "audio/step1.mp3",
+		"step2": "audio/step2.mp3",
+		"step3": "audio/step3.mp3",
+		"step4": "audio/step4.mp3",
+		"step5": "audio/step5.mp3"
 		
 	},
 	"fonts": {
@@ -385,6 +394,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			if (canJump) {
 				this.player.vy = -1.2;
 				canJump = false;
+				game.sounds.play("jump");
 			}
 		}
 		var movement = 0.6;
@@ -437,7 +447,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			this.goal.sprite.reset();
 			this.goal.spriteOffsetY = 43;
 			this.timers.blockCrumble.start();
-			game.sounds.play("crumble1");
+			game.sounds.play("podium");
 		}
 	}
 
