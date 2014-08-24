@@ -14,6 +14,16 @@ var manifest = {
 	"fonts": {
 	},
 	"animations": {
+		"burrito-podium-green": {
+			"strip": "img/burrito-podium-green.png",
+			"frames": 20,
+			"msPerFrame": 80
+		},
+		"burrito-podium-ghost": {
+			"strip": "img/burrito-podium-ghost.png",
+			"frames": 20,
+			"msPerFrame": 80
+		},
 		"player-run-left": {
 			"strip": "img/hamster-run-left.png",
 			"frames": 22,
@@ -175,11 +185,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		context.fillRect(this.x, this.y, this.width, this.height);
 	};
 
-	this.goal = new Splat.Entity(0, 0, 100, 100);
-	this.goal.draw = function(context) {
-		context.fillStyle = "green";
-		context.fillRect(this.x, this.y, this.width, this.height);
-	};
+	var burrito = game.animations.get("burrito-podium-green");
+	this.goal = new Splat.AnimatedEntity(0, 0, burrito.width, burrito.height, burrito, 0, 0);
 
 	buildLevel(levels[currentLevel], this);
 }, function(elapsedMillis) {
@@ -211,6 +218,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 	this.player.vy += 0.1;
 
+	this.spawn.move(elapsedMillis);
+	this.goal.move(elapsedMillis);
 	this.player.move(elapsedMillis);
 	for (var i = 0; i < this.blocks.length; i++) {
 		if (this.player.collides(this.blocks[i])) {
@@ -234,6 +243,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		if (this.player.collides(this.goal)) {
 			console.log("goal");
 			this.hitGoal = true;
+			this.goal.sprite = game.animations.get("burrito-podium-ghost");
 			for (i = 0; i < this.blocks.length; i++) {
 				if (this.blocks[i].touched) {
 					this.blocks.splice(i, 1);
