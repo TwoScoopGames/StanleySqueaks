@@ -7,7 +7,12 @@ var canvas = document.getElementById("canvas");
 var manifest = {
 	"images": {
 		"background": "img/background.png",
-		"block-sand": "img/block-sand.png"
+		"block-cookie": "img/block-cookie.png",
+		"block": "img/block-sand.png",
+		"block-sand2": "img/block-sand2.png",
+		"block-sand3": "img/block-sand3.png",
+		"block-stone": "img/block-stone.png",
+		"block-stone2": "img/block-stone2.png",
 	},
 	"sounds": {
 	},
@@ -61,15 +66,10 @@ var game = new Splat.Game(canvas, manifest);
 var blockSize = 32;
 
 function buildLevel(level, scene) {
-	var img = game.images.get("block-sand");
-
 	scene.blocks = [];
 	for (var i = 0; i < level.objects.length; i++) {
 		var obj = level.objects[i];
-		if (obj.type === "block") {
-			var block = new Splat.AnimatedEntity(obj.x, obj.y, blockSize, blockSize, img, 0, -9);
-			scene.blocks.push(block);
-		} else if (obj.type === "spawn") {
+		if (obj.type === "spawn") {
 			scene.spawn.x = obj.x;
 			scene.spawn.y = obj.y;
 			scene.player.x = obj.x;
@@ -77,6 +77,11 @@ function buildLevel(level, scene) {
 		} else if (obj.type === "goal") {
 			scene.goal.x = obj.x;
 			scene.goal.y = obj.y;
+		} else {
+			var img = game.images.get(obj.type);
+			var block = new Splat.AnimatedEntity(obj.x, obj.y, blockSize, blockSize, img, 0, -9);
+			block.type = obj.type;
+			scene.blocks.push(block);
 		}
 	}
 }
@@ -87,6 +92,7 @@ function addBlock(scene, imageName, x, y) {
 	var gridY = Math.floor(y / blockSize) * blockSize;
 
 	var block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, -9);
+	block.type = imageName;
 	scene.blocks.push(block);
 	return block;
 }
@@ -105,7 +111,32 @@ function findBlockIndex(scene, x, y) {
 	return -1;
 }
 
+var blockToDraw = "block";
 function editLevel(scene) {
+	if (game.keyboard.consumePressed("1")) {
+		blockToDraw = "spawn";
+	}
+	if (game.keyboard.consumePressed("2")) {
+		blockToDraw = "goal";
+	}
+	if (game.keyboard.consumePressed("3")) {
+		blockToDraw = "block";
+	}
+	if (game.keyboard.consumePressed("4")) {
+		blockToDraw = "block-sand2";
+	}
+	if (game.keyboard.consumePressed("5")) {
+		blockToDraw = "block-sand3";
+	}
+	if (game.keyboard.consumePressed("6")) {
+		blockToDraw = "block-cookie";
+	}
+	if (game.keyboard.consumePressed("7")) {
+		blockToDraw = "block-stone";
+	}
+	if (game.keyboard.consumePressed("8")) {
+		blockToDraw = "block-stone2";
+	}
 	if (!game.mouse.isPressed(0)) {
 		return;
 	}
@@ -114,7 +145,12 @@ function editLevel(scene) {
 	var y = game.mouse.y;
 	var oldX, oldY;
 	var index = findBlockIndex(scene, x, y);
-	if (game.keyboard.isPressed("1")) {
+	if (game.keyboard.isPressed("shift")) {
+		if (index < 0) {
+			return;
+		}
+		scene.blocks.splice(index, 1);
+	} else if (blockToDraw === "spawn") {
 		oldX = scene.spawn.x;
 		oldY = scene.spawn.y;
 		scene.spawn.x = x;
@@ -123,8 +159,7 @@ function editLevel(scene) {
 			scene.spawn.x = oldX;
 			scene.spawn.y = oldY;
 		}
-		game.mouse.consumePressed(0);
-	} else if (game.keyboard.isPressed("2")) {
+	} else if (blockToDraw === "goal") {
 		oldX = scene.goal.x;
 		oldY = scene.goal.y;
 		scene.goal.x = x;
@@ -133,17 +168,15 @@ function editLevel(scene) {
 			scene.goal.x = oldX;
 			scene.goal.y = oldY;
 		}
-		game.mouse.consumePressed(0);
-	} else if (game.keyboard.isPressed("shift")) {
-		if (index < 0) {
-			return;
-		}
-		scene.blocks.splice(index, 1);
 	} else {
 		if (index >= 0) {
-			return;
+			if (blockToDraw === scene.blocks[index].type) {
+				return;
+			} else {
+				scene.blocks.splice(index, 1);
+			}
 		}
-		var block = addBlock(scene, "block-sand", x, y);
+		var block = addBlock(scene, blockToDraw, x, y);
 		if (scene.player.collides(block) || block.collides(scene.spawn) || block.collides(scene.goal)) {
 			scene.blocks.pop();
 		}
@@ -160,7 +193,7 @@ function exportLevel(scene, name) {
 
 	level.objects = blockArray.map(function(block) {
 		return {
-			type: "block",
+			type: block.type,
 			x: block.x,
 			y: block.y,
 		};
