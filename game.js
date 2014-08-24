@@ -244,6 +244,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player.frictionX = 0.3;
 
 	this.hitGoal = false;
+	this.touched = 0;
 
 	this.spawn = new Splat.Entity(0, 0, this.player.width, this.player.height);
 	this.spawn.draw = function(context) {
@@ -255,6 +256,22 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.goal = new Splat.AnimatedEntity(0, 0, burrito.width, burrito.height, burrito, 0, 0);
 
 	buildLevel(levels[currentLevel], this);
+
+	var scene = this;
+	this.timers.blockCrumble = new Splat.Timer(undefined, 100, function() {
+		if (scene.touched < 0) {
+			return;
+		}
+		scene.touched--;
+		for (var i = 0; i < scene.blocks.length; i++) {
+			if (scene.blocks[i].touched === scene.touched && unbreakableBlocks.indexOf(scene.blocks[i].type) === -1) {
+				scene.blocks.splice(i, 1);
+				i--;
+			}
+		}
+		this.reset();
+		this.start();
+	});
 }, function(elapsedMillis) {
 	// simulation
 	var movement = 1.0;
@@ -291,18 +308,27 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		this.player.direction = "left";
 	}
 
-	this.player.vy += 0.1;
-
 	this.spawn.move(elapsedMillis);
 	this.goal.move(elapsedMillis);
-	this.player.move(elapsedMillis);
+	if (!this.timers.blockCrumble.running) {
+		this.player.vy += 0.1;
+		this.player.move(elapsedMillis);
+	}
 	if (this.player.y > 1500) {
 		// death!
 		game.scenes.switchTo("title");
 	}
-	for (var i = 0; i < this.blocks.length; i++) {
-		if (this.player.collides(this.blocks[i])) {
-			this.blocks[i].touched = true;
+	if (!this.hitGoal) {
+		var touchedSomething = false;
+		for (var i = 0; i < this.blocks.length; i++) {
+			var block = this.blocks[i];
+			if (block.touched === undefined && this.player.collides(block)) {
+				block.touched = this.touched;
+				touchedSomething = true;
+			}
+		}
+		if (touchedSomething) {
+			this.touched++;
 		}
 	}
 	var involved = this.player.solveCollisions(this.blocks);
@@ -323,12 +349,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 			console.log("goal");
 			this.hitGoal = true;
 			this.goal.sprite = game.animations.get("burrito-podium-ghost");
-			for (i = 0; i < this.blocks.length; i++) {
-				if (this.blocks[i].touched && unbreakableBlocks.indexOf(this.blocks[i].type) === -1) {
-					this.blocks.splice(i, 1);
-					i--;
-				}
-			}
+			this.timers.blockCrumble.start();
 		}
 	}
 
