@@ -58,6 +58,7 @@ var manifest = {
 };
 
 var game = new Splat.Game(canvas, manifest);
+var blockSize = 32;
 
 function buildLevel(level, scene) {
 	var img = game.images.get("block-sand");
@@ -66,7 +67,7 @@ function buildLevel(level, scene) {
 	for (var i = 0; i < level.objects.length; i++) {
 		var obj = level.objects[i];
 		if (obj.type === "block") {
-			var block = new Splat.AnimatedEntity(obj.x, obj.y, img.width, img.height, img, 0, 0);
+			var block = new Splat.AnimatedEntity(obj.x, obj.y, blockSize, blockSize, img, 0, -9);
 			scene.blocks.push(block);
 		} else if (obj.type === "spawn") {
 			scene.spawn.x = obj.x;
@@ -81,12 +82,11 @@ function buildLevel(level, scene) {
 }
 
 function addBlock(scene, imageName, x, y) {
-	var blockSize = 32;
 	var img = game.images.get(imageName);
 	var gridX = Math.floor(x / blockSize) * blockSize;
 	var gridY = Math.floor(y / blockSize) * blockSize;
 
-	var block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, 0);
+	var block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, -9);
 	scene.blocks.push(block);
 	return block;
 }
