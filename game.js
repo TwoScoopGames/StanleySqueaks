@@ -340,6 +340,17 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	draw(context, this.spawn, "green");
 	draw(context, this.goal, "green");
 	draw(context, this.player, "blue");
+
+	if (blockToDraw === "spawn" || blockToDraw === "goal") {
+		context.fillStyle = "rgba(100, 100, 100, 0.7)";
+		context.font = "30px sans-serif";
+		context.fillText(blockToDraw, 34, 50);
+	} else {
+		var img = game.images.get(blockToDraw);
+		context.fillStyle = "rgba(100, 100, 100, 0.3)";
+		context.fillRect(20, 20, img.width + 20, img.height + 20);
+		context.drawImage(img, 30, 30);
+	}
 }));
 
 game.scenes.add("win", new Splat.Scene(canvas, function() {
