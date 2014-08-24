@@ -180,6 +180,16 @@ function exportLevel(scene, name) {
 	return level;
 }
 
+var debug = false;
+function draw(context, entity, color) {
+	entity.draw(context);
+	if (!debug) {
+		return;
+	}
+	context.strokeStyle = color;
+	context.strokeRect(entity.x, entity.y, entity.width, entity.height);
+}
+
 var currentLevel = 0;
 
 game.scenes.add("title", new Splat.Scene(canvas, function() {
@@ -206,7 +216,10 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	if (game.keyboard.consumePressed("x")) {
 		levels[currentLevel] = exportLevel(this, levels[currentLevel].name);
 	}
-	
+	if (game.keyboard.consumePressed("f1")) {
+		debug = !debug;
+	}
+
 	if (game.keyboard.consumePressed("r")) {
 		game.scenes.switchTo("title");
 	}
@@ -288,12 +301,12 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	context.drawImage(game.images.get("background"), 0, 0);
 
 	for (var i = 0; i < this.blocks.length; i++) {
-		this.blocks[i].draw(context);
+		draw(context, this.blocks[i], "red");
 	}
 
-	this.spawn.draw(context);
-	this.goal.draw(context);
-	this.player.draw(context);
+	draw(context, this.spawn, "green");
+	draw(context, this.goal, "green");
+	draw(context, this.player, "blue");
 }));
 
 game.scenes.add("win", new Splat.Scene(canvas, function() {
