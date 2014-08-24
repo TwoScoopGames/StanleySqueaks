@@ -43,32 +43,32 @@ var manifest = {
 			"repeatAt": 8
 		},
 		"player-idle-left": {
-			"strip": "img/hamster-idle-left.png",
+			"strip": "img/hamster-idle-left-f19.png",
 			"frames": 19,
 			"msPerFrame": 40
 		},
 		"player-idle-right": {
-			"strip": "img/hamster-idle-right.png",
+			"strip": "img/hamster-idle-right-f19.png",
 			"frames": 19,
 			"msPerFrame": 40
 		},
 		"player-jump-left": {
-			"strip": "img/hamster-jump-left.png",
+			"strip": "img/hamster-jump-left-f19.png",
 			"frames": 19,
 			"msPerFrame": 40
 		},
 		"player-jump-right": {
-			"strip": "img/hamster-jump-right.png",
+			"strip": "img/hamster-jump-right-f19.png",
 			"frames": 19,
 			"msPerFrame": 40
 		},
 		"player-run-left": {
-			"strip": "img/hamster-run-left.png",
+			"strip": "img/hamster-run-left-f22.png",
 			"frames": 22,
 			"msPerFrame": 20
 		},
 		"player-run-right": {
-			"strip": "img/hamster-run-right.png",
+			"strip": "img/hamster-run-right-f22.png",
 			"frames": 22,
 			"msPerFrame": 20
 		},
