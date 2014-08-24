@@ -24,6 +24,16 @@ var manifest = {
 			"frames": 20,
 			"msPerFrame": 80
 		},
+		"player-idle-left": {
+			"strip": "img/hamster-idle-left.png",
+			"frames": 19,
+			"msPerFrame": 40
+		},
+		"player-idle-right": {
+			"strip": "img/hamster-idle-right.png",
+			"frames": 19,
+			"msPerFrame": 40
+		},
 		"player-run-left": {
 			"strip": "img/hamster-run-left.png",
 			"frames": 22,
@@ -253,8 +263,14 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		}
 	}
 
+	game.animations.get("player-idle-left").move(elapsedMillis);
+	game.animations.get("player-idle-right").move(elapsedMillis);
 	if (!this.player.moved()) {
-		this.player.sprite.reset();
+		if (this.player.direction === "left") {
+			this.player.sprite = game.animations.get("player-idle-left");
+		} else {
+			this.player.sprite = game.animations.get("player-idle-right");
+		}
 	}
 
 	editLevel(this);
