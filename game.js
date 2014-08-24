@@ -31,7 +31,7 @@ var manifest = {
 			"msPerFrame": 80
 		},
 		"spawn": {
-			"strip": "img/doorway.png",
+			"strip": "img/door.png",
 			"frames": 9,
 			"msPerFrame": 80
 		},
