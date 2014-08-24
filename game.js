@@ -403,7 +403,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 game.scenes.add("start", new Splat.Scene(canvas, function() {
 }, function() {
-	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.keyboard.consumePressed(0)) {
+	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.mouse.consumePressed(0)) {
 		game.scenes.switchTo("main");
 	}
 }, function(context) {
