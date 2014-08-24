@@ -1403,6 +1403,440 @@ module.exports = [
 		    "y": 24.74516695957821
 		}
 	    ]
+	},
+	{
+	    "name": "Level 4",
+	    "objects": [
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 608
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 576
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 544
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 512
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 480
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 448
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 416
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 384
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 352
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 320
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 288
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 256
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 224
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 192
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 160
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 128
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 96
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 64
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 32
+		},
+		{
+		    "type": "block",
+		    "x": 0,
+		    "y": 0
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 608
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 576
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 544
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 512
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 480
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 448
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 416
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 384
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 352
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 320
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 288
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 256
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 224
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 192
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 160
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 128
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 96
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 64
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 32
+		},
+		{
+		    "type": "block",
+		    "x": 1120,
+		    "y": 0
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 64,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 32,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 96,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 128,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 512,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 480,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 544,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 576,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 608,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 160,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 192,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 224,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 256,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 288,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 320,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 448,
+		    "y": 576
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 160,
+		    "y": 160
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 192,
+		    "y": 160
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 992,
+		    "y": 512
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1024,
+		    "y": 512
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1056,
+		    "y": 512
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1088,
+		    "y": 512
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1024,
+		    "y": 480
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1056,
+		    "y": 480
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1088,
+		    "y": 480
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1088,
+		    "y": 448
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1056,
+		    "y": 448
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 1088,
+		    "y": 416
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 800,
+		    "y": 576
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 224,
+		    "y": 160
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 128,
+		    "y": 160
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 96,
+		    "y": 160
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 64,
+		    "y": 160
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 32,
+		    "y": 160
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 256,
+		    "y": 160
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 352,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 384,
+		    "y": 576
+		},
+		{
+		    "type": "block-sand3",
+		    "x": 416,
+		    "y": 576
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 320,
+		    "y": 160
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 288,
+		    "y": 192
+		},
+		{
+		    "type": "block-cookie",
+		    "x": 288,
+		    "y": 160
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 800,
+		    "y": 352
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 640,
+		    "y": 288
+		},
+		{
+		    "type": "block-sand2",
+		    "x": 512,
+		    "y": 224
+		},
+		{
+		    "type": "spawn",
+		    "x": 32.65014866204163,
+		    "y": 16.871704745166962
+		},
+		{
+		    "type": "goal",
+		    "x": 41.657086223984145,
+		    "y": 440.91388400702994
+		}
+	    ]
 	}
-
 ];
