@@ -17,6 +17,7 @@ var manifest = {
 		"block-stone2": "img/block-stone2.png",
 		"doorway": "img/doorway.png",
 		"gamedevlou": "img/gamedevlou.png",
+		"log": "img/log.png",
 		"rock1": "img/rock-particle1.png",
 		"rock2": "img/rock-particle2.png",
 		"rock3": "img/rock-particle3.png",
@@ -290,6 +291,9 @@ function editLevel(scene) {
 	}
 	if (game.keyboard.consumePressed("9")) {
 		blockToDraw = "block-stone2";
+	}
+	if (game.keyboard.consumePressed("0")) {
+		blockToDraw = "log";
 	}
 	if (!game.mouse.isPressed(0)) {
 		return;
