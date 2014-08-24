@@ -99,6 +99,12 @@ var manifest = {
 			"msPerFrame": 160,
 			"repeatAt": 19
 		},
+		"skull": {
+			"strip": "img/skullboss-f20.png",
+			"frames": 20,
+			"msPerFrame": 100,
+			"repeatAt": 19
+		},
 	}
 };
 
@@ -214,21 +220,24 @@ function editLevel(scene) {
 		blockToDraw = "goal";
 	}
 	if (game.keyboard.consumePressed("3")) {
-		blockToDraw = "block";
+		blockToDraw = "skull";
 	}
 	if (game.keyboard.consumePressed("4")) {
-		blockToDraw = "block-sand2";
+		blockToDraw = "block";
 	}
 	if (game.keyboard.consumePressed("5")) {
-		blockToDraw = "block-sand3";
+		blockToDraw = "block-sand2";
 	}
 	if (game.keyboard.consumePressed("6")) {
-		blockToDraw = "block-cookie";
+		blockToDraw = "block-sand3";
 	}
 	if (game.keyboard.consumePressed("7")) {
-		blockToDraw = "block-stone";
+		blockToDraw = "block-cookie";
 	}
 	if (game.keyboard.consumePressed("8")) {
+		blockToDraw = "block-stone";
+	}
+	if (game.keyboard.consumePressed("9")) {
 		blockToDraw = "block-stone2";
 	}
 	if (!game.mouse.isPressed(0)) {
@@ -244,23 +253,15 @@ function editLevel(scene) {
 			return;
 		}
 		scene.blocks.splice(index, 1);
-	} else if (blockToDraw === "spawn") {
-		oldX = scene.spawn.x;
-		oldY = scene.spawn.y;
-		scene.spawn.x = x;
-		scene.spawn.y = y;
-		if (scene.spawn.getCollisions(scene.blocks).length > 0) {
-			scene.spawn.x = oldX;
-			scene.spawn.y = oldY;
-		}
-	} else if (blockToDraw === "goal") {
-		oldX = scene.goal.x;
-		oldY = scene.goal.y;
-		scene.goal.x = x;
-		scene.goal.y = y;
-		if (scene.goal.getCollisions(scene.blocks).length > 0) {
-			scene.goal.x = oldX;
-			scene.goal.y = oldY;
+	} else if (blockToDraw === "spawn" || blockToDraw === "goal" || blockToDraw === "skull") {
+		var entity = scene[blockToDraw];
+		oldX = entity.x;
+		oldY = entity.y;
+		entity.x = x;
+		entity.y = y;
+		if (entity.getCollisions(scene.blocks).length > 0) {
+			entity.x = oldX;
+			entity.y = oldY;
 		}
 	} else {
 		if (index >= 0) {
@@ -301,6 +302,11 @@ function exportLevel(scene, name) {
 		type: "goal",
 		x: scene.goal.x,
 		y: scene.goal.y,
+	});
+	level.objects.push({
+		type: "skull",
+		x: scene.skull.x,
+		y: scene.skull.y,
 	});
 
 	return level;
@@ -356,6 +362,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	var burrito = game.animations.get("burrito-podium-green");
 	this.goal = new Splat.AnimatedEntity(0, 0, burrito.width, burrito.height, burrito, 0, 0);
 
+	var skull = game.animations.get("skull").copy();
+	this.skull = new Splat.AnimatedEntity(0, 0, skull.width, skull.height, skull, 0, 0);
+
 	buildLevel(levels[currentLevel], this);
 
 	game.animations.get("player-enter-door").reset();
@@ -388,6 +397,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	game.animations.get("player-enter-door").move(elapsedMillis);
 	this.goal.move(elapsedMillis);
 	particles.move(elapsedMillis);
+	if (this.hitGoal) {
+		this.skull.move(elapsedMillis);
+	}
 
 	if (game.keyboard.consumePressed("f1")) {
 		debug = !debug;
@@ -505,6 +517,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	draw(context, this.spawn, "green");
 	draw(context, this.goal, "green");
+	draw(context, this.skull, "green");
 
 	if (this.timers.enter.running) {
 		game.animations.get("player-enter-door").draw(context, this.spawn.x, this.spawn.y);
@@ -515,7 +528,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	particles.draw(context);
 
 	if (editable) {
-		if (blockToDraw === "spawn" || blockToDraw === "goal") {
+		if (blockToDraw === "spawn" || blockToDraw === "goal" || blockToDraw === "skull") {
 			context.fillStyle = "rgba(100, 100, 100, 0.7)";
 			context.font = "30px sans-serif";
 			context.fillText(blockToDraw, 34, 50);
