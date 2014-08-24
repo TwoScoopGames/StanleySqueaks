@@ -241,6 +241,26 @@ function editLevel(scene) {
 		levels[currentLevel] = exportLevel(scene, levels[currentLevel].name);
 		console.log("module.exports = " + JSON.stringify(levels, null, 4) + ";");
 	}
+
+	scene.camera.vx = 0;
+	scene.camera.vy = 0;
+	if (game.keyboard.isPressed("w")) {
+		scene.camera.adjusted = true;
+		scene.camera.vy = -0.5;
+	}
+	if (game.keyboard.isPressed("s")) {
+		scene.camera.adjusted = true;
+		scene.camera.vy = 0.5;
+	}
+	if (game.keyboard.isPressed("a")) {
+		scene.camera.adjusted = true;
+		scene.camera.vx = -0.5;
+	}
+	if (game.keyboard.isPressed("d")) {
+		scene.camera.adjusted = true;
+		scene.camera.vx = 0.5;
+	}
+
 	if (game.keyboard.consumePressed("1")) {
 		blockToDraw = "spawn";
 	}
@@ -272,8 +292,8 @@ function editLevel(scene) {
 		return;
 	}
 
-	var x = game.mouse.x;
-	var y = game.mouse.y;
+	var x = game.mouse.x + scene.camera.x;
+	var y = game.mouse.y + scene.camera.y;
 	var oldX, oldY;
 	var index = findBlockIndex(scene, x, y);
 	if (game.keyboard.isPressed("shift")) {
@@ -384,6 +404,19 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
 
+	this.camera = new Splat.EntityBoxCamera(this.player, 400, 100, canvas.width / 2, canvas.height / 2);
+	this.camera.move = function(elapsedMillis) {
+		if (this.adjusted) {
+			Splat.Entity.prototype.move.call(this, elapsedMillis);
+		} else {
+			Splat.EntityBoxCamera.prototype.move.call(this, elapsedMillis);
+		}
+		this.x = Math.max(0, this.x);
+		this.x = Math.min(canvas.width, this.x);
+		this.y = Math.min(0, this.y);
+		this.y = Math.max(-canvas.height, this.y);
+	};
+
 	this.hitGoal = false;
 	this.touched = 0;
 	particles.reset();
@@ -459,6 +492,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	if (!playerFrozen) {
 		if (game.keyboard.consumePressed("space")) {
+			this.camera.adjusted = false;
 			if (this.player.direction === "left") {
 				setSprite(this.player, "player-jump-left");
 				this.player.sprite.reset();
@@ -474,9 +508,11 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		}
 		var movement = 0.6;
 		if (game.keyboard.isPressed("right")) {
+			this.camera.adjusted = false;
 		 	this.player.vx = movement; //how fast he moves
 			this.player.direction = "right";
 		} else if (game.keyboard.isPressed("left")) {
+			this.camera.adjusted = false;
 			this.player.vx = -movement; //how fast he moves
 			this.player.direction = "left";
 		}
@@ -554,6 +590,10 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	}
 }, function(context) {
 	// draw
+	context.fillStyle = "black";
+	this.camera.drawAbsolute(context, function() {
+		context.fillRect(0, 0, canvas.width, canvas.height);
+	});
 	context.drawImage(game.images.get("background"), 0, 0);
 	context.drawImage(game.images.get("doorway"), this.spawn.x - 34, this.spawn.y - 32);
 
@@ -587,16 +627,18 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	}
 
 	if (editable) {
-		if (blockToDraw === "spawn" || blockToDraw === "goal" || blockToDraw === "skull") {
-			context.fillStyle = "rgba(100, 100, 100, 0.7)";
-			context.font = "30px sans-serif";
-			context.fillText(blockToDraw, 34, 50);
-		} else {
-			var img = game.images.get(blockToDraw);
-			context.fillStyle = "rgba(100, 100, 100, 0.3)";
-			context.fillRect(20, 20, img.width + 20, img.height + 20);
-			context.drawImage(img, 30, 30);
-		}
+		this.camera.drawAbsolute(context, function() {
+			if (blockToDraw === "spawn" || blockToDraw === "goal" || blockToDraw === "skull") {
+				context.fillStyle = "rgba(100, 100, 100, 0.7)";
+				context.font = "30px sans-serif";
+				context.fillText(blockToDraw, 34, 50);
+			} else {
+				var img = game.images.get(blockToDraw);
+				context.fillStyle = "rgba(100, 100, 100, 0.3)";
+				context.fillRect(20, 20, img.width + 20, img.height + 20);
+				context.drawImage(img, 30, 30);
+			}
+		});
 	}
 }));
 
