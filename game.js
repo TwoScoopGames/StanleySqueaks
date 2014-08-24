@@ -45,38 +45,72 @@ var manifest = {
 		"player-idle-left": {
 			"strip": "img/hamster-idle-left-f19.png",
 			"frames": 19,
-			"msPerFrame": 40
+			"msPerFrame": 70
 		},
 		"player-idle-right": {
 			"strip": "img/hamster-idle-right-f19.png",
 			"frames": 19,
-			"msPerFrame": 40
+			"msPerFrame": 70
 		},
 		"player-jump-left": {
 			"strip": "img/hamster-jump-left-f19.png",
 			"frames": 19,
-			"msPerFrame": 40
+			"msPerFrame": 30
 		},
 		"player-jump-right": {
 			"strip": "img/hamster-jump-right-f19.png",
 			"frames": 19,
-			"msPerFrame": 40
+			"msPerFrame": 30
 		},
 		"player-run-left": {
 			"strip": "img/hamster-run-left-f22.png",
 			"frames": 22,
-			"msPerFrame": 20
+			"msPerFrame": 30
 		},
 		"player-run-right": {
 			"strip": "img/hamster-run-right-f22.png",
 			"frames": 22,
-			"msPerFrame": 20
+			"msPerFrame": 30
 		},
 	}
 };
 
+var bounding = {
+	"player-idle-left": {
+		"spriteOffsetX": -22,
+		"spriteOffsetY": -25,
+	},
+	"player-idle-right": {
+		"spriteOffsetX": -15,
+		"spriteOffsetY": -25,
+	},
+	"player-jump-left": {
+		"spriteOffsetX": -20,
+		"spriteOffsetY": -23,
+	},
+	"player-jump-right": {
+		"spriteOffsetX": -23,
+		"spriteOffsetY": -23,
+	},
+	"player-run-left": {
+		"spriteOffsetX": -30,
+		"spriteOffsetY": -28,
+	},
+	"player-run-right": {
+		"spriteOffsetX": -30,
+		"spriteOffsetY": -28,
+	},
+};
+
 var game = new Splat.Game(canvas, manifest);
 var blockSize = 32;
+
+function setSprite(animatedEntity, name) {
+	animatedEntity.sprite = game.animations.get(name);
+	var bounds = bounding[name];
+	animatedEntity.spriteOffsetX = bounds.spriteOffsetX;
+	animatedEntity.spriteOffsetY = bounds.spriteOffsetY;
+}
 
 function buildLevel(level, scene) {
 	scene.blocks = [];
@@ -243,8 +277,13 @@ function draw(context, entity, color) {
 	if (!debug) {
 		return;
 	}
-	context.strokeStyle = color;
-	context.strokeRect(entity.x, entity.y, entity.width, entity.height);
+	if (entity.touched >= 0) {
+		context.fillStyle = color;
+		context.fillRect(entity.x, entity.y, entity.width, entity.height);
+	} else {
+		context.strokeStyle = color;
+		context.strokeRect(entity.x, entity.y, entity.width, entity.height);
+	}
 }
 
 
@@ -266,7 +305,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 }));
 
 game.scenes.add("main", new Splat.Scene(canvas, function() {
-	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0);
+	this.player = new Splat.AnimatedEntity(100, 100, 46, 110, game.animations.get("player-idle-left"), 0, 0);
+	setSprite(this.player, "player-idle-left");
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
 
@@ -323,13 +363,13 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	if (!playerFrozen) {
 		if (game.keyboard.consumePressed("space")) {
 			if (this.player.direction === "left") {
-				this.player.sprite = game.animations.get("player-jump-left");
+				setSprite(this.player, "player-jump-left");
 				this.player.sprite.reset();
 			} else {
-				this.player.sprite = game.animations.get("player-jump-right");
+				setSprite(this.player, "player-jump-right");
 				this.player.sprite.reset();
 			}
-			if(canJump === true) {
+			if (canJump) {
 				this.player.vy = -1.0;
 				canJump = false;
 			}
@@ -343,8 +383,8 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			this.player.direction = "left";
 		}
 
-		this.player.vy += 0.1;
 		this.player.move(elapsedMillis);
+		this.player.vy += 0.1;
 	}
 	if (this.player.y > 1500) {
 		// death!
@@ -388,15 +428,15 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	if (involved.length > 0) {
 		if (this.player.moved()) {
 			if (this.player.direction === "left") {
-				this.player.sprite = game.animations.get("player-run-left");
+				setSprite(this.player, "player-run-left");
 			} else {
-				this.player.sprite = game.animations.get("player-run-right");
+				setSprite(this.player, "player-run-right");
 			}
 		} else {
 			if (this.player.direction === "left") {
-				this.player.sprite = game.animations.get("player-idle-left");
+				setSprite(this.player, "player-idle-left");
 			} else {
-				this.player.sprite = game.animations.get("player-idle-right");
+				setSprite(this.player, "player-idle-right");
 			}
 		}
 		canJump = true;
