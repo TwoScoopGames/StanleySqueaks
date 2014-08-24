@@ -616,7 +616,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	// this.camera.drawAbsolute(context, function() {
 	// 	context.fillRect(0, 0, canvas.width, canvas.height);
 	// });
-	context.drawImage(game.images.get("background2"), 0, -canvas.height);
+	context.drawImage(game.images.get("background"), 0, -canvas.height);
 	context.drawImage(game.images.get("doorway"), this.spawn.x - 34, this.spawn.y - 32);
 
 	for (var i = 0; i < this.blocks.length; i++) {
