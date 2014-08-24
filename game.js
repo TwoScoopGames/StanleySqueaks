@@ -21,6 +21,7 @@ var manifest = {
 		"rock2": "img/rock-particle2.png",
 		"rock3": "img/rock-particle3.png",
 		"rock4": "img/rock-particle4.png",
+		"titlescreen": "img/titlescreen.png",
 	},
 	"sounds": {
 		"bump": "audio/bump.mp3",
@@ -383,7 +384,7 @@ var canJump = true;
 
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.timers.expire = new Splat.Timer(undefined, 2000, function() {
-		game.scenes.switchTo("main");
+		game.scenes.switchTo("start");
 	});
 	this.timers.expire.start();
 }, function() {
@@ -393,6 +394,19 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 	var gdl = game.images.get("gamedevlou");
 	context.drawImage(gdl, (canvas.width / 2) - (gdl.width / 2), (canvas.height / 2) - (gdl.height / 2));
+}));
+
+game.scenes.add("start", new Splat.Scene(canvas, function() {
+}, function() {
+	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.keyboard.consumePressed(0)) {
+		game.scenes.switchTo("main");
+	}
+}, function(context) {
+	context.fillStyle = "white";
+	context.fillRect(0, 0, canvas.width, canvas.height);
+
+	var image = game.images.get("titlescreen");
+	context.drawImage(image, 0, 0, canvas.width, canvas.height);
 }));
 
 function willBlockCrumble(scene, block) {
