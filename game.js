@@ -367,6 +367,10 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	context.drawImage(gdl, (canvas.width / 2) - (gdl.width / 2), (canvas.height / 2) - (gdl.height / 2));
 }));
 
+function willBlockCrumble(scene, block) {
+	return block.touched === scene.touched - 1 && unbreakableBlocks.indexOf(block.type) === -1;
+}
+
 game.scenes.add("main", new Splat.Scene(canvas, function() {
 	this.player = new Splat.AnimatedEntity(100, 100, 46, 110, game.animations.get("player-idle-left"), 0, 0);
 	setSprite(this.player, "player-idle-left");
@@ -397,14 +401,15 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		if (scene.touched < 0) {
 			return;
 		}
-		scene.touched--;
 		for (var i = 0; i < scene.blocks.length; i++) {
-			if (scene.blocks[i].touched === scene.touched && unbreakableBlocks.indexOf(scene.blocks[i].type) === -1) {
-				particles.spray(10, scene.blocks[i].x + (blockSize / 2), scene.blocks[i].y + (blockSize / 2), 1);
+			var block = scene.blocks[i];
+			if (willBlockCrumble(scene, block)) {
+				particles.spray(10, block.x + (blockSize / 2), block.y + (blockSize / 2), 1);
 				scene.blocks.splice(i, 1);
 				i--;
 			}
 		}
+		scene.touched--;
 		this.reset();
 		this.start();
 	});
@@ -546,6 +551,14 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		draw(context, this.player, "blue");
 	}
 
+	if (this.timers.blockCrumble.running) {
+		for (i = 0; i < this.blocks.length; i++) {
+			var block = this.blocks[i];
+			if (willBlockCrumble(this, block)) {
+				line(context, 0, 0, block.x + (block.width / 2), block.y + (block.height / 2), "rgba(0, 255, 0, 0.4)", 3);
+			}
+		}
+	}
 	particles.draw(context);
 
 	if (editable) {
@@ -561,6 +574,15 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		}
 	}
 }));
+
+function line(context, x1, y1, x2, y2, color, width) {
+	context.beginPath();
+	context.moveTo(x1, y1);
+	context.lineTo(x2, y2);
+	context.lineWidth = width;
+	context.strokeStyle = color;
+	context.stroke();
+}
 
 game.scenes.add("win", new Splat.Scene(canvas, function() {
 }, function() {
