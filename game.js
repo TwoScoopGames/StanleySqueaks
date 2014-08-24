@@ -205,6 +205,7 @@ var unbreakableBlocks = [
 function editLevel(scene) {
 	if (game.keyboard.consumePressed("x")) {
 		levels[currentLevel] = exportLevel(scene, levels[currentLevel].name);
+		console.log("module.exports = " + JSON.stringify(levels, null, 4) + ";");
 	}
 	if (game.keyboard.consumePressed("1")) {
 		blockToDraw = "spawn";
@@ -302,7 +303,6 @@ function exportLevel(scene, name) {
 		y: scene.goal.y,
 	});
 
-	console.log(JSON.stringify(level, null, 4));
 	return level;
 }
 
