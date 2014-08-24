@@ -30,14 +30,14 @@ var manifest = {
 		"hamster-fall": "audio/hamster-fall.mp3",
 		"jump": "audio/jump.mp3",
 		"podium": "audio/podium.mp3",
+		"skull-on": "audio/skull-on.mp3",
 		"squeak1": "audio/squeak1.mp3",
 		"squeak2": "audio/squeak2.mp3",
 		"step1": "audio/step1.mp3",
 		"step2": "audio/step2.mp3",
 		"step3": "audio/step3.mp3",
 		"step4": "audio/step4.mp3",
-		"step5": "audio/step5.mp3"
-		
+		"step5": "audio/step5.mp3",
 	},
 	"fonts": {
 	},
@@ -404,7 +404,11 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	this.timers.enter.start();
 
 	var scene = this;
-	this.timers.trap = new Splat.Timer(undefined, 2000, function() {
+	this.timers.trap = new Splat.Timer(undefined, 3200, function() {
+		scene.timers.skull.start();
+		game.sounds.play("skull-on");
+	});
+	this.timers.skull = new Splat.Timer(undefined, 2000, function() {
 		scene.timers.blockCrumble.start();
 	});
 	this.timers.blockCrumble = new Splat.Timer(undefined, 200, function() {
@@ -436,7 +440,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	game.animations.get("player-enter-door").move(elapsedMillis);
 	this.goal.move(elapsedMillis);
 	particles.move(elapsedMillis);
-	if (this.hitGoal) {
+	if (this.timers.skull.running) {
 		this.skull.move(elapsedMillis);
 	}
 
@@ -451,7 +455,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		game.scenes.switchTo("main");
 	}
 	
-	var playerFrozen = this.timers.trap.running || this.timers.blockCrumble.running || this.timers.enter.running;
+	var playerFrozen = this.timers.trap.running || this.timers.skull.running || this.timers.blockCrumble.running || this.timers.enter.running;
 
 	if (!playerFrozen) {
 		if (game.keyboard.consumePressed("space")) {
