@@ -13,6 +13,7 @@ var manifest = {
 		"block-sand3": "img/block-sand3.png",
 		"block-stone": "img/block-stone.png",
 		"block-stone2": "img/block-stone2.png",
+		"doorway": "img/doorway.png",
 		"gamedevlou": "img/gamedevlou.png",
 	},
 	"sounds": {
@@ -393,6 +394,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 }, function(context) {
 	// draw
 	context.drawImage(game.images.get("background"), 0, 0);
+	context.drawImage(game.images.get("doorway"), this.spawn.x - 34, this.spawn.y - 32);
 
 	for (var i = 0; i < this.blocks.length; i++) {
 		draw(context, this.blocks[i], "red");
