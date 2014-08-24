@@ -13,6 +13,7 @@ var manifest = {
 		"block-sand3": "img/block-sand3.png",
 		"block-stone": "img/block-stone.png",
 		"block-stone2": "img/block-stone2.png",
+		"gamedevlou": "img/gamedevlou.png",
 	},
 	"sounds": {
 	},
@@ -244,6 +245,20 @@ var currentLevel = 1;
 var canJump = true;
 
 game.scenes.add("title", new Splat.Scene(canvas, function() {
+	this.timers.expire = new Splat.Timer(undefined, 2000, function() {
+		game.scenes.switchTo("main");
+	});
+	this.timers.expire.start();
+}, function() {
+}, function(context) {
+	context.fillStyle = "#049fc6";
+	context.fillRect(0, 0, canvas.width, canvas.height);
+
+	var gdl = game.images.get("gamedevlou");
+	context.drawImage(gdl, (canvas.width / 2) - (gdl.width / 2), (canvas.height / 2) - (gdl.height / 2));
+}));
+
+game.scenes.add("main", new Splat.Scene(canvas, function() {
 	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0);
 	this.player.direction = "left";
 	this.player.frictionX = 0.3;
@@ -286,7 +301,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	}
 
 	if (game.keyboard.consumePressed("r")) {
-		game.scenes.switchTo("title");
+		game.scenes.switchTo("main");
 	}
 	
 	if (game.keyboard.consumePressed("space")) {
@@ -318,7 +333,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	}
 	if (this.player.y > 1500) {
 		// death!
-		game.scenes.switchTo("title");
+		game.scenes.switchTo("main");
 	}
 	if (!this.hitGoal) {
 		var touchedSomething = false;
@@ -343,7 +358,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 				game.scenes.switchTo("win");
 				return;
 			}
-			game.scenes.switchTo("title");
+			game.scenes.switchTo("main");
 			return;
 		}
 	} else {
