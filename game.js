@@ -72,6 +72,12 @@ var manifest = {
 			"frames": 22,
 			"msPerFrame": 30
 		},
+		"podium-sink": {
+			"strip": "img/podium-sink.png",
+			"frames": 20,
+			"msPerFrame": 160,
+			"repeatAt": 19
+		},
 	}
 };
 
@@ -420,7 +426,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		if (this.player.collides(this.goal)) {
 			console.log("goal");
 			this.hitGoal = true;
-			this.goal.sprite = game.animations.get("burrito-podium-ghost");
+			this.goal.sprite = game.animations.get("podium-sink");
+			this.goal.sprite.reset();
+			this.goal.spriteOffsetY = 43;
 			this.timers.blockCrumble.start();
 		}
 	}
