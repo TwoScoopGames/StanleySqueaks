@@ -291,6 +291,10 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.spawn.move(elapsedMillis);
 	this.goal.move(elapsedMillis);
 	this.player.move(elapsedMillis);
+	if (this.player.y > 1500) {
+		// death!
+		game.scenes.switchTo("title");
+	}
 	for (var i = 0; i < this.blocks.length; i++) {
 		if (this.player.collides(this.blocks[i])) {
 			this.blocks[i].touched = true;
