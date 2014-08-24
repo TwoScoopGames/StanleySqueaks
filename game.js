@@ -166,6 +166,9 @@ function buildLevel(level, scene) {
 		} else if (obj.type === "goal") {
 			scene.goal.x = obj.x;
 			scene.goal.y = obj.y;
+		} else if (obj.type === "skull") {
+			scene.skull.x = obj.x;
+			scene.skull.y = obj.y;
 		} else {
 			var img = game.images.get(obj.type);
 			var block = new Splat.AnimatedEntity(obj.x, obj.y, blockSize, blockSize, img, 0, -9);
@@ -257,8 +260,8 @@ function editLevel(scene) {
 		var entity = scene[blockToDraw];
 		oldX = entity.x;
 		oldY = entity.y;
-		entity.x = x;
-		entity.y = y;
+		entity.x = Math.floor(x);
+		entity.y = Math.floor(y);
 		if (entity.getCollisions(scene.blocks).length > 0) {
 			entity.x = oldX;
 			entity.y = oldY;
