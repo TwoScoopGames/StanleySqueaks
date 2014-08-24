@@ -8,6 +8,7 @@ var Particles = require("./particles");
 var manifest = {
 	"images": {
 		"background": "img/background.png",
+		"background2": "img/background2.png",
 		"block-cookie": "img/block-cookie.png",
 		"block": "img/block-sand.png",
 		"block-sand2": "img/block-sand2.png",
@@ -439,6 +440,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	var scene = this;
 	this.timers.trap = new Splat.Timer(undefined, 3200, function() {
 		scene.timers.skull.start();
+		scene.camera.entity = scene.skull;
+		scene.camera.width = 0;
+		scene.camera.height = 0;
 		game.sounds.play("skull-on");
 	});
 	this.timers.skull = new Splat.Timer(undefined, 2000, function() {
@@ -446,6 +450,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	});
 	this.timers.blockCrumble = new Splat.Timer(undefined, 200, function() {
 		if (scene.touched < 0) {
+			scene.camera.entity = scene.player;
+			scene.camera.width = 400;
+			scene.camera.height = 100;
 			return;
 		}
 		for (var i = 0; i < scene.blocks.length; i++) {
@@ -590,11 +597,11 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	}
 }, function(context) {
 	// draw
-	context.fillStyle = "black";
-	this.camera.drawAbsolute(context, function() {
-		context.fillRect(0, 0, canvas.width, canvas.height);
-	});
-	context.drawImage(game.images.get("background"), 0, 0);
+	// context.fillStyle = "black";
+	// this.camera.drawAbsolute(context, function() {
+	// 	context.fillRect(0, 0, canvas.width, canvas.height);
+	// });
+	context.drawImage(game.images.get("background2"), 0, -canvas.height);
 	context.drawImage(game.images.get("doorway"), this.spawn.x - 34, this.spawn.y - 32);
 
 	for (var i = 0; i < this.blocks.length; i++) {
@@ -618,6 +625,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		for (i = 0; i < this.blocks.length; i++) {
 			var block = this.blocks[i];
 			if (willBlockCrumble(this, block)) {
+				this.camera.entity = block;
+				this.camera.width = 0;
+				this.camera.height = 0;
 				var x = block.x + (block.width / 2);
 				var y = block.y + (block.height / 2);
 				line(context, this.skull.x + 48, this.skull.y + 43, x, y, "rgba(91, 216, 91, " + (laserProgress * 0.65) + ")", 20 * laserProgress);
