@@ -236,6 +236,7 @@ function draw(context, entity, color) {
 
 
 var currentLevel = 1;
+var canJump = true;
 
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.player = new Splat.AnimatedEntity(100, 100, 96, 140, game.animations.get("player-run-left"), 0, 0);
@@ -268,6 +269,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	if (game.keyboard.consumePressed("r")) {
 		game.scenes.switchTo("title");
 	}
+	
 	if (game.keyboard.consumePressed("space")) {
 		if (this.player.direction === "left") {
 			this.player.sprite = game.animations.get("player-jump-left");
@@ -276,7 +278,10 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 			this.player.sprite = game.animations.get("player-jump-right");
 			this.player.sprite.reset();
 		}
-		this.player.vy = -1.0;
+		if(canJump === true) {
+			this.player.vy = -1.0;
+			canJump = false;
+		}
 	}
 	if (game.keyboard.isPressed("right")) {
 		this.player.vx = movement; //how fast he moves
@@ -337,6 +342,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 				this.player.sprite = game.animations.get("player-idle-right");
 			}
 		}
+		canJump = true;
 	}
 
 	if (editable) {
