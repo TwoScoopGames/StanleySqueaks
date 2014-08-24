@@ -111,8 +111,13 @@ function findBlockIndex(scene, x, y) {
 	return -1;
 }
 
+var currentLevel = 0;
 var blockToDraw = "block";
+
 function editLevel(scene) {
+	if (game.keyboard.consumePressed("x")) {
+		levels[currentLevel] = exportLevel(scene, levels[currentLevel].name);
+	}
 	if (game.keyboard.consumePressed("1")) {
 		blockToDraw = "spawn";
 	}
@@ -214,6 +219,7 @@ function exportLevel(scene, name) {
 }
 
 var debug = false;
+var editable = false;
 function draw(context, entity, color) {
 	entity.draw(context);
 	if (!debug) {
@@ -222,6 +228,7 @@ function draw(context, entity, color) {
 	context.strokeStyle = color;
 	context.strokeRect(entity.x, entity.y, entity.width, entity.height);
 }
+
 
 var currentLevel = 1;
 
@@ -246,11 +253,11 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	// simulation
 	var movement = 1.0;
 
-	if (game.keyboard.consumePressed("x")) {
-		levels[currentLevel] = exportLevel(this, levels[currentLevel].name);
-	}
 	if (game.keyboard.consumePressed("f1")) {
 		debug = !debug;
+	}
+	if (game.keyboard.consumePressed("f2")) {
+		editable = !editable;
 	}
 
 	if (game.keyboard.consumePressed("r")) {
@@ -311,7 +318,6 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		}
 	}
 
-
 	if (involved.length > 0) {
 		if (this.player.moved()) {
 			if (this.player.direction === "left") {
@@ -328,7 +334,9 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		}
 	}
 
-	editLevel(this);
+	if (editable) {
+		editLevel(this);
+	}
 }, function(context) {
 	// draw
 	context.drawImage(game.images.get("background"), 0, 0);
@@ -341,15 +349,17 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	draw(context, this.goal, "green");
 	draw(context, this.player, "blue");
 
-	if (blockToDraw === "spawn" || blockToDraw === "goal") {
-		context.fillStyle = "rgba(100, 100, 100, 0.7)";
-		context.font = "30px sans-serif";
-		context.fillText(blockToDraw, 34, 50);
-	} else {
-		var img = game.images.get(blockToDraw);
-		context.fillStyle = "rgba(100, 100, 100, 0.3)";
-		context.fillRect(20, 20, img.width + 20, img.height + 20);
-		context.drawImage(img, 30, 30);
+	if (editable) {
+		if (blockToDraw === "spawn" || blockToDraw === "goal") {
+			context.fillStyle = "rgba(100, 100, 100, 0.7)";
+			context.font = "30px sans-serif";
+			context.fillText(blockToDraw, 34, 50);
+		} else {
+			var img = game.images.get(blockToDraw);
+			context.fillStyle = "rgba(100, 100, 100, 0.3)";
+			context.fillRect(20, 20, img.width + 20, img.height + 20);
+			context.drawImage(img, 30, 30);
+		}
 	}
 }));
 
