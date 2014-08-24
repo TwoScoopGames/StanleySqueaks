@@ -17,6 +17,13 @@ var manifest = {
 		"gamedevlou": "img/gamedevlou.png",
 	},
 	"sounds": {
+		"bump": "audio/bump.mp3",
+		"crumble1": "audio/crumble1.mp3",
+		"crumble2": "audio/crumble2.mp3",
+		"crumble3": "audio/crumble3.mp3",
+		"crumble4": "audio/crumble4.mp3",
+		"podium": "audio/podium.mp3"
+		
 	},
 	"fonts": {
 	},
@@ -430,6 +437,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			this.goal.sprite.reset();
 			this.goal.spriteOffsetY = 43;
 			this.timers.blockCrumble.start();
+			game.sounds.play("crumble1");
 		}
 	}
 
