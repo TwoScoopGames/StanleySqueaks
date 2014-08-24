@@ -139,6 +139,7 @@ var game = new Splat.Game(canvas, manifest);
 var blockSize = 32;
 
 var crumbleSounds = [ "crumble1", "crumble2", "crumble3", "crumble4" ];
+var squeaks = [ "squeak1", "squeak2" ];
 function playRandomSound(sounds) {
 	var snd = Math.floor(Math.random() * sounds.length);
 	game.sounds.play(sounds[snd]);
@@ -537,6 +538,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			} else {
 				setSprite(this.player, "player-idle-right");
 			}
+		}
+		if (!canJump) {
+			playRandomSound(squeaks);
 		}
 		canJump = true;
 	}
