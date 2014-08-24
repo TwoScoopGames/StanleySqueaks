@@ -29,6 +29,11 @@ var manifest = {
 			"frames": 20,
 			"msPerFrame": 80
 		},
+		"spawn": {
+			"strip": "img/doorway.png",
+			"frames": 9,
+			"msPerFrame": 80
+		},
 		"player-idle-left": {
 			"strip": "img/hamster-idle-left.png",
 			"frames": 19,
@@ -246,11 +251,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.hitGoal = false;
 	this.touched = 0;
 
-	this.spawn = new Splat.Entity(0, 0, this.player.width, this.player.height);
-	this.spawn.draw = function(context) {
-		context.fillStyle = "blue";
-		context.fillRect(this.x, this.y, this.width, this.height);
-	};
+	var doorway = game.animations.get("spawn");
+	this.spawn = new Splat.AnimatedEntity(0, 0, doorway.width, doorway.height, doorway, 0, 0);
 
 	var burrito = game.animations.get("burrito-podium-green");
 	this.goal = new Splat.AnimatedEntity(0, 0, burrito.width, burrito.height, burrito, 0, 0);
