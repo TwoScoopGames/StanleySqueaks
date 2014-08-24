@@ -212,7 +212,25 @@ var unbreakableBlocks = [
 ];
 
 function editLevel(scene) {
-	if (game.keyboard.consumePressed("x")) {
+	if (game.keyboard.consumePressed("pageup")) {
+		console.log("next");
+		currentLevel++;
+		if (!levels[currentLevel]) {
+			levels[currentLevel] = JSON.parse(JSON.stringify(levels[currentLevel-1])); // clone previous level
+		}
+		game.scenes.switchTo("main");
+		return;
+	}
+	if (game.keyboard.consumePressed("pagedown")) {
+		console.log("prev");
+		currentLevel--;
+		if (currentLevel < 0) {
+			currentLevel = 0;
+		}
+		game.scenes.switchTo("main");
+		return;
+	}
+	if (game.keyboard.consumePressed("x") && !scene.hitGoal) {
 		levels[currentLevel] = exportLevel(scene, levels[currentLevel].name);
 		console.log("module.exports = " + JSON.stringify(levels, null, 4) + ";");
 	}
