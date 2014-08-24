@@ -34,6 +34,16 @@ var manifest = {
 			"frames": 19,
 			"msPerFrame": 40
 		},
+		"player-jump-left": {
+			"strip": "img/hamster-jump-left.png",
+			"frames": 19,
+			"msPerFrame": 40
+		},
+		"player-jump-right": {
+			"strip": "img/hamster-jump-right.png",
+			"frames": 19,
+			"msPerFrame": 40
+		},
 		"player-run-left": {
 			"strip": "img/hamster-run-left.png",
 			"frames": 22,
@@ -42,16 +52,6 @@ var manifest = {
 		"player-run-right": {
 			"strip": "img/hamster-run-right.png",
 			"frames": 22,
-			"msPerFrame": 20
-		},
-		"player-jump-left": {
-			"strip": "img/hamster-jump-left.png",
-			"frames": 19,
-			"msPerFrame": 20
-		},
-		"player-jump-right": {
-			"strip": "img/hamster-jump-right.png",
-			"frames": 19,
 			"msPerFrame": 20
 		},
 	}
@@ -211,6 +211,13 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		game.scenes.switchTo("title");
 	}
 	if (game.keyboard.consumePressed("space")) {
+		if (this.player.direction === "left") {
+			this.player.sprite = game.animations.get("player-jump-left");
+			this.player.sprite.reset();
+		} else {
+			this.player.sprite = game.animations.get("player-jump-right");
+			this.player.sprite.reset();
+		}
 		this.player.vy = -1.0;
 	}
 	if (game.keyboard.isPressed("right")) {
@@ -219,11 +226,6 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	} else if (game.keyboard.isPressed("left")) {
 		this.player.vx = -movement; //how fast he moves
 		this.player.direction = "left";
-	}
-	if (this.player.direction === "left") {
-		this.player.sprite = game.animations.get("player-run-left");
-	} else {
-		this.player.sprite = game.animations.get("player-run-right");
 	}
 
 	this.player.vy += 0.1;
@@ -236,7 +238,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 			this.blocks[i].touched = true;
 		}
 	}
-	this.player.solveCollisions(this.blocks);
+	var involved = this.player.solveCollisions(this.blocks);
 
 	if (this.hitGoal) {
 		if (this.player.collides(this.spawn)) {
@@ -263,13 +265,20 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		}
 	}
 
-	game.animations.get("player-idle-left").move(elapsedMillis);
-	game.animations.get("player-idle-right").move(elapsedMillis);
-	if (!this.player.moved()) {
-		if (this.player.direction === "left") {
-			this.player.sprite = game.animations.get("player-idle-left");
+
+	if (involved.length > 0) {
+		if (this.player.moved()) {
+			if (this.player.direction === "left") {
+				this.player.sprite = game.animations.get("player-run-left");
+			} else {
+				this.player.sprite = game.animations.get("player-run-right");
+			}
 		} else {
-			this.player.sprite = game.animations.get("player-idle-right");
+			if (this.player.direction === "left") {
+				this.player.sprite = game.animations.get("player-idle-left");
+			} else {
+				this.player.sprite = game.animations.get("player-idle-right");
+			}
 		}
 	}
 
