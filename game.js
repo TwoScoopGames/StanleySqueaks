@@ -378,6 +378,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		this.reset();
 		this.start();
 	});
+	this.timers.death = new Splat.Timer(undefined, 2200, function(){
+		game.scenes.switchTo("main");
+	});
 }, function(elapsedMillis) {
 	// simulation
 
@@ -409,14 +412,14 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 				this.player.sprite.reset();
 			}
 			if (canJump) {
+				game.sounds.play("jump");
 				this.player.vy = -1.2;
 				canJump = false;
-				game.sounds.play("jump");
 			}
 		}
 		var movement = 0.6;
 		if (game.keyboard.isPressed("right")) {
-			this.player.vx = movement; //how fast he moves
+		 	this.player.vx = movement; //how fast he moves
 			this.player.direction = "right";
 		} else if (game.keyboard.isPressed("left")) {
 			this.player.vx = -movement; //how fast he moves
@@ -426,9 +429,12 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		this.player.move(elapsedMillis);
 		this.player.vy += 0.1;
 	}
-	if (this.player.y > 1500) {
+	if (this.player.y > 1000) {
 		// death!
-		game.scenes.switchTo("main");
+		if(!this.timers.death.running) {
+			game.sounds.play("hamster-fall");
+			this.timers.death.start();
+		}	
 	}
 	if (!this.hitGoal) {
 		var touchedSomething = false;
