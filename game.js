@@ -138,6 +138,12 @@ var bounding = {
 var game = new Splat.Game(canvas, manifest);
 var blockSize = 32;
 
+var crumbleSounds = [ "crumble1", "crumble2", "crumble3", "crumble4" ];
+function playRandomSound(sounds) {
+	var snd = Math.floor(Math.random() * sounds.length);
+	game.sounds.play(sounds[snd]);
+}
+
 var rocks = [ "rock1", "rock2", "rock3", "rock4" ];
 var particles = new Particles(100, function(particle) {
 	var img = Math.floor(Math.random() * rocks.length);
@@ -397,7 +403,10 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	this.timers.enter.start();
 
 	var scene = this;
-	this.timers.blockCrumble = new Splat.Timer(undefined, 100, function() {
+	this.timers.trap = new Splat.Timer(undefined, 2000, function() {
+		scene.timers.blockCrumble.start();
+	});
+	this.timers.blockCrumble = new Splat.Timer(undefined, 200, function() {
 		if (scene.touched < 0) {
 			return;
 		}
@@ -408,6 +417,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 				var y = block.y + (block.height / 2);
 				particles.spray(10, x, y, 1);
 				scene.blocks.splice(i, 1);
+				playRandomSound(crumbleSounds);
 				i--;
 			}
 		}
@@ -440,7 +450,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		game.scenes.switchTo("main");
 	}
 	
-	var playerFrozen = this.timers.blockCrumble.running || this.timers.enter.running;
+	var playerFrozen = this.timers.trap.running || this.timers.blockCrumble.running || this.timers.enter.running;
 
 	if (!playerFrozen) {
 		if (game.keyboard.consumePressed("space")) {
@@ -509,7 +519,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			this.goal.sprite = game.animations.get("podium-sink");
 			this.goal.sprite.reset();
 			this.goal.spriteOffsetY = 43;
-			this.timers.blockCrumble.start();
+			this.timers.trap.start();
 			game.sounds.play("podium");
 		}
 	}
@@ -553,18 +563,20 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		draw(context, this.player, "blue");
 	}
 
+	particles.draw(context);
+
 	if (this.timers.blockCrumble.running) {
+		var laserProgress = this.timers.blockCrumble.time / this.timers.blockCrumble.expireMillis;
 		for (i = 0; i < this.blocks.length; i++) {
 			var block = this.blocks[i];
 			if (willBlockCrumble(this, block)) {
 				var x = block.x + (block.width / 2);
 				var y = block.y + (block.height / 2);
-				line(context, this.skull.x + 48, this.skull.y + 43, x, y, "rgba(0, 255, 0, 0.4)", 3);
-				line(context, this.skull.x + 73, this.skull.y + 48, x, y, "rgba(0, 255, 0, 0.4)", 3);
+				line(context, this.skull.x + 48, this.skull.y + 43, x, y, "rgba(91, 216, 91, " + (laserProgress * 0.65) + ")", 20 * laserProgress);
+				line(context, this.skull.x + 73, this.skull.y + 48, x, y, "rgba(91, 216, 91, " + (laserProgress * 0.65) + ")", 20 * laserProgress);
 			}
 		}
 	}
-	particles.draw(context);
 
 	if (editable) {
 		if (blockToDraw === "spawn" || blockToDraw === "goal" || blockToDraw === "skull") {
