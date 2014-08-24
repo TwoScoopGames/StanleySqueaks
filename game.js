@@ -3,6 +3,7 @@
 var levels = require("./levels");
 var Splat = require("splatjs");
 var canvas = document.getElementById("canvas");
+var Particles = require("./particles");
 
 var manifest = {
 	"images": {
@@ -15,6 +16,10 @@ var manifest = {
 		"block-stone2": "img/block-stone2.png",
 		"doorway": "img/doorway.png",
 		"gamedevlou": "img/gamedevlou.png",
+		"rock1": "img/rock-particle1.png",
+		"rock2": "img/rock-particle2.png",
+		"rock3": "img/rock-particle3.png",
+		"rock4": "img/rock-particle4.png",
 	},
 	"sounds": {
 		"bump": "audio/bump.mp3",
@@ -126,6 +131,15 @@ var bounding = {
 
 var game = new Splat.Game(canvas, manifest);
 var blockSize = 32;
+
+var rocks = [ "rock1", "rock2", "rock3", "rock4" ];
+var particles = new Particles(100, function(particle) {
+	var img = Math.floor(Math.random() * rocks.length);
+	particle.image = rocks[img];
+}, function(context, particle) {
+	var img = game.images.get(particle.image);
+	context.drawImage(img, particle.x - Math.floor(img.width / 2), particle.y - Math.floor(img.height / 2));
+});
 
 function setSprite(animatedEntity, name) {
 	animatedEntity.sprite = game.animations.get(name);
@@ -334,6 +348,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	this.hitGoal = false;
 	this.touched = 0;
+	particles.reset();
 
 	var doorway = game.animations.get("spawn");
 	this.spawn = new Splat.AnimatedEntity(0, 0, doorway.width, doorway.height, doorway, 0, 0);
@@ -355,6 +370,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		scene.touched--;
 		for (var i = 0; i < scene.blocks.length; i++) {
 			if (scene.blocks[i].touched === scene.touched && unbreakableBlocks.indexOf(scene.blocks[i].type) === -1) {
+				particles.spray(10, scene.blocks[i].x + (blockSize / 2), scene.blocks[i].y + (blockSize / 2), 1);
 				scene.blocks.splice(i, 1);
 				i--;
 			}
@@ -368,6 +384,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	this.spawn.move(elapsedMillis);
 	game.animations.get("player-enter-door").move(elapsedMillis);
 	this.goal.move(elapsedMillis);
+	particles.move(elapsedMillis);
 
 	if (game.keyboard.consumePressed("f1")) {
 		debug = !debug;
@@ -488,6 +505,8 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	} else {
 		draw(context, this.player, "blue");
 	}
+
+	particles.draw(context);
 
 	if (editable) {
 		if (blockToDraw === "spawn" || blockToDraw === "goal") {
