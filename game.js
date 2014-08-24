@@ -404,7 +404,9 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		for (var i = 0; i < scene.blocks.length; i++) {
 			var block = scene.blocks[i];
 			if (willBlockCrumble(scene, block)) {
-				particles.spray(10, block.x + (blockSize / 2), block.y + (blockSize / 2), 1);
+				var x = block.x + (block.width / 2);
+				var y = block.y + (block.height / 2);
+				particles.spray(10, x, y, 1);
 				scene.blocks.splice(i, 1);
 				i--;
 			}
@@ -555,7 +557,10 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		for (i = 0; i < this.blocks.length; i++) {
 			var block = this.blocks[i];
 			if (willBlockCrumble(this, block)) {
-				line(context, 0, 0, block.x + (block.width / 2), block.y + (block.height / 2), "rgba(0, 255, 0, 0.4)", 3);
+				var x = block.x + (block.width / 2);
+				var y = block.y + (block.height / 2);
+				line(context, this.skull.x + 48, this.skull.y + 43, x, y, "rgba(0, 255, 0, 0.4)", 3);
+				line(context, this.skull.x + 73, this.skull.y + 48, x, y, "rgba(0, 255, 0, 0.4)", 3);
 			}
 		}
 	}
