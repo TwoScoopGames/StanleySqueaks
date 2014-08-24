@@ -370,11 +370,11 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 				this.player.sprite.reset();
 			}
 			if (canJump) {
-				this.player.vy = -1.0;
+				this.player.vy = -1.2;
 				canJump = false;
 			}
 		}
-		var movement = 1.0;
+		var movement = 0.6;
 		if (game.keyboard.isPressed("right")) {
 			this.player.vx = movement; //how fast he moves
 			this.player.direction = "right";
