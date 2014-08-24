@@ -113,6 +113,11 @@ function findBlockIndex(scene, x, y) {
 
 var currentLevel = 0;
 var blockToDraw = "block";
+var unbreakableBlocks = [
+	"block-cookie",
+	"block-stone",
+	"block-stone2"
+];
 
 function editLevel(scene) {
 	if (game.keyboard.consumePressed("x")) {
@@ -310,7 +315,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 			this.hitGoal = true;
 			this.goal.sprite = game.animations.get("burrito-podium-ghost");
 			for (i = 0; i < this.blocks.length; i++) {
-				if (this.blocks[i].touched) {
+				if (this.blocks[i].touched && unbreakableBlocks.indexOf(this.blocks[i].type) === -1) {
 					this.blocks.splice(i, 1);
 					i--;
 				}
