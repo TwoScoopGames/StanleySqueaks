@@ -36,6 +36,12 @@ var manifest = {
 			"frames": 9,
 			"msPerFrame": 80
 		},
+		"player-enter-door": {
+			"strip": "img/enter-door.png",
+			"frames": 9,
+			"msPerFrame": 50,
+			"repeatAt": 8
+		},
 		"player-idle-left": {
 			"strip": "img/hamster-idle-left.png",
 			"frames": 19,
@@ -275,6 +281,10 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	buildLevel(levels[currentLevel], this);
 
+	game.animations.get("player-enter-door").reset();
+	this.timers.enter = new Splat.Timer(undefined, 500, undefined);
+	this.timers.enter.start();
+
 	var scene = this;
 	this.timers.blockCrumble = new Splat.Timer(undefined, 100, function() {
 		if (scene.touched < 0) {
@@ -327,6 +337,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	}
 
 	this.spawn.move(elapsedMillis);
+	game.animations.get("player-enter-door").move(elapsedMillis);
 	this.goal.move(elapsedMillis);
 	if (!this.timers.blockCrumble.running) {
 		this.player.vy += 0.1;
@@ -402,7 +413,12 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	draw(context, this.spawn, "green");
 	draw(context, this.goal, "green");
-	draw(context, this.player, "blue");
+
+	if (this.timers.enter.running) {
+		game.animations.get("player-enter-door").draw(context, this.spawn.x, this.spawn.y);
+	} else {
+		draw(context, this.player, "blue");
+	}
 
 	if (editable) {
 		if (blockToDraw === "spawn" || blockToDraw === "goal") {
