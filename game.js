@@ -22,6 +22,7 @@ var manifest = {
 		"rock3": "img/rock-particle3.png",
 		"rock4": "img/rock-particle4.png",
 		"titlescreen": "img/titlescreen.png",
+		"win-screen": "img/win-screen.png",
 	},
 	"sounds": {
 		"bump": "audio/bump.mp3",
@@ -678,12 +679,8 @@ function line(context, x1, y1, x2, y2, color, width) {
 game.scenes.add("win", new Splat.Scene(canvas, function() {
 }, function() {
 }, function(context) {
-	context.fillStyle = "white";
-	context.fillRect(0, 0, canvas.width, canvas.height);
-
-	context.font = "50px sans-serif";
-	context.fillStyle = "black";
-	context.fillText("You win!", 200, 200);
+	var image = game.images.get("win-screen");
+	context.drawImage(image, 0, 0);
 }));
 
 game.scenes.switchTo("loading"); //going to title scene
