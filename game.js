@@ -302,7 +302,10 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	});
 }, function(elapsedMillis) {
 	// simulation
-	var movement = 1.0;
+
+	this.spawn.move(elapsedMillis);
+	game.animations.get("player-enter-door").move(elapsedMillis);
+	this.goal.move(elapsedMillis);
 
 	if (game.keyboard.consumePressed("f1")) {
 		debug = !debug;
@@ -315,31 +318,31 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		game.scenes.switchTo("main");
 	}
 	
-	if (game.keyboard.consumePressed("space")) {
-		if (this.player.direction === "left") {
-			this.player.sprite = game.animations.get("player-jump-left");
-			this.player.sprite.reset();
-		} else {
-			this.player.sprite = game.animations.get("player-jump-right");
-			this.player.sprite.reset();
-		}
-		if(canJump === true) {
-			this.player.vy = -1.0;
-			canJump = false;
-		}
-	}
-	if (game.keyboard.isPressed("right")) {
-		this.player.vx = movement; //how fast he moves
-		this.player.direction = "right";
-	} else if (game.keyboard.isPressed("left")) {
-		this.player.vx = -movement; //how fast he moves
-		this.player.direction = "left";
-	}
+	var playerFrozen = this.timers.blockCrumble.running || this.timers.enter.running;
 
-	this.spawn.move(elapsedMillis);
-	game.animations.get("player-enter-door").move(elapsedMillis);
-	this.goal.move(elapsedMillis);
-	if (!this.timers.blockCrumble.running) {
+	if (!playerFrozen) {
+		if (game.keyboard.consumePressed("space")) {
+			if (this.player.direction === "left") {
+				this.player.sprite = game.animations.get("player-jump-left");
+				this.player.sprite.reset();
+			} else {
+				this.player.sprite = game.animations.get("player-jump-right");
+				this.player.sprite.reset();
+			}
+			if(canJump === true) {
+				this.player.vy = -1.0;
+				canJump = false;
+			}
+		}
+		var movement = 1.0;
+		if (game.keyboard.isPressed("right")) {
+			this.player.vx = movement; //how fast he moves
+			this.player.direction = "right";
+		} else if (game.keyboard.isPressed("left")) {
+			this.player.vx = -movement; //how fast he moves
+			this.player.direction = "left";
+		}
+
 		this.player.vy += 0.1;
 		this.player.move(elapsedMillis);
 	}
