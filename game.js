@@ -547,7 +547,6 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			if (canJump) {
 				game.sounds.play("jump");
 				this.player.vy = -1.0;
-				canJump = false;
 			}
 		}
 		var movement = 0.6;
@@ -621,7 +620,23 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		if (!canJump) {
 			playRandomSound(squeaks);
 		}
-		canJump = true;
+	}
+
+	canJump = false;
+	var b;
+	for (var j = 0; j < involved.length; j++) {
+		b = involved[j];
+		if (b.y + b.height >= this.player.y) {
+			canJump = true;
+		}
+	}
+	if (!canJump) {
+		for (j = 0; j < this.blocks.length; j++) {
+			b = this.blocks[j];
+			if (b.y === this.player.y + this.player.height) {
+				canJump = true;
+			}
+		}
 	}
 
 	if (editable) {
