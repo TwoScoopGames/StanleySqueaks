@@ -43,8 +43,7 @@ var manifest = {
 		"step4": "audio/step4.mp3",
 		"step5": "audio/step5.mp3",
 	},
-	"fonts": {
-	},
+	"fonts": {},
 	"animations": {
 		"burrito-podium-green": {
 			"strip": "img/burrito-podium-green.png",
@@ -142,14 +141,15 @@ var bounding = {
 var game = new Splat.Game(canvas, manifest);
 var blockSize = 32;
 
-var crumbleSounds = [ "crumble1", "crumble2", "crumble3", "crumble4" ];
-var squeaks = [ "squeak1", "squeak2" ];
+var crumbleSounds = ["crumble1", "crumble2", "crumble3", "crumble4"];
+var squeaks = ["squeak1", "squeak2"];
+
 function playRandomSound(sounds) {
 	var snd = Math.floor(Math.random() * sounds.length);
 	game.sounds.play(sounds[snd]);
 }
 
-var rocks = [ "rock1", "rock2", "rock3", "rock4" ];
+var rocks = ["rock1", "rock2", "rock3", "rock4"];
 var particles = new Particles(100, function(particle) {
 	var img = Math.floor(Math.random() * rocks.length);
 	particle.image = rocks[img];
@@ -227,7 +227,7 @@ function editLevel(scene) {
 		console.log("next");
 		currentLevel++;
 		if (!levels[currentLevel]) {
-			levels[currentLevel] = JSON.parse(JSON.stringify(levels[currentLevel-1])); // clone previous level
+			levels[currentLevel] = JSON.parse(JSON.stringify(levels[currentLevel - 1])); // clone previous level
 		}
 		game.scenes.switchTo("main");
 		return;
@@ -369,6 +369,7 @@ function exportLevel(scene, name) {
 
 var debug = false;
 var editable = false;
+
 function draw(context, entity, color) {
 	entity.draw(context);
 	if (!debug) {
@@ -392,8 +393,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		game.scenes.switchTo("start");
 	});
 	this.timers.expire.start();
-}, function() {
-}, function(context) {
+}, function() {}, function(context) {
 	context.fillStyle = "#049fc6";
 	context.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -401,9 +401,8 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	context.drawImage(gdl, (canvas.width / 2) - (gdl.width / 2), (canvas.height / 2) - (gdl.height / 2));
 }));
 
-game.scenes.add("start", new Splat.Scene(canvas, function() {
-}, function() {
-	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.mouse.consumePressed(0)) {
+game.scenes.add("start", new Splat.Scene(canvas, function() {}, function() {
+	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.keyboard.consumePressed(0)) {
 		game.scenes.switchTo("main");
 	}
 }, function(context) {
@@ -489,7 +488,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		this.reset();
 		this.start();
 	});
-	this.timers.death = new Splat.Timer(undefined, 2200, function(){
+	this.timers.death = new Splat.Timer(undefined, 2200, function() {
 		game.scenes.switchTo("main");
 	});
 }, function(elapsedMillis) {
@@ -513,7 +512,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	if (game.keyboard.consumePressed("r")) {
 		game.scenes.switchTo("main");
 	}
-	
+
 	var playerFrozen = this.timers.trap.running || this.timers.skull.running || this.timers.blockCrumble.running || this.timers.enter.running;
 
 	if (!playerFrozen) {
@@ -535,7 +534,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		var movement = 0.6;
 		if (game.keyboard.isPressed("right")) {
 			this.camera.adjusted = false;
-		 	this.player.vx = movement; //how fast he moves
+			this.player.vx = movement; //how fast he moves
 			this.player.direction = "right";
 		} else if (game.keyboard.isPressed("left")) {
 			this.camera.adjusted = false;
@@ -548,10 +547,10 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	}
 	if (this.player.y > 1000) {
 		// death!
-		if(!this.timers.death.running) {
+		if (!this.timers.death.running) {
 			game.sounds.play("hamster-fall");
 			this.timers.death.start();
-		}	
+		}
 	}
 	if (!this.hitGoal) {
 		var touchedSomething = false;
@@ -680,9 +679,7 @@ function line(context, x1, y1, x2, y2, color, width) {
 	context.stroke();
 }
 
-game.scenes.add("win", new Splat.Scene(canvas, function() {
-}, function() {
-}, function(context) {
+game.scenes.add("win", new Splat.Scene(canvas, function() {}, function() {}, function(context) {
 	var image = game.images.get("win-screen");
 	context.drawImage(image, 0, 0);
 }));
