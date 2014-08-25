@@ -66,6 +66,12 @@ var manifest = {
 			"msPerFrame": 50,
 			"repeatAt": 8
 		},
+		"player-exit-door": {
+			"strip": "img/exit-door.png",
+			"frames": 9,
+			"msPerFrame": 100,
+			"repeatAt": 8
+		},
 		"player-idle-left": {
 			"strip": "img/hamster-idle-left-f19.png",
 			"frames": 19,
@@ -452,8 +458,22 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	buildLevel(levels[currentLevel], this);
 
 	game.animations.get("player-enter-door").reset();
-	this.timers.enter = new Splat.Timer(undefined, 500, undefined);
+	this.timers.enter = new Splat.Timer(function(elapsedMillis) {
+		game.animations.get("player-enter-door").move(elapsedMillis);
+	}, 500, undefined);
 	this.timers.enter.start();
+
+	game.animations.get("player-exit-door").reset();
+	this.timers.exit = new Splat.Timer(function(elapsedMillis) {
+		game.animations.get("player-exit-door").move(elapsedMillis);
+	}, 900, function() {
+		currentLevel++;
+		if (currentLevel === levels.length) {
+			game.scenes.switchTo("win");
+			return;
+		}
+		game.scenes.switchTo("main");
+	});
 
 	var scene = this;
 	this.timers.trap = new Splat.Timer(undefined, 3200, function() {
@@ -495,7 +515,6 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	// simulation
 
 	this.spawn.move(elapsedMillis);
-	game.animations.get("player-enter-door").move(elapsedMillis);
 	this.goal.move(elapsedMillis);
 	particles.move(elapsedMillis);
 	if (this.timers.skull.running) {
@@ -513,7 +532,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		game.scenes.switchTo("main");
 	}
 
-	var playerFrozen = this.timers.trap.running || this.timers.skull.running || this.timers.blockCrumble.running || this.timers.enter.running;
+	var playerFrozen = this.timers.trap.running || this.timers.skull.running || this.timers.blockCrumble.running || this.timers.enter.running || this.timers.exit.running;
 
 	if (!playerFrozen) {
 		if (game.keyboard.consumePressed("space")) {
@@ -570,12 +589,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	if (this.hitGoal) {
 		if (this.player.collides(this.spawn)) {
 			console.log("win");
-			currentLevel++;
-			if (currentLevel === levels.length) {
-				game.scenes.switchTo("win");
-				return;
-			}
-			game.scenes.switchTo("main");
+			this.timers.exit.start();
 			return;
 		}
 	} else {
@@ -615,10 +629,6 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	}
 }, function(context) {
 	// draw
-	// context.fillStyle = "black";
-	// this.camera.drawAbsolute(context, function() {
-	// 	context.fillRect(0, 0, canvas.width, canvas.height);
-	// });
 	context.drawImage(game.images.get("background"), 0, -canvas.height);
 	context.drawImage(game.images.get("doorway"), this.spawn.x - 34, this.spawn.y - 32);
 
@@ -632,6 +642,8 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	if (this.timers.enter.running) {
 		game.animations.get("player-enter-door").draw(context, this.spawn.x, this.spawn.y);
+	} else if (this.timers.exit.running) {
+		game.animations.get("player-exit-door").draw(context, this.spawn.x, this.spawn.y);
 	} else {
 		draw(context, this.player, "blue");
 	}
