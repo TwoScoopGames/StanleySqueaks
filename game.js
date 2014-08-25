@@ -546,7 +546,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			}
 			if (canJump) {
 				game.sounds.play("jump");
-				this.player.vy = -1.2;
+				this.player.vy = -1.0;
 				canJump = false;
 			}
 		}
