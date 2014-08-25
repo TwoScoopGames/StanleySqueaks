@@ -2700,77 +2700,9 @@ module.exports = [{
 }, {
     "name": "Level 4",
     "objects": [{
-        "type": "block-cookie",
-        "x": 736,
-        "y": 608
-    }, {
-        "type": "block-cookie",
-        "x": 768,
-        "y": 608
-    }, {
-        "type": "block-cookie",
-        "x": 800,
-        "y": 608
-    }, {
-        "type": "block-cookie",
-        "x": 832,
-        "y": 608
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 608
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 576
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 544
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 512
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 480
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 448
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 416
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 384
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -160
-    }, {
         "type": "block",
         "x": 384,
         "y": -160
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -192
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -224
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -256
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -288
     }, {
         "type": "block-cookie",
         "x": 64,
@@ -2854,38 +2786,6 @@ module.exports = [{
     }, {
         "type": "block-cookie",
         "x": 224,
-        "y": 0
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -32
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -64
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -96
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -128
-    }, {
-        "type": "block",
-        "x": 256,
-        "y": 0
-    }, {
-        "type": "block",
-        "x": 288,
-        "y": 0
-    }, {
-        "type": "block",
-        "x": 320,
-        "y": 0
-    }, {
-        "type": "block",
-        "x": 352,
         "y": 0
     }, {
         "type": "block",
@@ -3271,6 +3171,22 @@ module.exports = [{
         "type": "block-stone2",
         "x": 672,
         "y": -384
+    }, {
+        "type": "block",
+        "x": 256,
+        "y": 0
+    }, {
+        "type": "block",
+        "x": 288,
+        "y": 0
+    }, {
+        "type": "block",
+        "x": 320,
+        "y": 0
+    }, {
+        "type": "block",
+        "x": 352,
+        "y": 0
     }, {
         "type": "spawn",
         "x": 128,
