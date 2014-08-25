@@ -1875,14 +1875,6 @@ module.exports = [{
         "y": 192
     }, {
         "type": "log",
-        "x": 192,
-        "y": 160
-    }, {
-        "type": "log",
-        "x": 160,
-        "y": 160
-    }, {
-        "type": "log",
         "x": 160,
         "y": 576
     }, {
@@ -1969,22 +1961,6 @@ module.exports = [{
 }, {
     "name": "Level 4",
     "objects": [{
-        "type": "block-cookie",
-        "x": 128,
-        "y": 160
-    }, {
-        "type": "block-cookie",
-        "x": 96,
-        "y": 160
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": 160
-    }, {
-        "type": "block-cookie",
-        "x": 32,
-        "y": 160
-    }, {
         "type": "block-cookie",
         "x": 736,
         "y": 608
@@ -2129,30 +2105,6 @@ module.exports = [{
         "x": 1248,
         "y": 256
     }, {
-        "type": "log",
-        "x": 288,
-        "y": 224
-    }, {
-        "type": "log",
-        "x": 288,
-        "y": 192
-    }, {
-        "type": "log",
-        "x": 256,
-        "y": 160
-    }, {
-        "type": "log",
-        "x": 1280,
-        "y": 224
-    }, {
-        "type": "log",
-        "x": 1280,
-        "y": 192
-    }, {
-        "type": "log",
-        "x": 1312,
-        "y": 160
-    }, {
         "type": "block-cookie",
         "x": 736,
         "y": -416
@@ -2228,50 +2180,6 @@ module.exports = [{
         "type": "log",
         "x": 864,
         "y": 128
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": 160
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": 128
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": 96
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": 64
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": 32
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": 0
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": -32
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": -64
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": -96
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": -128
-    }, {
-        "type": "block-sand2",
-        "x": 224,
-        "y": -160
     }, {
         "type": "block-sand2",
         "x": 224,
@@ -2452,50 +2360,6 @@ module.exports = [{
         "type": "block-sand2",
         "x": 1344,
         "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 160
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 128
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 96
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 64
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 32
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": 0
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": -32
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": -64
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": -96
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": -128
-    }, {
-        "type": "block-sand2",
-        "x": 1344,
-        "y": -160
     }, {
         "type": "block-sand2",
         "x": 1344,
@@ -2680,6 +2544,174 @@ module.exports = [{
         "type": "log",
         "x": 1152,
         "y": 64
+    }, {
+        "type": "block-sand2",
+        "x": 192,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 160,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 128,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 96,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 64,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 64,
+        "y": -64
+    }, {
+        "type": "block-sand2",
+        "x": 96,
+        "y": -96
+    }, {
+        "type": "block-sand2",
+        "x": 128,
+        "y": -128
+    }, {
+        "type": "block-sand2",
+        "x": 160,
+        "y": -160
+    }, {
+        "type": "block-sand2",
+        "x": 192,
+        "y": -192
+    }, {
+        "type": "log",
+        "x": 320,
+        "y": 64
+    }, {
+        "type": "log",
+        "x": 288,
+        "y": 256
+    }, {
+        "type": "log",
+        "x": 256,
+        "y": 256
+    }, {
+        "type": "log",
+        "x": 1280,
+        "y": 256
+    }, {
+        "type": "log",
+        "x": 1312,
+        "y": 256
+    }, {
+        "type": "log",
+        "x": 1216,
+        "y": 64
+    }, {
+        "type": "block-sand2",
+        "x": 1376,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 1408,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 1440,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 1472,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 1504,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": 160
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": 128
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": 96
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": 64
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": 32
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": 0
+    }, {
+        "type": "block-sand2",
+        "x": 32,
+        "y": -32
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": 160
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": 128
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": 96
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": 64
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": 32
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": 0
+    }, {
+        "type": "block-sand2",
+        "x": 1536,
+        "y": -32
+    }, {
+        "type": "block-sand2",
+        "x": 1504,
+        "y": -64
+    }, {
+        "type": "block-sand2",
+        "x": 1472,
+        "y": -96
+    }, {
+        "type": "block-sand2",
+        "x": 1440,
+        "y": -128
+    }, {
+        "type": "block-sand2",
+        "x": 1408,
+        "y": -160
+    }, {
+        "type": "block-sand2",
+        "x": 1376,
+        "y": -192
     }, {
         "type": "spawn",
         "x": 752,
