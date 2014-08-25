@@ -192,6 +192,10 @@ module.exports = [{
         "x": 160,
         "y": 160
     }, {
+        "type": "block",
+        "x": 800,
+        "y": 160
+    }, {
         "type": "block-cookie",
         "x": 32,
         "y": 160
@@ -229,6 +233,14 @@ module.exports = [{
         "y": 160
     }, {
         "type": "block",
+        "x": 832,
+        "y": 160
+    }, {
+        "type": "block",
+        "x": 864,
+        "y": 160
+    }, {
+        "type": "block",
         "x": 896,
         "y": 160
     }, {
@@ -236,515 +248,507 @@ module.exports = [{
         "x": 928,
         "y": 160
     }, {
-        "type": "block-stone2",
-        "x": 928,
-        "y": 256
-    }, {
-        "type": "block-stone2",
-        "x": 896,
-        "y": 256
-    }, {
-        "type": "block-stone2",
-        "x": 864,
-        "y": 256
-    }, {
-        "type": "block-stone2",
-        "x": 800,
-        "y": 320
-    }, {
-        "type": "block-stone2",
-        "x": 768,
-        "y": 320
-    }, {
-        "type": "block-stone2",
-        "x": 736,
-        "y": 320
-    }, {
-        "type": "block-stone2",
-        "x": 672,
-        "y": 384
-    }, {
-        "type": "block-stone2",
-        "x": 640,
-        "y": 384
-    }, {
-        "type": "block-stone2",
-        "x": 608,
-        "y": 384
-    }, {
-        "type": "block-stone2",
-        "x": 544,
-        "y": 448
-    }, {
-        "type": "block-stone2",
-        "x": 512,
-        "y": 448
-    }, {
-        "type": "block-stone2",
-        "x": 480,
-        "y": 448
-    }, {
-        "type": "block-stone2",
-        "x": 416,
-        "y": 512
-    }, {
-        "type": "block-stone2",
-        "x": 384,
-        "y": 512
-    }, {
-        "type": "block-stone2",
+        "type": "log",
         "x": 352,
         "y": 512
     }, {
-        "type": "block-stone2",
-        "x": 288,
+        "type": "log",
+        "x": 384,
+        "y": 512
+    }, {
+        "type": "log",
+        "x": 416,
+        "y": 512
+    }, {
+        "type": "log",
+        "x": 480,
+        "y": 448
+    }, {
+        "type": "log",
+        "x": 512,
+        "y": 448
+    }, {
+        "type": "log",
+        "x": 544,
+        "y": 448
+    }, {
+        "type": "log",
+        "x": 608,
+        "y": 384
+    }, {
+        "type": "log",
+        "x": 640,
+        "y": 384
+    }, {
+        "type": "log",
+        "x": 672,
+        "y": 384
+    }, {
+        "type": "log",
+        "x": 736,
+        "y": 320
+    }, {
+        "type": "log",
+        "x": 768,
+        "y": 320
+    }, {
+        "type": "log",
+        "x": 800,
+        "y": 320
+    }, {
+        "type": "log",
+        "x": 864,
+        "y": 256
+    }, {
+        "type": "log",
+        "x": 896,
+        "y": 256
+    }, {
+        "type": "log",
+        "x": 928,
+        "y": 256
+    }, {
+        "type": "block-sand2",
+        "x": 32,
         "y": 608
     }, {
-        "type": "block-stone2",
-        "x": 256,
+        "type": "block-sand2",
+        "x": 64,
         "y": 608
     }, {
-        "type": "block-stone2",
-        "x": 224,
-        "y": 608
-    }, {
-        "type": "block-stone2",
-        "x": 192,
-        "y": 608
-    }, {
-        "type": "block-stone2",
-        "x": 160,
-        "y": 608
-    }, {
-        "type": "block-stone2",
-        "x": 128,
-        "y": 608
-    }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 96,
         "y": 608
     }, {
-        "type": "block-stone2",
-        "x": 64,
+        "type": "block-sand2",
+        "x": 128,
         "y": 608
     }, {
-        "type": "block-stone2",
-        "x": 64,
+        "type": "block-sand2",
+        "x": 160,
         "y": 608
     }, {
-        "type": "block-stone2",
-        "x": 32,
+        "type": "block-sand2",
+        "x": 192,
         "y": 608
     }, {
-        "type": "block-stone2",
-        "x": 32,
+        "type": "block-sand2",
+        "x": 224,
         "y": 608
     }, {
-        "type": "block-stone2",
-        "x": 0,
+        "type": "block-sand2",
+        "x": 256,
         "y": 608
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
+        "x": 288,
+        "y": 608
+    }, {
+        "type": "block-sand2",
         "x": 288,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 256,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 224,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 192,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 160,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 128,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 96,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 64,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 32,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
+        "x": 0,
+        "y": 608
+    }, {
+        "type": "block-sand2",
         "x": 0,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
+        "x": 0,
+        "y": 576
+    }, {
+        "type": "block-sand2",
         "x": 0,
         "y": 544
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 512
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 480
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 480
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 448
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 416
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 384
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 352
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 320
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 288
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 256
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 224
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 192
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 192
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 128
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 128
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 96
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 64
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 32
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 32
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": 0
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": -32
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": -64
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": -96
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": -128
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 0,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 32,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 64,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 96,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 128,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 160,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 192,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 224,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 256,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 288,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 320,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 352,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 384,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 416,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 448,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 480,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 512,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 544,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 576,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 608,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 640,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 672,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 704,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 736,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 768,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 800,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 832,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 864,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 896,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 928,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 960,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 992,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1024,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1056,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1088,
         "y": -160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 608
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 576
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 544
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 512
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 512
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 480
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 480
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 448
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 416
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 384
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 384
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 352
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 320
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 288
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 256
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 224
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 192
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 160
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 128
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 96
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 64
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 32
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 32
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": 0
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": -32
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": -64
     }, {
-        "type": "block-stone2",
-        "x": 1120,
-        "y": -64
-    }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": -96
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": -128
     }, {
-        "type": "block-stone2",
+        "type": "block-sand2",
         "x": 1120,
         "y": -160
     }, {
@@ -1875,6 +1879,14 @@ module.exports = [{
         "y": 192
     }, {
         "type": "log",
+        "x": 192,
+        "y": 160
+    }, {
+        "type": "log",
+        "x": 160,
+        "y": 160
+    }, {
+        "type": "log",
         "x": 160,
         "y": 576
     }, {
@@ -1962,6 +1974,22 @@ module.exports = [{
     "name": "Level 4",
     "objects": [{
         "type": "block-cookie",
+        "x": 128,
+        "y": 160
+    }, {
+        "type": "block-cookie",
+        "x": 96,
+        "y": 160
+    }, {
+        "type": "block-cookie",
+        "x": 64,
+        "y": 160
+    }, {
+        "type": "block-cookie",
+        "x": 32,
+        "y": 160
+    }, {
+        "type": "block-cookie",
         "x": 736,
         "y": 608
     }, {
@@ -2105,6 +2133,30 @@ module.exports = [{
         "x": 1248,
         "y": 256
     }, {
+        "type": "log",
+        "x": 288,
+        "y": 224
+    }, {
+        "type": "log",
+        "x": 288,
+        "y": 192
+    }, {
+        "type": "log",
+        "x": 256,
+        "y": 160
+    }, {
+        "type": "log",
+        "x": 1280,
+        "y": 224
+    }, {
+        "type": "log",
+        "x": 1280,
+        "y": 192
+    }, {
+        "type": "log",
+        "x": 1312,
+        "y": 160
+    }, {
         "type": "block-cookie",
         "x": 736,
         "y": -416
@@ -2180,6 +2232,50 @@ module.exports = [{
         "type": "log",
         "x": 864,
         "y": 128
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": 160
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": 128
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": 96
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": 64
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": 32
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": 0
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": -32
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": -64
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": -96
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": -128
+    }, {
+        "type": "block-sand2",
+        "x": 224,
+        "y": -160
     }, {
         "type": "block-sand2",
         "x": 224,
@@ -2360,6 +2456,50 @@ module.exports = [{
         "type": "block-sand2",
         "x": 1344,
         "y": 192
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": 160
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": 128
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": 96
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": 64
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": 32
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": 0
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": -32
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": -64
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": -96
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": -128
+    }, {
+        "type": "block-sand2",
+        "x": 1344,
+        "y": -160
     }, {
         "type": "block-sand2",
         "x": 1344,
@@ -2544,174 +2684,6 @@ module.exports = [{
         "type": "log",
         "x": 1152,
         "y": 64
-    }, {
-        "type": "block-sand2",
-        "x": 192,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 160,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 128,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 96,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 64,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 64,
-        "y": -64
-    }, {
-        "type": "block-sand2",
-        "x": 96,
-        "y": -96
-    }, {
-        "type": "block-sand2",
-        "x": 128,
-        "y": -128
-    }, {
-        "type": "block-sand2",
-        "x": 160,
-        "y": -160
-    }, {
-        "type": "block-sand2",
-        "x": 192,
-        "y": -192
-    }, {
-        "type": "log",
-        "x": 320,
-        "y": 64
-    }, {
-        "type": "log",
-        "x": 288,
-        "y": 256
-    }, {
-        "type": "log",
-        "x": 256,
-        "y": 256
-    }, {
-        "type": "log",
-        "x": 1280,
-        "y": 256
-    }, {
-        "type": "log",
-        "x": 1312,
-        "y": 256
-    }, {
-        "type": "log",
-        "x": 1216,
-        "y": 64
-    }, {
-        "type": "block-sand2",
-        "x": 1376,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 1408,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 1440,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 1472,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 1504,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": 192
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": 160
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": 128
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": 96
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": 64
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": 32
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": 0
-    }, {
-        "type": "block-sand2",
-        "x": 32,
-        "y": -32
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": 160
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": 128
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": 96
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": 64
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": 32
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": 0
-    }, {
-        "type": "block-sand2",
-        "x": 1536,
-        "y": -32
-    }, {
-        "type": "block-sand2",
-        "x": 1504,
-        "y": -64
-    }, {
-        "type": "block-sand2",
-        "x": 1472,
-        "y": -96
-    }, {
-        "type": "block-sand2",
-        "x": 1440,
-        "y": -128
-    }, {
-        "type": "block-sand2",
-        "x": 1408,
-        "y": -160
-    }, {
-        "type": "block-sand2",
-        "x": 1376,
-        "y": -192
     }, {
         "type": "spawn",
         "x": 752,
@@ -2777,26 +2749,6 @@ module.exports = [{
         "y": 384
     }, {
         "type": "block-cookie",
-        "x": 96,
-        "y": -384
-    }, {
-        "type": "block-cookie",
-        "x": 128,
-        "y": -384
-    }, {
-        "type": "block-cookie",
-        "x": 160,
-        "y": -384
-    }, {
-        "type": "block-cookie",
-        "x": 192,
-        "y": -384
-    }, {
-        "type": "block-cookie",
-        "x": 224,
-        "y": -384
-    }, {
-        "type": "block-cookie",
         "x": 64,
         "y": -160
     }, {
@@ -3000,69 +2952,9 @@ module.exports = [{
         "x": 704,
         "y": 0
     }, {
-        "type": "block-cookie",
-        "x": 608,
-        "y": -128
-    }, {
-        "type": "block-cookie",
-        "x": 640,
-        "y": -128
-    }, {
-        "type": "block-cookie",
-        "x": 672,
-        "y": -128
-    }, {
-        "type": "block-cookie",
-        "x": 416,
-        "y": -256
-    }, {
-        "type": "block-cookie",
-        "x": 448,
-        "y": -256
-    }, {
-        "type": "block-cookie",
-        "x": 480,
-        "y": -256
-    }, {
-        "type": "block-cookie",
-        "x": 608,
-        "y": -384
-    }, {
-        "type": "block-cookie",
-        "x": 640,
-        "y": -384
-    }, {
-        "type": "block-cookie",
-        "x": 672,
-        "y": -384
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -640
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -608
-    }, {
-        "type": "block-cookie",
-        "x": 64,
-        "y": -576
-    }, {
         "type": "block",
         "x": 384,
         "y": -448
-    }, {
-        "type": "block-cookie",
-        "x": 384,
-        "y": -480
-    }, {
-        "type": "block-cookie",
-        "x": 416,
-        "y": -480
-    }, {
-        "type": "block-cookie",
-        "x": 448,
-        "y": -480
     }, {
         "type": "block-cookie",
         "x": 736,
@@ -3184,16 +3076,212 @@ module.exports = [{
         "x": 1024,
         "y": -640
     }, {
+        "type": "block-cookie",
+        "x": 96,
+        "y": -320
+    }, {
+        "type": "block-cookie",
+        "x": 128,
+        "y": -320
+    }, {
+        "type": "block-cookie",
+        "x": 160,
+        "y": -320
+    }, {
+        "type": "block-cookie",
+        "x": 192,
+        "y": -320
+    }, {
+        "type": "block-cookie",
+        "x": 224,
+        "y": -320
+    }, {
+        "type": "block-cookie",
+        "x": 64,
+        "y": -576
+    }, {
+        "type": "block-cookie",
+        "x": 64,
+        "y": -608
+    }, {
+        "type": "block-cookie",
+        "x": 64,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 96,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 128,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 160,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 192,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 224,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 256,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 288,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 320,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 352,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 384,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 416,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 448,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 480,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 512,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 544,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 576,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 608,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 640,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 672,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 704,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 736,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 768,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 800,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 832,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 864,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 896,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 928,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 960,
+        "y": -640
+    }, {
+        "type": "block-cookie",
+        "x": 992,
+        "y": -640
+    }, {
+        "type": "block-stone2",
+        "x": 384,
+        "y": -480
+    }, {
+        "type": "block-stone2",
+        "x": 416,
+        "y": -480
+    }, {
+        "type": "block-stone2",
+        "x": 448,
+        "y": -480
+    }, {
+        "type": "block-stone2",
+        "x": 416,
+        "y": -256
+    }, {
+        "type": "block-stone2",
+        "x": 448,
+        "y": -256
+    }, {
+        "type": "block-stone2",
+        "x": 480,
+        "y": -256
+    }, {
+        "type": "block-stone2",
+        "x": 608,
+        "y": -128
+    }, {
+        "type": "block-stone2",
+        "x": 640,
+        "y": -128
+    }, {
+        "type": "block-stone2",
+        "x": 672,
+        "y": -128
+    }, {
+        "type": "block-stone2",
+        "x": 608,
+        "y": -384
+    }, {
+        "type": "block-stone2",
+        "x": 640,
+        "y": -384
+    }, {
+        "type": "block-stone2",
+        "x": 672,
+        "y": -384
+    }, {
         "type": "spawn",
-        "x": 129,
-        "y": -523
+        "x": 128,
+        "y": -461
     }, {
         "type": "goal",
         "x": 128,
         "y": -135
     }, {
         "type": "skull",
-        "x": 784,
-        "y": -615
+        "x": 822,
+        "y": -554
     }]
 }];
