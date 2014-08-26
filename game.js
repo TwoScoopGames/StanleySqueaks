@@ -15,6 +15,7 @@ var manifest = {
 		"block-sand3": "img/block-sand3.png",
 		"block-stone": "img/block-stone.png",
 		"block-stone2": "img/block-stone2.png",
+		"controls": "img/controls.png",
 		"doorway": "img/doorway.png",
 		"gamedevlou": "img/gamedevlou.png",
 		"log": "img/log.png",
@@ -413,13 +414,20 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 game.scenes.add("start", new Splat.Scene(canvas, function() {
 }, function() {
 	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.mouse.consumePressed(0)) {
+		game.scenes.switchTo("controls");
+	}
+}, function(context) {
+	var image = game.images.get("titlescreen");
+	context.drawImage(image, 0, 0, canvas.width, canvas.height);
+}));
+
+game.scenes.add("controls", new Splat.Scene(canvas, function() {
+}, function() {
+	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.mouse.consumePressed(0)) {
 		game.scenes.switchTo("main");
 	}
 }, function(context) {
-	context.fillStyle = "white";
-	context.fillRect(0, 0, canvas.width, canvas.height);
-
-	var image = game.images.get("titlescreen");
+	var image = game.images.get("controls");
 	context.drawImage(image, 0, 0, canvas.width, canvas.height);
 }));
 
