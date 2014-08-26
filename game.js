@@ -535,6 +535,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	if (game.keyboard.consumePressed("f1")) {
 		debug = !debug;
+		this.showFrameRate = debug;
 	}
 	if (game.keyboard.consumePressed("f2")) {
 		editable = !editable;
