@@ -236,6 +236,7 @@ function editLevel(scene) {
 		currentLevel++;
 		if (!levels[currentLevel]) {
 			levels[currentLevel] = JSON.parse(JSON.stringify(levels[currentLevel-1])); // clone previous level
+			levels[currentLevel].name = "Level " + currentLevel;
 		}
 		game.scenes.switchTo("main");
 		return;
@@ -250,7 +251,7 @@ function editLevel(scene) {
 		return;
 	}
 	if (game.keyboard.consumePressed("x") && !scene.hitGoal) {
-		levels[currentLevel] = exportLevel(scene, levels[currentLevel].name);
+		levels[currentLevel] = exportLevel(scene, "Level " + currentLevel);
 		console.log("module.exports = " + JSON.stringify(levels, null, 4) + ";");
 	}
 
