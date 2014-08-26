@@ -193,6 +193,7 @@ function buildLevel(level, scene) {
 			scene.blocks.push(block);
 		}
 	}
+	scene.blocks = sortEntities(scene.blocks);
 }
 
 function addBlock(scene, imageName, x, y) {
@@ -203,6 +204,7 @@ function addBlock(scene, imageName, x, y) {
 	var block = new Splat.AnimatedEntity(gridX, gridY, blockSize, blockSize, img, 0, -9);
 	block.type = imageName;
 	scene.blocks.push(block);
+	scene.blocks = sortEntities(scene.blocks);
 	return block;
 }
 
@@ -696,6 +698,12 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		});
 	}
 }));
+
+function sortEntities(entities) {
+	return entities.sort(function(a, b) {
+		return (b.y + b.height) - (a.y + a.height);
+	});
+}
 
 function line(context, x1, y1, x2, y2, color, width) {
 	context.beginPath();
