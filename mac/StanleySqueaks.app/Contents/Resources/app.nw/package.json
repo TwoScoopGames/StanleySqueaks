@@ -1,0 +1,13 @@
+{
+	"name": "Stanley Squeaks and the Emerald Burrito",
+	"main": "index.html",
+	"window": {
+		"title": "Stanley Squeaks and the Emerald Burrito",
+		"toolbar": false,
+		"frame": true,
+		"width": 1920,
+		"height": 1080,
+		"position": "mouse",
+		"fullscreen": false
+	}
+}
