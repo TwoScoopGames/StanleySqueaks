@@ -1,0 +1,64 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="fence" itemID="550f29ae-000000ea" lastModified="1427057070" lastUniqueIdentifier="6">
+  <timeline>
+    <DOMTimeline name="fence">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 16" selected="true" centerPoint3DX="27.2" centerPoint3DY="301.15">
+                  <matrix>
+                    <Matrix ty="5.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.2" y="295.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 16" selected="true" centerPoint3DX="101.9" centerPoint3DY="297.2">
+                  <matrix>
+                    <Matrix tx="74.7" ty="1.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.2" y="295.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 16" selected="true" centerPoint3DX="173.7" centerPoint3DY="298.8">
+                  <matrix>
+                    <Matrix tx="146.5" ty="3.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.2" y="295.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 16" selected="true" centerPoint3DX="252.8" centerPoint3DY="300.6">
+                  <matrix>
+                    <Matrix tx="225.6" ty="4.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.2" y="295.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 16" selected="true" centerPoint3DX="323.95" centerPoint3DY="295.7">
+                  <matrix>
+                    <Matrix tx="296.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.2" y="295.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 16" selected="true" centerPoint3DX="396.65" centerPoint3DY="297.35">
+                  <matrix>
+                    <Matrix tx="369.45" ty="1.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.2" y="295.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

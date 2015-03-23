@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 15" itemID="550f5769-00000475" lastModified="1427068777">
+  <timeline>
+    <DOMTimeline name="Symbol 15">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#141212"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!56 1S1[50 1 39 0!39 0|20 0!20 0[16 0 9 3!9 3[0 7 0 9!0 9[0 10 1 10!1 10[14 3 19 2!19 2|40 2!40 2[61 7 67 7!67 7|69 6!69 6[66 3 56 1"/>
+                    <Edge cubics="!39 0(;39,0 20,0 20,0q39 0 20 0);"/>
+                    <Edge cubics="!20 0(;18,0 -1,5 0,9q20 0Q16 0q9 3Q0 7q0 9);"/>
+                    <Edge cubics="!0 9(;0,9 0,10 1,10q0 9Q0 10q1 10);"/>
+                    <Edge cubics="!1 10(;1,10 14,3 19,2q1 10Q14 3q19 2);"/>
+                    <Edge cubics="!19 2(;19,2 40,2 40,2q19 2 40 2);"/>
+                    <Edge cubics="!40 2(;48,3 61,7 67,7q40 2Q61 7q67 7);"/>
+                    <Edge cubics="!67 7(;68,7 68,6 69,6q67 7Q67 7q69 6);"/>
+                    <Edge cubics="!69 6(;64,1 49,1 39,0q69 6Q66 3q56 1Q50 1q39 0);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

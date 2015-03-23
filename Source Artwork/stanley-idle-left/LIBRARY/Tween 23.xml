@@ -1,0 +1,144 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Tween 23" itemID="53f8b899-0000027e" symbolType="graphic" lastModified="1408809113">
+  <timeline>
+    <DOMTimeline name="Tween 23">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="228.45">
+                  <matrix>
+                    <Matrix tx="180.65" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="319.85">
+                  <matrix>
+                    <Matrix tx="272.05" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="411.25">
+                  <matrix>
+                    <Matrix tx="363.45" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="502.65">
+                  <matrix>
+                    <Matrix tx="454.85" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="594.05">
+                  <matrix>
+                    <Matrix tx="546.25" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="685.6">
+                  <matrix>
+                    <Matrix tx="637.8" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="137.05">
+                  <matrix>
+                    <Matrix tx="89.25" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="45.65">
+                  <matrix>
+                    <Matrix tx="-2.15" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-502.8">
+                  <matrix>
+                    <Matrix tx="-550.6" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-411.4">
+                  <matrix>
+                    <Matrix tx="-459.2" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-320">
+                  <matrix>
+                    <Matrix tx="-367.8" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-228.6">
+                  <matrix>
+                    <Matrix tx="-276.4" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-137.2">
+                  <matrix>
+                    <Matrix tx="-185" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-45.75">
+                  <matrix>
+                    <Matrix tx="-93.55" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-594.2">
+                  <matrix>
+                    <Matrix tx="-642" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 6" selected="true" centerPoint3DX="-685.6">
+                  <matrix>
+                    <Matrix tx="-733.4" ty="-47.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.8" y="47.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

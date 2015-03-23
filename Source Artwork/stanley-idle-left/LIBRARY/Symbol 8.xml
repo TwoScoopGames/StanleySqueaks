@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 8" itemID="53f8df6d-00000333" lastModified="1408819187">
+  <timeline>
+    <DOMTimeline name="Symbol 8" currentFrame="4">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Tween 26" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="13.5" ty="7.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.2" y="-1.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.98846435546875" b="0.15142822265625" c="-0.15142822265625" d="0.98846435546875" tx="13.25" ty="6.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.05" y="-1.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="13.3" ty="7.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.9" y="-1.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

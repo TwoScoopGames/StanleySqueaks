@@ -1,0 +1,80 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="tree" itemID="550f2e1b-0000014a" lastModified="1427058203" lastUniqueIdentifier="8">
+  <timeline>
+    <DOMTimeline name="tree">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="plant1-3" selected="true" centerPoint3DX="272.4" centerPoint3DY="134.9">
+                  <matrix>
+                    <Matrix a="-1.7178955078125" b="0.1724853515625" c="0.199386596679688" d="1.98558044433594" tx="339.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.3" y="84.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="plant1-1" selected="true" centerPoint3DX="149.8" centerPoint3DY="150.5">
+                  <matrix>
+                    <Matrix a="1.72653198242188" d="1.72653198242188" ty="16.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="174.9" y="93.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="plant1-3" selected="true" centerPoint3DX="425.4" centerPoint3DY="139.6">
+                  <matrix>
+                    <Matrix a="1.7186279296875" b="0.16497802734375" c="-0.16497802734375" d="1.7186279296875" tx="355.6" ty="21.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.3" y="79.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="plant1-1" selected="true" centerPoint3DX="469.5" centerPoint3DY="154.75">
+                  <matrix>
+                    <Matrix a="-1.42649841308594" b="-0.148422241210938" c="-0.161376953125" d="1.55096435546875" tx="605.5" ty="46.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="170.25" y="84.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="plant1-1" selected="true" centerPoint3DX="434.9" centerPoint3DY="200.9">
+                  <matrix>
+                    <Matrix a="-1.04144287109375" b="-0.326416015625" c="-0.354888916015625" d="1.13230895996094" tx="552.3" ty="141.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="175.6" y="76"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="tree trunk" selected="true" centerPoint3DX="291.8" centerPoint3DY="353.75">
+                  <matrix>
+                    <Matrix a="-0.50732421875" b="-0.183868408203125" c="-0.2098388671875" d="0.579071044921875" tx="463.75" ty="160.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="231.5" y="82.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="plant1-2" selected="true" centerPoint3DX="335.15" centerPoint3DY="214.9">
+                  <matrix>
+                    <Matrix a="2.08392333984375" d="2.08392333984375" tx="282.55" ty="71.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="28.2" y="50.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="plant1-2" selected="true" centerPoint3DX="261.9" centerPoint3DY="196.7">
+                  <matrix>
+                    <Matrix a="1.70237731933594" b="0.29833984375" c="-0.29833984375" d="1.70237731933594" tx="238.8" ty="71.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="40.2" y="50.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,54 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 23" itemID="5403cf0d-0000031a" lastModified="1409535757" lastUniqueIdentifier="8">
+  <timeline>
+    <DOMTimeline name="Symbol 23">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 21" centerPoint3DX="54.35" centerPoint3DY="28.5">
+                  <matrix>
+                    <Matrix a="-0.815292358398438" b="-0.470504760742188" c="-0.470504760742188" d="0.815292358398438" tx="86.3" ty="24.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="3.1" y="40.95"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.33" tintColor="#333333"/>
+                  </color>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 21" centerPoint3DX="94.65" centerPoint3DY="55.8">
+                  <matrix>
+                    <Matrix a="0.853057861328125" b="0.52178955078125" c="-0.52178955078125" d="0.853057861328125" tx="83.95" ty="23.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="3.15" y="41"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 22" centerPoint3DX="38.7" centerPoint3DY="30.9">
+                  <matrix>
+                    <Matrix tx="13.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="49.25" y="59.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 22" centerPoint3DX="26.75" centerPoint3DY="59.55">
+                  <matrix>
+                    <Matrix a="0.533859252929688" b="0.637451171875" c="0.637451171875" d="-0.533859252929688" ty="59.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="49.3" y="59.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.06" tintColor="#00FF00"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

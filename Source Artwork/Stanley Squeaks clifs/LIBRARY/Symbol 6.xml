@@ -1,0 +1,36 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 6" itemID="54d66502-00000028" lastModified="1423346774">
+  <timeline>
+    <DOMTimeline name="Symbol 6">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFCC99"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#F5C396"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="2" edges="!453 84[470 #71.57 470 152!470 152[470 292 285 292!285 292[146 292 61 213!61 213[0 156 0 115!0 115[0 #56.DD 28.5 63"/>
+                    <Edge fillStyle1="1" edges="!28.5 63[#2D.A4 #30.BE 73 36!73 36[143 3 235 0!235 0[333 -3 397 32!397 32[#1B2.B9 #34.AB 453 84"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!28.5 63[#2B.F8 #57.DA 78 92!78 92[93 94 107 97!107 97[163 110 219 105!219 105[244 103 269 104!269 104[278 105 287 105!287 105[314 104 341 100!341 100[#18C.F9 #5D.2D 453 84"/>
+                    <Edge cubics="!470 152(;470,207 453,292 285,292q470 152Q470 292q285 292);"/>
+                    <Edge cubics="!285 292(;68,292 0,140 0,115q285 292Q146 292q61 213Q0 156q0 115);"/>
+                    <Edge cubics="!0 115(;0,95 11,77 29,63q0 115Q0 87q29 63);"/>
+                    <Edge cubics="!29 63(;122,-13 390,-37 453,84q29 63 73 36Q143 3q235 0Q333 -3q397 32Q435 53q453 84);"/>
+                    <Edge cubics="!453 84(;465,107 470,128 470,152q453 84Q470 113q470 152);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 21" itemID="5403ce8c-0000030b" lastModified="1409539136" lastUniqueIdentifier="4">
+  <timeline>
+    <DOMTimeline name="Symbol 21" currentFrame="29">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="44" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 26" selected="true" centerPoint3DX="27.3" centerPoint3DY="21.5">
+                  <matrix>
+                    <Matrix ty="-0.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.3" y="21.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" duration="36" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 26" centerPoint3DX="28.2" centerPoint3DY="23.4">
+                  <matrix>
+                    <Matrix a="0.99786376953125" b="0.06512451171875" c="-0.06512451171875" d="0.99786376953125" tx="2.3" ty="-0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.3" y="21.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="80" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 26" centerPoint3DX="27.3" centerPoint3DY="21.5">
+                  <matrix>
+                    <Matrix ty="-0.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.3" y="21.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
