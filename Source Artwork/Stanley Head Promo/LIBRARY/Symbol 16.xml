@@ -1,0 +1,104 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 16" itemID="551168e3-00000070" lastModified="1427204323" lastUniqueIdentifier="8">
+  <timeline>
+    <DOMTimeline name="Symbol 16">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="left ear" selected="true" centerPoint3DX="2285.4" centerPoint3DY="838.35">
+                  <matrix>
+                    <Matrix a="7.057373046875" b="1.17555236816406" c="-1.0875244140625" d="6.52381896972656" tx="2009.6" ty="476.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="20" y="58.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="head" selected="true" centerPoint3DX="1658.5" centerPoint3DY="1225.95">
+                  <matrix>
+                    <Matrix a="7.67767333984375" b="0.2208251953125" c="-0.2208251953125" d="7.67767333984375" tx="743.5" ty="280.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="117.2" y="115"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="14.6614990234375" b="1.32347106933594" c="-1.3050537109375" d="14.4866943359375" tx="1413.15" ty="1170"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 15" selected="true">
+                  <matrix>
+                    <Matrix a="51.1266021728516" b="1.12037658691406" c="-1.510009765625" d="68.8864440917969" tx="2106.45" ty="1200.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.75" y="0.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="hat" selected="true" centerPoint3DX="1643.55" centerPoint3DY="504.6">
+                  <matrix>
+                    <Matrix a="7.68034362792969" b="-0.0111236572265625" c="0.0111236572265625" d="7.68034362792969" tx="607.9" ty="2.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="134.15" y="94.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Duplicate Items Folder/nose" selected="true" centerPoint3DX="1901.75" centerPoint3DY="1335.85">
+                  <matrix>
+                    <Matrix a="-24.2724304199219" b="-0.39752197265625" c="-0.371246337890625" d="22.7466278076172" tx="2102.15" ty="1176.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.4" y="6.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-16.9810791015625" b="2.94908142089844" c="3.13446044921875" d="16.0105438232422" tx="831.75" ty="638.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-8.7" y="8.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-19.3953552246094" b="1.9903564453125" c="1.8333740234375" d="17.8708648681641" tx="993.3" ty="752.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" selected="true" centerPoint3DX="694" centerPoint3DY="1275.55">
+                  <matrix>
+                    <Matrix a="-20.9323120117188" b="-0.60321044921875" c="-0.904891967773438" d="21.2043151855469" tx="1695.15" ty="1068.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="3" y="13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" selected="true" centerPoint3DX="2916.15" centerPoint3DY="1366">
+                  <matrix>
+                    <Matrix a="14.4268798828125" b="0.8634033203125" c="-0.746505737304688" d="17.8616180419922" tx="2143.05" ty="1135.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="2.95" y="13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="mouth2" selected="true" centerPoint3DX="1660.75" centerPoint3DY="1714.75">
+                  <matrix>
+                    <Matrix a="6.54283142089844" b="4.0076904296875" c="5.22929382324219" d="-8.53590393066406" tx="1477.6" ty="1660.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="20.3" y="5.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,60 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Duplicate Items Folder/Tween 27" itemID="550f55b9-00000444" symbolType="graphic" lastModified="1427061474">
+  <timeline>
+    <DOMTimeline name="Tween 27">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup selected="true">
+                  <members>
+                    <DOMSymbolInstance libraryItemName="hand pad" selected="true" centerPoint3DX="-1.1" centerPoint3DY="-0.9">
+                      <matrix>
+                        <Matrix a="0.0654754638671875" b="-0.1971435546875" c="0.1971435546875" d="0.0654754638671875" tx="-6.4" ty="2.25"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="22.45" y="19.45"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="finger2" selected="true" centerPoint3DX="2.35" centerPoint3DY="3.65">
+                      <matrix>
+                        <Matrix a="0.0654754638671875" b="-0.1971435546875" c="0.1971435546875" d="0.0654754638671875" tx="-0.3" ty="4"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="9.8" y="2.85"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="finger3" selected="true" centerPoint3DX="3.85" centerPoint3DY="-0.9">
+                      <matrix>
+                        <Matrix a="0.0654754638671875" b="-0.1971435546875" c="0.1971435546875" d="0.0654754638671875" tx="1.1" ty="-0.45"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="7.6" y="5.35"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="finger1" selected="true" centerPoint3DX="0.4" centerPoint3DY="5.05">
+                      <matrix>
+                        <Matrix a="0.0571441650390625" b="-0.172088623046875" c="0.172088623046875" d="0.0571441650390625" tx="-2" ty="5.45"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="11.35" y="3.5"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                    <DOMSymbolInstance libraryItemName="finger2" selected="true" centerPoint3DX="3.3" centerPoint3DY="1.25">
+                      <matrix>
+                        <Matrix a="0.0654754638671875" b="-0.1971435546875" c="0.1971435546875" d="0.0654754638671875" tx="0.7" ty="1.7"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="9.05" y="2.85"/>
+                      </transformationPoint>
+                    </DOMSymbolInstance>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

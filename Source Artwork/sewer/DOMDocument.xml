@@ -1,0 +1,571 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1920" height="1080" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" snapAlign="false" objectsSnapTo="false" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveIntervalMinutes="1">
+     <media>
+          <DOMBitmapItem name="Bitmap 1" itemID="551601b7-000000b6" sourceExternalFilepath="Bitmap 1.png" sourceLastImported="1427505587" sourcePlatform="macintosh" externalFileSize="15678" allowSmoothing="true" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 1.png" bitmapDataHRef="M 1 1427505587.dat" frameRight="12280" frameBottom="6680"/>
+     </media>
+     <symbols>
+          <Include href="Symbol 1.xml" loadImmediate="false" itemID="5515eec9-0000001e" lastModified="1427505376"/>
+          <Include href="Symbol 2.xml" loadImmediate="false" itemID="5515eee4-00000028" lastModified="1427501103"/>
+          <Include href="Symbol 3.xml" loadImmediate="false" itemID="5515ef2d-00000042" lastModified="1427502020"/>
+          <Include href="Symbol 4.xml" loadImmediate="false" itemID="5515f003-0000004e" lastModified="1427501060"/>
+          <Include href="Symbol 5.xml" loadImmediate="false" itemID="5515f140-00000088" lastModified="1427501376"/>
+          <Include href="Symbol 6.xml" loadImmediate="false" itemID="5515f1bc-00000094" lastModified="1427501500"/>
+          <Include href="Symbol 7.xml" loadImmediate="false" itemID="5515f3fb-000000a6" lastModified="1427502103"/>
+          <Include href="Symbol 8.xml" loadImmediate="false" itemID="55160215-000000c4" lastModified="1427505709"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMShape>
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#778976"/>
+                                                  </FillStyle>
+                                             </fills>
+                                             <edges>
+                                                  <Edge fillStyle1="1" edges="!-1160 11785|-1160 12022!-1160 12022[#FFFB62.36 #2EF6.5F -1204 12023!-1204 12023[-1246 11981 -1299 11934!-1299 11934[-1322 11914 -1322 11905!-1322 11905[-1322 11892 -1303 11872!-1303 11872[-1279 11848 -1204 11787!-1204 11787|-1160 11785"/>
+                                                  <Edge cubics="!-1204 12023(;-1300,11927 -1322,11921 -1322,11905q-1204 12023Q-1246 11981q-1299 11934Q-1322 11914q-1322 11905);"/>
+                                                  <Edge cubics="!-1322 11905(;-1322,11889 -1311,11873 -1204,11787q-1322 11905Q-1322 11892q-1303 11872Q-1279 11848q-1204 11787);"/>
+                                                  <Edge cubics="!-1204 11787(;-1204,11787 -1160,11785 -1160,11785q-1204 11787 -1160 11785);"/>
+                                                  <Edge cubics="!-1160 12022(;-1175,12022 -1189,12022 -1204,12023q-1160 12022Q-1182 12022q-1204 12023);"/>
+                                                  <Edge cubics="!-1160 12022(;-1160,12022 -1160,11785 -1160,11785q-1160 12022 -1160 11785);"/>
+                                             </edges>
+                                        </DOMShape>
+                                        <DOMGroup>
+                                             <matrix>
+                                                  <Matrix tx="-1085.6" ty="6.65"/>
+                                             </matrix>
+                                             <members>
+                                                  <DOMShape>
+                                                       <matrix>
+                                                            <Matrix tx="-1085.6" ty="6.65"/>
+                                                       </matrix>
+                                                       <fills>
+                                                            <FillStyle index="1">
+                                                                 <SolidColor color="#778976"/>
+                                                            </FillStyle>
+                                                       </fills>
+                                                       <edges>
+                                                            <Edge fillStyle1="1" edges="!40701 12404S2[40639 12440 40576 12464!40576 12464|36891 12486!36891 12486|36762 12507!36762 12507|31967 12518!31967 12518|31724 12550!31724 12550|28095 12561!28095 12561[28013 12572 27339 12599!27339 12599[26654 12626 26559 12636!26559
+ 12636|24797 12647!24797 12647|22616 12679!22616 12679|9718 12690!9718 12690|9508 12722!9508 12722|7553 12733!7553 12733|7312 12771!7312 12771|4277 12771!4277 12771[3925 12760 3723 12729!3723 12729[3449 12686 3321 12675!3321 12675[2565
+ 12614 -501 12636!-501 12636|-2707 12636!-2707 12636|-2707 12377!-2707 12377|-358 12367!-358 12367[-247 12359 111 12347!111 12347[473 12335 593 12335!593 12335[2544 12335 3366 12404!3366 12404[3601 12423 3825 12457!3825 12457[4032 12489
+ 4134 12496!4134 12496|7391 12496!7391 12496|7634 12464!7634 12464|9556 12453!9556 12453|9765 12421!9765 12421|23348 12410!23348 12410[25038 12394 26290 12356!26290 12356[26992 12334 28176 12292!28176 12292|31805 12281!31805 12281|32046
+ 12249!32046 12249|36826 12228!36826 12228|36955 12206!36955 12206|40190 12195!40190 12195|40448 12174!40448 12174[40769 12213 40769 12341!40769 12341[40769 12363 40701 12404"/>
+                                                            <Edge cubics="!-358 12367(;-212,12357 431,12335 593,12335q-358 12367Q-247 12359q111 12347Q473 12335q593 12335);"/>
+                                                            <Edge cubics="!593 12335(;3731,12335 3666,12464 4134,12496q593 12335Q2544 12335q3366 12404Q3601 12423q3825 12457Q4032 12489q4134 12496);"/>
+                                                            <Edge cubics="!4134 12496(;4134,12496 7391,12496 7391,12496q4134 12496 7391 12496);"/>
+                                                            <Edge cubics="!7391 12496(;7391,12496 7634,12464 7634,12464q7391 12496 7634 12464);"/>
+                                                            <Edge cubics="!7634 12464(;7634,12464 9556,12453 9556,12453q7634 12464 9556 12453);"/>
+                                                            <Edge cubics="!9556 12453(;9556,12453 9765,12421 9765,12421q9556 12453 9765 12421);"/>
+                                                            <Edge cubics="!9765 12421(;9765,12421 23348,12410 23348,12410q9765 12421 23348 12410);"/>
+                                                            <Edge cubics="!23348 12410(;26076,12384 26857,12330 28176,12292q23348 12410Q25038 12394q26290 12356Q26992 12334q28176 12292);"/>
+                                                            <Edge cubics="!28176 12292(;28176,12292 31805,12281 31805,12281q28176 12292 31805 12281);"/>
+                                                            <Edge cubics="!31805 12281(;31805,12281 32046,12249 32046,12249q31805 12281 32046 12249);"/>
+                                                            <Edge cubics="!32046 12249(;32046,12249 36826,12228 36826,12228q32046 12249 36826 12228);"/>
+                                                            <Edge cubics="!36826 12228(;36826,12228 36955,12206 36955,12206q36826 12228 36955 12206);"/>
+                                                            <Edge cubics="!36955 12206(;36955,12206 40190,12195 40190,12195q36955 12206 40190 12195);"/>
+                                                            <Edge cubics="!40190 12195(;40190,12195 40448,12174 40448,12174q40190 12195 40448 12174);"/>
+                                                            <Edge cubics="!40448 12174(;40762,12212 40769,12308 40769,12341q40448 12174Q40769 12213q40769 12341);"/>
+                                                            <Edge cubics="!40769 12341(;40769,12373 40648,12437 40576,12464q40769 12341Q40769 12363q40701 12404Q40639 12440q40576 12464);"/>
+                                                            <Edge cubics="!40576 12464(;40576,12464 36891,12486 36891,12486q40576 12464 36891 12486);"/>
+                                                            <Edge cubics="!36891 12486(;36891,12486 36762,12507 36762,12507q36891 12486 36762 12507);"/>
+                                                            <Edge cubics="!36762 12507(;36762,12507 31967,12518 31967,12518q36762 12507 31967 12518);"/>
+                                                            <Edge cubics="!31967 12518(;31967,12518 31724,12550 31724,12550q31967 12518 31724 12550);"/>
+                                                            <Edge cubics="!31724 12550(;31724,12550 28095,12561 28095,12561q31724 12550 28095 12561);"/>
+                                                            <Edge cubics="!28095 12561(;27935,12582 26753,12615 26559,12636q28095 12561Q28013 12572q27339 12599Q26654 12626q26559 12636);"/>
+                                                            <Edge cubics="!26559 12636(;26559,12636 24797,12647 24797,12647q26559 12636 24797 12647);"/>
+                                                            <Edge cubics="!24797 12647(;24797,12647 22616,12679 22616,12679q24797 12647 22616 12679);"/>
+                                                            <Edge cubics="!22616 12679(;22616,12679 9718,12690 9718,12690q22616 12679 9718 12690);"/>
+                                                            <Edge cubics="!9718 12690(;9718,12690 9508,12722 9508,12722q9718 12690 9508 12722);"/>
+                                                            <Edge cubics="!9508 12722(;9508,12722 7553,12733 7553,12733q9508 12722 7553 12733);"/>
+                                                            <Edge cubics="!7553 12733(;7553,12733 7312,12771 7312,12771q7553 12733 7312 12771);"/>
+                                                            <Edge cubics="!7312 12771(;7312,12771 4277,12771 4277,12771q7312 12771 4277 12771);"/>
+                                                            <Edge cubics="!4277 12771(;3054,12733 4544,12599 -501,12636q4277 12771Q3925 12760q3723 12729Q3449 12686q3321 12675Q2565 12614q-501 12636);"/>
+                                                            <Edge cubics="!-2707 12377(;-2707,12377 -2707,12636 -2707,12636q-2707 12377 -2707 12636);"/>
+                                                            <Edge cubics="!-2707 12377(;-2707,12377 -358,12367 -358,12367q-2707 12377 -358 12367);"/>
+                                                            <Edge cubics="!-501 12636(;-501,12636 -2707,12636 -2707,12636q-501 12636 -2707 12636);"/>
+                                                       </edges>
+                                                  </DOMShape>
+                                             </members>
+                                        </DOMGroup>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1" centerPoint3DX="18.5" centerPoint3DY="455.9">
+                                             <matrix>
+                                                  <Matrix tx="-169.7" ty="281.75"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="188.2" y="174.15"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1" centerPoint3DX="1071.5" centerPoint3DY="438.2">
+                                             <matrix>
+                                                  <Matrix tx="883.3" ty="264.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="188.2" y="174.15"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1" centerPoint3DX="2124.5" centerPoint3DY="443">
+                                             <matrix>
+                                                  <Matrix tx="1936.3" ty="268.85"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="188.2" y="174.15"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="184.95" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="-75.35" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="688.4" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="428.1" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="1191.85" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="931.55" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="1695.3" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="1435" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="2198.75" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="1938.45" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="-318.55" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="-578.85" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMGroup>
+                                             <matrix>
+                                                  <Matrix tx="2159.55" ty="-17.3"/>
+                                             </matrix>
+                                             <members>
+                                                  <DOMShape>
+                                                       <matrix>
+                                                            <Matrix tx="2159.55" ty="-17.3"/>
+                                                       </matrix>
+                                                       <fills>
+                                                            <FillStyle index="1">
+                                                                 <SolidColor color="#778976"/>
+                                                            </FillStyle>
+                                                       </fills>
+                                                       <edges>
+                                                            <Edge fillStyle1="1" edges="
+!15050 12640S2|10255 12651!10255 12651|10012 12683!10012 12683|6383 12694!6383 12694[6301 12705 5627 12732!5627 12732[4942 12759 4847 12769!4847 12769|3085 12780!3085 12780|904 12812!904 12812|-11994 12823!-11994 12823|-12204 12855!-12204
+ 12855|-14159 12866!-14159 12866|-14400 12904!-14400 12904|-17435 12904!-17435 12904[-17787 12893 -17989 12862!-17989 12862[-18263 12819 -18391 12808!-18391 12808[-19147 12747 -22213 12769!-22213 12769|-24419 12769!-24419 12769|-24419
+ 12510!-24419 12510|-22070 12500!-22070 12500[-21959 12492 -21601 12480!-21601 12480[-21239 12468 -21119 12468!-21119 12468[-19168 12468 -18346 12537!-18346 12537[-18111 12556 -17887 12590!-17887 12590[-17680 12622 -17578 12629!-17578
+ 12629|-14321 12629!-14321 12629|-14078 12597!-14078 12597|-12156 12586!-12156 12586|-11947 12554!-11947 12554|1636 12543!1636 12543[3326 12527 4578 12489!4578 12489[5280 12467 6464 12425!6464 12425|10093 12414!10093 12414|10334 12382
+!10334 12382|15114 12361!15114 12361|15243 12339!15243 12339|18478 12328!18478 12328|18736 12307!18736 12307[19057 12346 19057 12474!19057 12474[19057 12496 18989 12537!18989 12537[18927 12573 18864 12597!18864 12597|15179 12619!15179
+ 12619|15050 12640"/>
+                                                            <Edge cubics="!-22070 12500(;-21924,12490 -21281,12468 -21119,12468q-22070 12500Q-21959 12492q-21601 12480Q-21239 12468q-21119 12468);"/>
+                                                            <Edge cubics="!-21119 12468(;-17981,12468 -18046,12597 -17578,12629q-21119 12468Q-19168 12468q-18346 12537Q-18111 12556q-17887 12590Q-17680 12622q-17578 12629);"/>
+                                                            <Edge cubics="!-17578 12629(;-17578,12629 -14321,12629 -14321,12629q-17578 12629 -14321 12629);"/>
+                                                            <Edge cubics="!-14321 12629(;-14321,12629 -14078,12597 -14078,12597q-14321 12629 -14078 12597);"/>
+                                                            <Edge cubics="!-14078 12597(;-14078,12597 -12156,12586 -12156,12586q-14078 12597 -12156 12586);"/>
+                                                            <Edge cubics="!-12156 12586(;-12156,12586 -11947,12554 -11947,12554q-12156 12586 -11947 12554);"/>
+                                                            <Edge cubics="!-11947 12554(;-11947,12554 1636,12543 1636,12543q-11947 12554 1636 12543);"/>
+                                                            <Edge cubics="!1636 12543(;4364,12517 5145,12463 6464,12425q1636 12543Q3326 12527q4578 12489Q5280 12467q6464 12425);"/>
+                                                            <Edge cubics="!6464 12425(;6464,12425 10093,12414 10093,12414q6464 12425 10093 12414);"/>
+                                                            <Edge cubics="!10093 12414(;10093,12414 10334,12382 10334,12382q10093 12414 10334 12382);"/>
+                                                            <Edge cubics="!10334 12382(;10334,12382 15114,12361 15114,12361q10334 12382 15114 12361);"/>
+                                                            <Edge cubics="!15114 12361(;15114,12361 15243,12339 15243,12339q15114 12361 15243 12339);"/>
+                                                            <Edge cubics="!15243 12339(;15243,12339 18478,12328 18478,12328q15243 12339 18478 12328);"/>
+                                                            <Edge cubics="!18478 12328(;18478,12328 18736,12307 18736,12307q18478 12328 18736 12307);"/>
+                                                            <Edge cubics="!18736 12307(;19050,12345 19057,12441 19057,12474q18736 12307Q19057 12346q19057 12474);"/>
+                                                            <Edge cubics="!19057 12474(;19057,12506 18936,12570 18864,12597q19057 12474Q19057 12496q18989 12537Q18927 12573q18864 12597);"/>
+                                                            <Edge cubics="!18864 12597(;18864,12597 15179,12619 15179,12619q18864 12597 15179 12619);"/>
+                                                            <Edge cubics="!15179 12619(;15179,12619 15050,12640 15050,12640q15179 12619 15050 12640);"/>
+                                                            <Edge cubics="!15050 12640(;15050,12640 10255,12651 10255,12651q15050 12640 10255 12651);"/>
+                                                            <Edge cubics="!10255 12651(;10255,12651 10012,12683 10012,12683q10255 12651 10012 12683);"/>
+                                                            <Edge cubics="!10012 12683(;10012,12683 6383,12694 6383,12694q10012 12683 6383 12694);"/>
+                                                            <Edge cubics="!6383 12694(;6223,12715 5041,12748 4847,12769q6383 12694Q6301 12705q5627 12732Q4942 12759q4847 12769);"/>
+                                                            <Edge cubics="!4847 12769(;4847,12769 3085,12780 3085,12780q4847 12769 3085 12780);"/>
+                                                            <Edge cubics="!3085 12780(;3085,12780 904,12812 904,12812q3085 12780 904 12812);"/>
+                                                            <Edge cubics="!904 12812(;904,12812 -11994,12823 -11994,12823q904 12812 -11994 12823);"/>
+                                                            <Edge cubics="!-11994 12823(;-11994,12823 -12204,12855 -12204,12855q-11994 12823 -12204 12855);"/>
+                                                            <Edge cubics="!-12204 12855(;-12204,12855 -14159,12866 -14159,12866q-12204 12855 -14159 12866);"/>
+                                                            <Edge cubics="!-14159 12866(;-14159,12866 -14400,12904 -14400,12904q-14159 12866 -14400 12904);"/>
+                                                            <Edge cubics="!-14400 12904(;-14400,12904 -17435,12904 -17435,12904q-14400 12904 -17435 12904);"/>
+                                                            <Edge cubics="!-17435 12904(;-18658,12866 -17168,12732 -22213,12769q-17435 12904Q-17787 12893q-17989 12862Q-18263 12819q-18391 12808Q-19147 12747q-22213 12769);"/>
+                                                            <Edge cubics="!-24419 12510(;-24419,12510 -24419,12769 -24419,12769q-24419 12510 -24419 12769);"/>
+                                                            <Edge cubics="!-24419 12510(;-24419,12510 -22070,12500 -22070,12500q-24419 12510 -22070 12500);"/>
+                                                            <Edge cubics="!-22213 12769(;-22213,12769 -24419,12769 -24419,12769q-22213 12769 -24419 12769);"/>
+                                                       </edges>
+                                                  </DOMShape>
+                                             </members>
+                                        </DOMGroup>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="-822" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="-1082.3" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="-1325.45" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="-1585.75" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="3205.9" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="2945.6" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="2702.2" centerPoint3DY="769.8">
+                                             <matrix>
+                                                  <Matrix tx="2441.9" ty="717.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="260.3" y="52.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 3" centerPoint3DX="456.05" centerPoint3DY="191.75">
+                                             <matrix>
+                                                  <Matrix tx="362.3" ty="51.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="93.75" y="140.3"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 3" centerPoint3DX="1509.05" centerPoint3DY="190.4">
+                                             <matrix>
+                                                  <Matrix tx="1415.3" ty="50.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="93.75" y="140.3"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 3" centerPoint3DX="2562" centerPoint3DY="193.75">
+                                             <matrix>
+                                                  <Matrix tx="2468.25" ty="53.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="93.75" y="140.3"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 3" centerPoint3DX="-597" centerPoint3DY="163.65">
+                                             <matrix>
+                                                  <Matrix tx="-690.75" ty="23.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="93.75" y="140.3"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 8" selected="true" centerPoint3DX="-1662.65" centerPoint3DY="956.85">
+                                             <matrix>
+                                                  <Matrix tx="-1969.65" ty="789.85"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="307" y="167"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <swatchLists>
+          <swatchList>
+               <swatches>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#003300" hue="80" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#006600" hue="80" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009900" hue="80" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC00" hue="80" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330000" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#333300" hue="40" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#336600" hue="60" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#339900" hue="67" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#33CC00" hue="70" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#33FF00" hue="72" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#660000" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663300" hue="20" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#666600" hue="40" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#669900" hue="53" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#66CC00" hue="60" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#66FF00" hue="64" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#333333" brightness="48"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000033" hue="160" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#003333" hue="120" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#006633" hue="100" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009933" hue="93" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC33" hue="90" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF33" hue="88" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330033" hue="200" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#333333" brightness="48"/>
+                    <SolidSwatchItem color="#336633" hue="80" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#339933" hue="80" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC33" hue="80" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF33" hue="80" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660033" hue="220" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663333" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#666633" hue="40" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#669933" hue="60" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#66CC33" hue="67" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#66FF33" hue="70" saturation="239" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#666666" brightness="96"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000066" hue="160" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#003366" hue="140" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#006666" hue="120" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009966" hue="107" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC66" hue="100" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF66" hue="96" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330066" hue="180" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#333366" hue="160" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#336666" hue="120" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#339966" hue="100" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC66" hue="93" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF66" hue="90" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660066" hue="200" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663366" hue="200" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#666666" brightness="96"/>
+                    <SolidSwatchItem color="#669966" hue="80" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#66CC66" hue="80" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FF66" hue="80" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#999999" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000099" hue="160" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#003399" hue="147" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#006699" hue="133" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#009999" hue="120" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC99" hue="110" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF99" hue="104" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330099" hue="173" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#333399" hue="160" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#336699" hue="140" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#339999" hue="120" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC99" hue="107" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF99" hue="100" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660099" hue="187" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#663399" hue="180" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#666699" hue="160" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#669999" hue="120" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#66CC99" hue="100" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FF99" hue="93" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000CC" hue="160" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0033CC" hue="150" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0066CC" hue="140" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0099CC" hue="130" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00CCCC" hue="120" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FFCC" hue="112" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3300CC" hue="170" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#3333CC" hue="160" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#3366CC" hue="147" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#3399CC" hue="133" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33CCCC" hue="120" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FFCC" hue="110" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6600CC" hue="180" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#6633CC" hue="173" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#6666CC" hue="160" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#6699CC" hue="140" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66CCCC" hue="120" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FFCC" hue="107" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0033FF" hue="152" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0066FF" hue="144" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0099FF" hue="136" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#00CCFF" hue="128" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3300FF" hue="168" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3333FF" hue="160" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#3366FF" hue="150" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#3399FF" hue="140" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#33CCFF" hue="130" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#33FFFF" hue="120" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6600FF" hue="176" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#6633FF" hue="170" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6666FF" hue="160" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#6699FF" hue="147" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#66CCFF" hue="133" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#66FFFF" hue="120" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990000" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993300" hue="13" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#996600" hue="27" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#999900" hue="40" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#99CC00" hue="50" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#99FF00" hue="56" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#CC0000" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3300" hue="10" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC6600" hue="20" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC9900" hue="30" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CCCC00" hue="40" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CCFF00" hue="48" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3300" hue="8" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF6600" hue="16" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF9900" hue="24" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFCC00" hue="32" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990033" hue="227" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993333" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996633" hue="20" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#999933" hue="40" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#99CC33" hue="53" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#99FF33" hue="60" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#CC0033" hue="230" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3333" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6633" hue="13" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC9933" hue="27" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CCCC33" hue="40" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CCFF33" hue="50" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF0033" hue="232" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3333" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6633" hue="10" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF9933" hue="20" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FFCC33" hue="30" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FFFF33" hue="40" saturation="239" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990066" hue="213" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993366" hue="220" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996666" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#999966" hue="40" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#99CC66" hue="60" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#99FF66" hue="67" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#CC0066" hue="220" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3366" hue="227" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6666" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC9966" hue="20" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CCCC66" hue="40" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CCFF66" hue="53" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF0066" hue="224" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3366" hue="230" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6666" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF9966" hue="13" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FFCC66" hue="27" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FFFF66" hue="40" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990099" hue="200" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993399" hue="200" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996699" hue="200" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#999999" brightness="144"/>
+                    <SolidSwatchItem color="#99CC99" hue="80" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99FF99" hue="80" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC0099" hue="210" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3399" hue="213" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6699" hue="220" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC9999" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCCC99" hue="40" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCFF99" hue="60" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FF0099" hue="216" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3399" hue="220" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6699" hue="227" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF9999" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCC99" hue="20" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFFF99" hue="40" saturation="239" brightness="192"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#9900CC" hue="190" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#9933CC" hue="187" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#9966CC" hue="180" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#9999CC" hue="160" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99CCCC" hue="120" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99FFCC" hue="100" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC00CC" hue="200" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC33CC" hue="200" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC66CC" hue="200" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC99CC" hue="200" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
+                    <SolidSwatchItem color="#CCFFCC" hue="80" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FF00CC" hue="208" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF33CC" hue="210" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF66CC" hue="213" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF99CC" hue="220" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCCCC" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FFFFCC" hue="40" saturation="239" brightness="216"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#9900FF" hue="184" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#9933FF" hue="180" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#9966FF" hue="173" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#9999FF" hue="160" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#99CCFF" hue="140" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#99FFFF" hue="120" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC00FF" hue="192" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#CC33FF" hue="190" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#CC66FF" hue="187" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#CC99FF" hue="180" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CCCCFF" hue="160" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#CCFFFF" hue="120" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF33FF" hue="200" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF66FF" hue="200" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF99FF" hue="200" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCCFF" hue="200" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
+                    <SolidSwatchItem color="#7D887C" hue="76" saturation="11" brightness="123"/>
+                    <SolidSwatchItem color="#606E60" hue="80" saturation="17" brightness="97"/>
+                    <SolidSwatchItem color="#838683" hue="80" saturation="3" brightness="125"/>
+                    <SolidSwatchItem color="#646E63" hue="76" saturation="13" brightness="99"/>
+                    <SolidSwatchItem color="#737A73" hue="80" saturation="8" brightness="112"/>
+                    <SolidSwatchItem color="#778076" alpha="0.980392156862745" hue="76" saturation="9" brightness="116"/>
+                    <SolidSwatchItem color="#EAC52E" alpha="0.980392156862745" hue="32" saturation="196" brightness="132"/>
+               </swatches>
+          </swatchList>
+     </swatchLists>
+     <PrinterSettings platform="macintosh"/>
+     <publishHistory/>
+</DOMDocument>

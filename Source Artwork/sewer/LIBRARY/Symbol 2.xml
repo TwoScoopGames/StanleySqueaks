@@ -1,0 +1,71 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2" itemID="5515eee4-00000028" lastModified="1427501103" lastUniqueIdentifier="5">
+  <timeline>
+    <DOMTimeline name="Symbol 2">
+      <layers>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 4" centerPoint3DX="476.45" centerPoint3DY="62.85">
+                  <matrix>
+                    <Matrix a="1.78103637695312" b="0.0379638671875" c="-0.0379638671875" d="1.78103637695312" tx="429.15" ty="18.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.15" y="24.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 4" centerPoint3DX="388.9" centerPoint3DY="62.9">
+                  <matrix>
+                    <Matrix a="1.78102111816406" b="0.0379638671875" c="-0.0379638671875" d="1.78102111816406" tx="341.65" ty="18.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.15" y="24.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 4" centerPoint3DX="301.55" centerPoint3DY="62.9">
+                  <matrix>
+                    <Matrix a="1.78102111816406" b="0.0379638671875" c="-0.0379638671875" d="1.78102111816406" tx="254.2" ty="18.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.1" y="24.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 4" centerPoint3DX="214.15" centerPoint3DY="62.85">
+                  <matrix>
+                    <Matrix a="1.78102111816406" b="0.0379638671875" c="-0.0379638671875" d="1.78102111816406" tx="166.75" ty="18.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.15" y="24.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 4" centerPoint3DX="126.75" centerPoint3DY="62.9">
+                  <matrix>
+                    <Matrix a="1.78102111816406" b="0.0379638671875" c="-0.0379638671875" d="1.78102111816406" tx="79.3" ty="18.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.15" y="24.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 4" centerPoint3DX="39.25" centerPoint3DY="62.85">
+                  <matrix>
+                    <Matrix a="1.78102111816406" b="0.0379638671875" c="-0.0379638671875" d="1.78102111816406" tx="-8.15" ty="18.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27.15" y="24.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

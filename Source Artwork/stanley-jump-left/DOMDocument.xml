@@ -91,7 +91,7 @@
           <Include href="vest sleeve.xml" loadImmediate="false" itemID="54cc3c87-00000338" lastModified="1423338962"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1" currentFrame="28">
+          <DOMTimeline name="Scene 1" currentFrame="26">
                <layers>
                     <DOMLayer name="vest sleeve" color="#4FFFFF" autoNamed="false">
                          <frames>
@@ -1785,7 +1785,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="hat" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="hat" color="#FF4FFF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
                                    <elements>
@@ -3477,7 +3477,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="arm" color="#4FFFFF" autoNamed="false">
+                    <DOMLayer name="arm" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
                                    <elements>
@@ -3631,7 +3631,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.108291625976562" b="0.70159912109375" c="0.70159912109375" d="-0.108291625976562" tx="34.65" ty="78.9"/>
+                                                  <Matrix a="0.108291625976562" b="0.70159912109375" c="0.70159912109375" d="-0.108291625976562" tx="27.05" ty="83.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>

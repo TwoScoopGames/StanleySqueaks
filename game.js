@@ -33,7 +33,7 @@ var manifest = {
 		"crumble3": "audio/crumble3.mp3",
 		"crumble4": "audio/crumble4.mp3",
 		"hamster-fall": "audio/hamster-fall.mp3",
-		"jump": "audio/jump.mp3",
+		"jump": "audio/squeak1.mp3",
 		"podium": "audio/podium.mp3",
 		"skull-on": "audio/skull-on.mp3",
 		"squeak1": "audio/squeak1.mp3",
@@ -85,14 +85,14 @@ var manifest = {
 			"msPerFrame": 70
 		},
 		"player-jump-left": {
-			"strip": "img/hamster-jump-left-f19.png",
-			"frames": 19,
-			"msPerFrame": 30
+			"strip": "img/hamster-jump-left-f29.png",
+			"frames": 29,
+			"msPerFrame": 15
 		},
 		"player-jump-right": {
-			"strip": "img/hamster-jump-right-f19.png",
-			"frames": 19,
-			"msPerFrame": 30
+			"strip": "img/hamster-jump-right-f29.png",
+			"frames": 29,
+			"msPerFrame": 15
 		},
 		"player-run-left": {
 			"strip": "img/hamster-run-left-f22.png",

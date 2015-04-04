@@ -9,7 +9,7 @@
           <DOMBitmapItem name="Bitmap 6" itemID="53f8b2f8-00000143" sourceExternalFilepath="../stanley-run-right/LIBRARY/Bitmap 6" sourceLastImported="1408807672" sourcePlatform="macintosh" externalFileCRC32="1719847367" externalFileSize="20367" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 6" bitmapDataHRef="M 6 1408807672.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
           <DOMBitmapItem name="Bitmap 6 copy" itemID="550f4a66-0000038d" sourceExternalFilepath="../../../../../../Library/Caches/TemporaryItems/FlashPNG" sourceLastImported="1427065432" sourcePlatform="macintosh" originalCompressionType="lossless" quality="50" href="Bitmap 6 copy" bitmapDataHRef="M 6 1427065434.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
           <DOMBitmapItem name="tumblr_m7nk3w0Trb1rbmom3o1_400.gif" itemID="53f8b2f8-0000013b" sourceExternalFilepath="../stanley-run-right/LIBRARY/tumblr_m7nk3w0Trb1rbmom3o1_400.gif" sourceLastImported="1408807632" sourcePlatform="macintosh" externalFileCRC32="1719847367" externalFileSize="20367" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="tumblr_m7nk3w0Trb1rbmom3o1_400.gif" bitmapDataHRef="M 2 1408807672.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
-          <DOMBitmapItem name="Untitled-1.jpg" itemID="550f822d-00000514" sourceExternalFilepath="./LIBRARY/Untitled-1.jpg" sourceLastImported="1427079579" sourcePlatform="macintosh" externalFileCRC32="1959105309" externalFileSize="52353" quality="50" href="Untitled-1.jpg" bitmapDataHRef="M 7 1427079668.dat" frameRight="8740" frameBottom="1700" isJPEG="true"/>
+          <DOMBitmapItem name="Untitled-1.jpg" itemID="550f822d-00000514" sourceExternalFilepath="./LIBRARY/Untitled-1.jpg" sourceLastImported="1427079579" sourcePlatform="macintosh" externalFileCRC32="1959105309" externalFileSize="52353" originalCompressionType="lossless" quality="50" href="Untitled-1.jpg" bitmapDataHRef="M 7 1427079668.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
      </media>
      <symbols>
           <Include href="arm.xml" loadImmediate="false" itemID="54cc3cfd-0000033c" lastModified="1423348270"/>
@@ -91,7 +91,7 @@
           <Include href="vest sleeve.xml" loadImmediate="false" itemID="54cc3c87-00000338" lastModified="1423338962"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1" currentFrame="8">
+          <DOMTimeline name="Scene 1" currentFrame="1">
                <layers>
                     <DOMLayer name="vest sleeve" color="#4FFFFF" autoNamed="false">
                          <frames>
@@ -99,7 +99,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="28.9" centerPoint3DY="65">
                                              <matrix>
-                                                  <Matrix a="-0.028839111328125" b="0.139968872070312" c="-0.166351318359375" d="-0.03424072265625" tx="34.95" ty="61.2"/>
+                                                  <Matrix a="-0.028839111328125" b="0.13995361328125" c="-0.166351318359375" d="-0.03424072265625" tx="34.95" ty="61.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="39.05" y="31.1"/>
@@ -111,7 +111,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="24.75" centerPoint3DY="66.65">
                                              <matrix>
-                                                  <Matrix a="0.130096435546875" b="0.0587005615234375" c="-0.0692596435546875" d="0.154861450195312" tx="22.35" ty="59.9"/>
+                                                  <Matrix a="0.130096435546875" b="0.0587005615234375" c="-0.0692596435546875" d="0.15484619140625" tx="22.35" ty="59.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="39.3" y="31.25"/>
@@ -123,7 +123,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="23.05" centerPoint3DY="71.25">
                                              <matrix>
-                                                  <Matrix a="0.08575439453125" b="-0.11431884765625" c="0.135879516601562" d="0.101882934570312" tx="16.05" ty="71.9"/>
+                                                  <Matrix a="0.08575439453125" b="-0.11431884765625" c="0.1358642578125" d="0.10186767578125" tx="16.05" ty="71.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="39.2" y="31.2"/>
@@ -135,7 +135,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="29.85" centerPoint3DY="61.7">
                                              <matrix>
-                                                  <Matrix a="0.0171966552734375" b="-0.144180297851562" c="0.1710205078125" d="0.015838623046875" tx="24.05" ty="65.95"/>
+                                                  <Matrix a="0.0171966552734375" b="-0.1441650390625" c="0.1710205078125" d="0.015838623046875" tx="24.05" ty="65.95"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="38.8" y="31.2"/>
@@ -147,7 +147,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="41.8" centerPoint3DY="45.55">
                                              <matrix>
-                                                  <Matrix a="-0.0915985107421875" b="-0.117279052734375" c="0.130325317382812" d="-0.116455078125" tx="40.8" ty="53.05"/>
+                                                  <Matrix a="-0.0915985107421875" b="-0.117279052734375" c="0.13031005859375" d="-0.116455078125" tx="40.8" ty="53.05"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -159,7 +159,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="36.8" centerPoint3DY="58.75">
                                              <matrix>
-                                                  <Matrix a="-0.0915985107421875" b="-0.10968017578125" c="0.130325317382812" d="-0.108901977539062" tx="35.8" ty="65.5"/>
+                                                  <Matrix a="-0.0915985107421875" b="-0.10968017578125" c="0.13031005859375" d="-0.10888671875" tx="35.8" ty="65.5"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -195,7 +195,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="23.75" centerPoint3DY="58.3">
                                              <matrix>
-                                                  <Matrix a="0.142318725585938" b="0.005615234375" c="-0.00616455078125" d="0.173171997070312" tx="19.5" ty="53.3"/>
+                                                  <Matrix a="0.142318725585938" b="0.005615234375" c="-0.00616455078125" d="0.17315673828125" tx="19.5" ty="53.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -219,7 +219,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="27.3" centerPoint3DY="62.1">
                                              <matrix>
-                                                  <Matrix a="-0.0081634521484375" b="0.142410278320312" c="-0.170394897460938" d="-0.0097198486328125" tx="31.85" ty="58.35"/>
+                                                  <Matrix a="-0.0081634521484375" b="0.14239501953125" c="-0.170394897460938" d="-0.0097198486328125" tx="31.85" ty="58.35"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -235,7 +235,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="lower arm" centerPoint3DX="15.1" centerPoint3DY="65.65">
                                              <matrix>
-                                                  <Matrix a="0.119461059570312" b="0.0866241455078125" c="-0.0866241455078125" d="0.119461059570312" tx="14.9" ty="57.1"/>
+                                                  <Matrix a="0.11944580078125" b="0.0866241455078125" c="-0.0866241455078125" d="0.11944580078125" tx="14.9" ty="57.1"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="39" y="90.15"/>
@@ -247,7 +247,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="lower arm" centerPoint3DX="22.05" centerPoint3DY="81">
                                              <matrix>
-                                                  <Matrix a="0.110549926757812" b="-0.097381591796875" c="0.097381591796875" d="0.110549926757812" tx="13.65" ty="79.3"/>
+                                                  <Matrix a="0.11053466796875" b="-0.097381591796875" c="0.097381591796875" d="0.11053466796875" tx="13.65" ty="79.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="39.15" y="90.1"/>
@@ -283,10 +283,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="lower arm" centerPoint3DX="54.95" centerPoint3DY="35.15">
                                              <matrix>
-                                                  <Matrix a="-0.0950469970703125" b="-0.120681762695312" c="0.11285400390625" d="-0.101638793945312" tx="52.55" ty="43.9"/>
+                                                  <Matrix a="-0.0950469970703125" b="-0.12066650390625" c="0.11285400390625" d="-0.10162353515625" tx="52.55" ty="43.9"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="39.2" y="90.2"/>
+                                                  <Point x="39.25" y="90.2"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -319,10 +319,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="lower arm" centerPoint3DX="42.35" centerPoint3DY="72.2">
                                              <matrix>
-                                                  <Matrix a="0.0087738037109375" b="-0.147293090820312" c="0.147293090820312" d="0.0087738037109375" tx="34.25" ty="76.65"/>
+                                                  <Matrix a="0.0087738037109375" b="-0.14727783203125" c="0.14727783203125" d="0.0087738037109375" tx="34.25" ty="76.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="39.65" y="89.95"/>
+                                                  <Point x="39.65" y="90"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -355,10 +355,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="lower arm" centerPoint3DX="12.95" centerPoint3DY="66.55">
                                              <matrix>
-                                                  <Matrix a="0.126815795898438" b="0.0749664306640625" c="-0.0755157470703125" d="0.126541137695312" tx="12.7" ty="57.4"/>
+                                                  <Matrix a="0.126815795898438" b="0.0749664306640625" c="-0.0755157470703125" d="0.12652587890625" tx="12.7" ty="57.4"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="39.7" y="89.85"/>
+                                                  <Point x="39.7" y="89.9"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -383,7 +383,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.653823852539062" b="-0.27520751953125" c="0.27520751953125" d="0.653823852539062" tx="30.65" ty="87.3"/>
+                                                  <Matrix a="0.65380859375" b="-0.27520751953125" c="0.27520751953125" d="0.65380859375" tx="30.65" ty="87.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -419,7 +419,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.261505126953125" b="-0.706069946289062" c="0.660308837890625" d="-0.279632568359375" tx="60.6" ty="27.1"/>
+                                                  <Matrix a="-0.261505126953125" b="-0.7060546875" c="0.660308837890625" d="-0.279632568359375" tx="60.6" ty="27.1"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -431,7 +431,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.482498168945312" b="-0.521148681640625" c="0.521148681640625" d="-0.482498168945312" tx="51.8" ty="37.3"/>
+                                                  <Matrix a="-0.48248291015625" b="-0.521148681640625" c="0.521148681640625" d="-0.48248291015625" tx="51.8" ty="37.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -443,7 +443,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.205154418945312" b="-0.679244995117188" c="0.679244995117188" d="-0.205154418945312" tx="55.3" ty="52.15"/>
+                                                  <Matrix a="-0.20513916015625" b="-0.679244995117188" c="0.679244995117188" d="-0.20513916015625" tx="55.3" ty="52.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -479,7 +479,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.626663208007812" b="0.334075927734375" c="-0.334075927734375" d="0.626663208007812" tx="8.45" ty="77"/>
+                                                  <Matrix a="0.62664794921875" b="0.334075927734375" c="-0.334075927734375" d="0.62664794921875" tx="8.45" ty="77"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -591,7 +591,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="upper arm" centerPoint3DX="30.9" centerPoint3DY="65.2">
                                              <matrix>
-                                                  <Matrix a="0.09539794921875" b="-0.112503051757812" c="0.112503051757812" d="0.09539794921875" tx="20.1" ty="65.65"/>
+                                                  <Matrix a="0.09539794921875" b="-0.11248779296875" c="0.11248779296875" d="0.09539794921875" tx="20.1" ty="65.65"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="82.6" y="21.95"/>
@@ -691,7 +691,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 26" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.082672119140625" b="0.754287719726562" c="-0.705398559570312" d="-0.0883941650390625" tx="21.1" ty="122.1"/>
+                                                  <Matrix a="-0.082672119140625" b="0.7542724609375" c="-0.70538330078125" d="-0.0883941650390625" tx="21.1" ty="122.1"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -703,7 +703,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 26" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.698486328125" b="0.128433227539062" c="-0.128433227539062" d="0.698486328125" tx="40.1" ty="119.5"/>
+                                                  <Matrix a="0.698486328125" b="0.12841796875" c="-0.12841796875" d="0.698486328125" tx="40.1" ty="119.5"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -727,7 +727,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 26" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.671279907226562" b="-0.23187255859375" c="0.23187255859375" d="0.671279907226562" tx="59.7" ty="115.05"/>
+                                                  <Matrix a="0.6712646484375" b="-0.23187255859375" c="0.23187255859375" d="0.6712646484375" tx="59.7" ty="115.05"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -739,7 +739,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 26" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.602554321289062" b="-0.373931884765625" c="0.373931884765625" d="0.602554321289062" tx="64" ty="114.85"/>
+                                                  <Matrix a="0.6025390625" b="-0.373931884765625" c="0.373931884765625" d="0.6025390625" tx="64" ty="114.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -779,7 +779,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.341812133789062" b="-0.0055389404296875" c="0.0057373046875" d="0.337753295898438" tx="48.3" ty="58.7"/>
+                                                  <Matrix a="0.341796875" b="-0.0055389404296875" c="0.0057373046875" d="0.337753295898438" tx="48.3" ty="58.7"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -935,7 +935,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.340957641601562" b="0.02239990234375" c="-0.02081298828125" d="0.337005615234375" tx="35.5" ty="39.5"/>
+                                                  <Matrix a="0.3409423828125" b="0.02239990234375" c="-0.02081298828125" d="0.337005615234375" tx="35.5" ty="39.5"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -947,7 +947,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.341522216796875" b="0.015106201171875" c="-0.0146331787109375" d="0.337478637695312" tx="33.65" ty="39.15"/>
+                                                  <Matrix a="0.341522216796875" b="0.015106201171875" c="-0.0146331787109375" d="0.33746337890625" tx="33.65" ty="39.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -959,7 +959,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.341827392578125" b="-0.0003509521484375" c="0.00152587890625" d="0.337783813476562" tx="45.35" ty="54.8"/>
+                                                  <Matrix a="0.341827392578125" b="-0.0003509521484375" c="0.00152587890625" d="0.3377685546875" tx="45.35" ty="54.8"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -999,7 +999,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="mouth2" centerPoint3DX="49" centerPoint3DY="63.85">
                                              <matrix>
-                                                  <Matrix a="0.155715942382812" b="0.087066650390625" c="0.113601684570312" d="-0.203155517578125" tx="44.95" ty="63.3"/>
+                                                  <Matrix a="0.15570068359375" b="0.087066650390625" c="0.11358642578125" d="-0.203155517578125" tx="44.95" ty="63.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.6" y="6.1"/>
@@ -1023,7 +1023,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="mouth2" centerPoint3DX="60.2" centerPoint3DY="41.95">
                                              <matrix>
-                                                  <Matrix a="0.175445556640625" b="0.0345458984375" c="0.0421905517578125" d="-0.244766235351562" tx="56.25" ty="42.9"/>
+                                                  <Matrix a="0.175445556640625" b="0.0345458984375" c="0.0421905517578125" d="-0.2447509765625" tx="56.25" ty="42.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.5" y="5.95"/>
@@ -1035,7 +1035,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="mouth2" centerPoint3DX="46.85" centerPoint3DY="51.5">
                                              <matrix>
-                                                  <Matrix a="0.14630126953125" b="0.102066040039062" c="0.133209228515625" d="-0.190872192382812" tx="43.2" ty="50.6"/>
+                                                  <Matrix a="0.14630126953125" b="0.10205078125" c="0.133209228515625" d="-0.19085693359375" tx="43.2" ty="50.6"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.35" y="6.15"/>
@@ -1059,7 +1059,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="mouth2" centerPoint3DX="47.1" centerPoint3DY="52.8">
                                              <matrix>
-                                                  <Matrix a="0.14630126953125" b="0.102066040039062" c="0.133209228515625" d="-0.190872192382812" tx="43.45" ty="51.9"/>
+                                                  <Matrix a="0.14630126953125" b="0.10205078125" c="0.133209228515625" d="-0.19085693359375" tx="43.45" ty="51.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.35" y="6.15"/>
@@ -1083,7 +1083,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="mouth2" centerPoint3DX="39.3" centerPoint3DY="50.85">
                                              <matrix>
-                                                  <Matrix a="0.156494140625" b="0.08563232421875" c="0.111770629882812" d="-0.204177856445312" tx="35.65" ty="50.4"/>
+                                                  <Matrix a="0.156494140625" b="0.08563232421875" c="0.11175537109375" d="-0.20416259765625" tx="35.65" ty="50.4"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.15" y="6.25"/>
@@ -1095,7 +1095,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="mouth2" centerPoint3DX="51.65" centerPoint3DY="66.25">
                                              <matrix>
-                                                  <Matrix a="0.160385131835938" b="0.0776214599609375" c="0.101272583007812" d="-0.209243774414062" tx="48" ty="65.95"/>
+                                                  <Matrix a="0.160385131835938" b="0.0776214599609375" c="0.10125732421875" d="-0.209228515625" tx="48" ty="65.95"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.05" y="6.25"/>
@@ -1147,7 +1147,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="80.6" centerPoint3DY="41.05">
                                              <matrix>
-                                                  <Matrix a="0.334060668945312" b="-0.039764404296875" c="0.0520477294921875" d="0.4222412109375" tx="62.1" ty="39.55"/>
+                                                  <Matrix a="0.33404541015625" b="-0.039764404296875" c="0.0520477294921875" d="0.4222412109375" tx="62.1" ty="39.55"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.4" y="13.7"/>
@@ -1159,7 +1159,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="84.3" centerPoint3DY="22.35">
                                              <matrix>
-                                                  <Matrix a="0.319778442382812" b="-0.109100341796875" c="0.1339111328125" d="0.420303344726562" tx="65.75" ty="24.35"/>
+                                                  <Matrix a="0.31976318359375" b="-0.109100341796875" c="0.1339111328125" d="0.4202880859375" tx="65.75" ty="24.35"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.7" y="13.55"/>
@@ -1171,7 +1171,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="76.1" centerPoint3DY="44.25">
                                              <matrix>
-                                                  <Matrix a="0.333328247070312" b="0.039581298828125" c="-0.0409088134765625" d="0.413223266601562" tx="59" ty="38.7"/>
+                                                  <Matrix a="0.33331298828125" b="0.039581298828125" c="-0.0409088134765625" d="0.4132080078125" tx="59" ty="38.7"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.8" y="13.65"/>
@@ -1183,7 +1183,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="76.2" centerPoint3DY="44.75">
                                              <matrix>
-                                                  <Matrix a="0.333206176757812" b="0.03948974609375" c="-0.040069580078125" d="0.413192749023438" tx="59.1" ty="39.2"/>
+                                                  <Matrix a="0.33319091796875" b="0.03948974609375" c="-0.040069580078125" d="0.413192749023438" tx="59.1" ty="39.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.75" y="13.7"/>
@@ -1195,7 +1195,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="76.35" centerPoint3DY="45.55">
                                              <matrix>
-                                                  <Matrix a="0.333328247070312" b="0.039581298828125" c="-0.0409088134765625" d="0.413223266601562" tx="59.25" ty="40"/>
+                                                  <Matrix a="0.33331298828125" b="0.039581298828125" c="-0.0409088134765625" d="0.4132080078125" tx="59.25" ty="40"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.8" y="13.65"/>
@@ -1207,7 +1207,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="72.9" centerPoint3DY="43.5">
                                              <matrix>
-                                                  <Matrix a="0.334671020507812" b="0.0249176025390625" c="-0.02203369140625" d="0.41461181640625" tx="55.55" ty="38.7"/>
+                                                  <Matrix a="0.33465576171875" b="0.0249176025390625" c="-0.02203369140625" d="0.41461181640625" tx="55.55" ty="38.7"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.75" y="13.75"/>
@@ -1247,7 +1247,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="30.5" centerPoint3DY="62.95">
                                              <matrix>
-                                                  <Matrix a="-0.484756469726562" b="0.0401763916015625" c="-0.05926513671875" d="0.499435424804688" tx="55.45" ty="55.95"/>
+                                                  <Matrix a="-0.4847412109375" b="0.0401763916015625" c="-0.05926513671875" d="0.499435424804688" tx="55.45" ty="55.95"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="2.9" y="13.6"/>
@@ -1319,7 +1319,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="23.8" centerPoint3DY="40.8">
                                              <matrix>
-                                                  <Matrix a="-0.484573364257812" b="-0.0406646728515625" c="-0.141143798828125" d="0.482254028320312" tx="49.95" ty="38.15"/>
+                                                  <Matrix a="-0.48455810546875" b="-0.0406646728515625" c="-0.141143798828125" d="0.48223876953125" tx="49.95" ty="38.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.05" y="13.65"/>
@@ -1355,7 +1355,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="15.3" centerPoint3DY="42.25">
                                              <matrix>
-                                                  <Matrix a="-0.486282348632812" b="0.010833740234375" c="-0.089324951171875" d="0.49493408203125" tx="40.85" ty="36.8"/>
+                                                  <Matrix a="-0.48626708984375" b="0.010833740234375" c="-0.089324951171875" d="0.49493408203125" tx="40.85" ty="36.8"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.05" y="13.55"/>
@@ -1367,7 +1367,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="27.4" centerPoint3DY="58.75">
                                              <matrix>
-                                                  <Matrix a="-0.485122680664062" b="0.034027099609375" c="-0.063934326171875" d="0.4986572265625" tx="52.6" ty="52.1"/>
+                                                  <Matrix a="-0.485107421875" b="0.034027099609375" c="-0.063934326171875" d="0.4986572265625" tx="52.6" ty="52.1"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="3.05" y="13.55"/>
@@ -1395,7 +1395,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.445556640625" b="0.08062744140625" c="0.07293701171875" d="0.410781860351562" tx="35.15" ty="46.25"/>
+                                                  <Matrix a="-0.445556640625" b="0.08062744140625" c="0.07293701171875" d="0.4107666015625" tx="35.15" ty="46.25"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -1419,7 +1419,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.436981201171875" b="0.127822875976562" c="0.1107177734375" d="0.411712646484375" tx="35" ty="35.95"/>
+                                                  <Matrix a="-0.436981201171875" b="0.1278076171875" c="0.1107177734375" d="0.411712646484375" tx="35" ty="35.95"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -1431,7 +1431,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.40350341796875" b="0.220230102539062" c="0.189712524414062" d="0.397613525390625" tx="38.1" ty="26.1"/>
+                                                  <Matrix a="-0.40350341796875" b="0.22021484375" c="0.189697265625" d="0.397613525390625" tx="38.1" ty="26.1"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -1455,7 +1455,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.452529907226562" b="0.0198974609375" c="0.018310546875" d="0.416976928710938" tx="33.25" ty="29.3"/>
+                                                  <Matrix a="-0.4525146484375" b="0.0198974609375" c="0.018310546875" d="0.416976928710938" tx="33.25" ty="29.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -1479,7 +1479,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.451171875" b="0.0395965576171875" c="0.036468505859375" d="0.415725708007812" tx="29.35" ty="30"/>
+                                                  <Matrix a="-0.451171875" b="0.0395965576171875" c="0.036468505859375" d="0.41571044921875" tx="29.35" ty="30"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -1491,7 +1491,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.447723388671875" b="0.0691986083984375" c="0.063690185546875" d="0.412551879882812" tx="23.3" ty="29.75"/>
+                                                  <Matrix a="-0.447723388671875" b="0.0691986083984375" c="0.063690185546875" d="0.41253662109375" tx="23.3" ty="29.75"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -1555,7 +1555,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.378097534179688" b="0.139968872070312" c="0.132583618164062" d="0.362945556640625" tx="30.9" ty="34.15"/>
+                                                  <Matrix a="-0.378097534179688" b="0.13995361328125" c="0.132568359375" d="0.362945556640625" tx="30.9" ty="34.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="-8.55" y="8.4"/>
@@ -1567,7 +1567,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.343414306640625" b="0.220535278320312" c="0.201644897460938" d="0.343399047851562" tx="33.8" ty="25"/>
+                                                  <Matrix a="-0.343414306640625" b="0.22052001953125" c="0.201644897460938" d="0.3433837890625" tx="33.8" ty="25"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="-8.4" y="8.3"/>
@@ -1579,7 +1579,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.397994995117188" b="0.04547119140625" c="0.0505218505859375" d="0.375808715820312" tx="29.7" ty="26.1"/>
+                                                  <Matrix a="-0.397994995117188" b="0.04547119140625" c="0.0505218505859375" d="0.37579345703125" tx="29.7" ty="26.1"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="-8.4" y="8.05"/>
@@ -1591,7 +1591,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.397857666015625" b="0.0453643798828125" c="0.0497589111328125" d="0.375747680664062" tx="29.85" ty="26.6"/>
+                                                  <Matrix a="-0.397857666015625" b="0.0453643798828125" c="0.0497589111328125" d="0.375732421875" tx="29.85" ty="26.6"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="-8.4" y="8.05"/>
@@ -1603,7 +1603,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.397994995117188" b="0.04547119140625" c="0.0505218505859375" d="0.375808715820312" tx="29.95" ty="27.4"/>
+                                                  <Matrix a="-0.397994995117188" b="0.04547119140625" c="0.0505218505859375" d="0.37579345703125" tx="29.95" ty="27.4"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="-8.4" y="8.05"/>
@@ -1639,7 +1639,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.385665893554688" b="0.1070556640625" c="0.107925415039062" d="0.363143920898438" tx="30.8" ty="43.85"/>
+                                                  <Matrix a="-0.385665893554688" b="0.1070556640625" c="0.10791015625" d="0.363143920898438" tx="30.8" ty="43.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="-8.5" y="8.15"/>
@@ -1679,7 +1679,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/nose" centerPoint3DX="54.95" centerPoint3DY="55.75">
                                              <matrix>
-                                                  <Matrix a="-0.56378173828125" b="0.0133819580078125" c="0.0126495361328125" d="0.528335571289062" tx="59.35" ty="52.35"/>
+                                                  <Matrix a="-0.56378173828125" b="0.0133819580078125" c="0.0126495361328125" d="0.5283203125" tx="59.35" ty="52.35"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="8.4" y="6.2"/>
@@ -1715,7 +1715,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/nose" centerPoint3DX="53.5" centerPoint3DY="44.2">
                                              <matrix>
-                                                  <Matrix a="-0.56231689453125" b="-0.042633056640625" c="-0.0398406982421875" d="0.526992797851562" tx="58.55" ty="41.15"/>
+                                                  <Matrix a="-0.56231689453125" b="-0.042633056640625" c="-0.0398406982421875" d="0.5269775390625" tx="58.55" ty="41.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="8.35" y="6.25"/>
@@ -1739,7 +1739,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/nose" centerPoint3DX="53.75" centerPoint3DY="45.5">
                                              <matrix>
-                                                  <Matrix a="-0.56231689453125" b="-0.042633056640625" c="-0.0398406982421875" d="0.526992797851562" tx="58.8" ty="42.45"/>
+                                                  <Matrix a="-0.56231689453125" b="-0.042633056640625" c="-0.0398406982421875" d="0.5269775390625" tx="58.8" ty="42.45"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="8.35" y="6.25"/>
@@ -1763,7 +1763,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/nose" centerPoint3DX="45.35" centerPoint3DY="42.7">
                                              <matrix>
-                                                  <Matrix a="-0.563629150390625" b="0.0184783935546875" c="0.017425537109375" d="0.528213500976562" tx="49.85" ty="39.35"/>
+                                                  <Matrix a="-0.563629150390625" b="0.0184783935546875" c="0.017425537109375" d="0.5281982421875" tx="49.85" ty="39.35"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="8.35" y="6.25"/>
@@ -1815,10 +1815,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="hat" centerPoint3DX="48.25" centerPoint3DY="36.75">
                                              <matrix>
-                                                  <Matrix a="0.178237915039062" b="-0.0081634521484375" c="0.0081634521484375" d="0.178237915039062" tx="23.1" ty="26.35"/>
+                                                  <Matrix a="0.17822265625" b="-0.0081634521484375" c="0.0081634521484375" d="0.17822265625" tx="23.1" ty="26.35"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="134.5" y="95.35"/>
+                                                  <Point x="134.5" y="95.4"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -1927,7 +1927,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.341812133789062" b="-0.0055389404296875" c="0.0057373046875" d="0.337753295898438" tx="63.85" ty="58.95"/>
+                                                  <Matrix a="0.341796875" b="-0.0055389404296875" c="0.0057373046875" d="0.337753295898438" tx="63.85" ty="58.95"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -2095,7 +2095,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.341522216796875" b="0.015106201171875" c="-0.0146331787109375" d="0.337478637695312" tx="49.05" ty="40.3"/>
+                                                  <Matrix a="0.341522216796875" b="0.015106201171875" c="-0.0146331787109375" d="0.33746337890625" tx="49.05" ty="40.3"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -2107,7 +2107,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.341827392578125" b="-0.0003509521484375" c="0.00152587890625" d="0.337783813476562" tx="60.9" ty="55.2"/>
+                                                  <Matrix a="0.341827392578125" b="-0.0003509521484375" c="0.00152587890625" d="0.3377685546875" tx="60.9" ty="55.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -2135,7 +2135,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="head" centerPoint3DX="50.7" centerPoint3DY="55.3">
                                              <matrix>
-                                                  <Matrix a="0.178176879882812" b="-0.0085601806640625" c="0.0085601806640625" d="0.178176879882812" tx="28.5" ty="35.85"/>
+                                                  <Matrix a="0.17816162109375" b="-0.0085601806640625" c="0.0085601806640625" d="0.17816162109375" tx="28.5" ty="35.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="117.65" y="115.1"/>
@@ -2159,7 +2159,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="head" centerPoint3DX="51.5" centerPoint3DY="43.65">
                                              <matrix>
-                                                  <Matrix a="0.176788330078125" b="-0.027252197265625" c="0.0247039794921875" d="0.181045532226562" tx="27.2" ty="25.9"/>
+                                                  <Matrix a="0.176788330078125" b="-0.027252197265625" c="0.0247039794921875" d="0.1810302734375" tx="27.2" ty="25.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="117.7" y="115.2"/>
@@ -2195,10 +2195,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="head" centerPoint3DX="47.2" centerPoint3DY="40.15">
                                              <matrix>
-                                                  <Matrix a="0.177688598632812" b="0.0149078369140625" c="-0.0149078369140625" d="0.177688598632812" tx="28.1" ty="18.05"/>
+                                                  <Matrix a="0.17767333984375" b="0.0149078369140625" c="-0.0149078369140625" d="0.17767333984375" tx="28.1" ty="18.05"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="116.95" y="115.95"/>
+                                                  <Point x="116.95" y="116"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -2271,7 +2271,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="left ear" centerPoint3DX="65.25" centerPoint3DY="45.85">
                                              <matrix>
-                                                  <Matrix a="0.165481567382812" b="0.0146636962890625" c="-0.0135650634765625" d="0.152984619140625" tx="58.3" ty="38.2"/>
+                                                  <Matrix a="0.16546630859375" b="0.0146636962890625" c="-0.0135650634765625" d="0.152984619140625" tx="58.3" ty="38.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="19.9" y="58.25"/>
@@ -2295,7 +2295,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="left ear" centerPoint3DX="64.65" centerPoint3DY="32.65">
                                              <matrix>
-                                                  <Matrix a="0.166336059570312" b="-0.00152587890625" c="-1.52587890625e-05" d="0.157730102539062" tx="56.95" ty="25.25"/>
+                                                  <Matrix a="0.16632080078125" b="-0.00152587890625" c="-1.52587890625e-05" d="0.15771484375" tx="56.95" ty="25.25"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.15" y="58.2"/>
@@ -2307,7 +2307,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="left ear" centerPoint3DX="66.85" centerPoint3DY="16.65">
                                              <matrix>
-                                                  <Matrix a="0.162796020507812" b="-0.03558349609375" c="0.030731201171875" d="0.160964965820312" tx="57.95" ty="10.65"/>
+                                                  <Matrix a="0.16278076171875" b="-0.03558349609375" c="0.030731201171875" d="0.16094970703125" tx="57.95" ty="10.65"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20.05" y="58.15"/>
@@ -2319,7 +2319,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="left ear" centerPoint3DX="62.5" centerPoint3DY="32.25">
                                              <matrix>
-                                                  <Matrix a="0.161956787109375" b="0.037139892578125" c="-0.0343780517578125" d="0.149734497070312" tx="57.2" ty="23.85"/>
+                                                  <Matrix a="0.161956787109375" b="0.037139892578125" c="-0.0343780517578125" d="0.14971923828125" tx="57.2" ty="23.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20" y="57.8"/>
@@ -2343,7 +2343,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="left ear" centerPoint3DX="62.75" centerPoint3DY="33.55">
                                              <matrix>
-                                                  <Matrix a="0.161956787109375" b="0.037139892578125" c="-0.0343780517578125" d="0.149734497070312" tx="57.45" ty="25.15"/>
+                                                  <Matrix a="0.161956787109375" b="0.037139892578125" c="-0.0343780517578125" d="0.14971923828125" tx="57.45" ty="25.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="20" y="57.8"/>
@@ -2443,7 +2443,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 2" centerPoint3DX="56.65" centerPoint3DY="67.75">
                                              <matrix>
-                                                  <Matrix a="-0.157608032226562" b="-0.028472900390625" c="-0.061370849609375" d="0.415939331054688" tx="60.8" ty="53.8"/>
+                                                  <Matrix a="-0.1575927734375" b="-0.028472900390625" c="-0.061370849609375" d="0.415939331054688" tx="60.8" ty="53.8"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="14.6" y="35"/>
@@ -2491,10 +2491,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 2" centerPoint3DX="50.55" centerPoint3DY="71.65">
                                              <matrix>
-                                                  <Matrix a="-0.159698486328125" b="0.0057525634765625" c="0.01910400390625" d="0.393264770507812" tx="52.2" ty="57.95"/>
+                                                  <Matrix a="-0.159698486328125" b="0.0057525634765625" c="0.01910400390625" d="0.39324951171875" tx="52.2" ty="57.95"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="14.8" y="34.85"/>
+                                                  <Point x="14.8" y="34.9"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -2531,7 +2531,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="30.6" centerPoint3DY="78">
                                              <matrix>
-                                                  <Matrix a="0.172637939453125" b="0.127105712890625" c="-0.0874176025390625" d="0.175796508789062" tx="27.75" ty="50.4"/>
+                                                  <Matrix a="0.172637939453125" b="0.127105712890625" c="-0.0874176025390625" d="0.17578125" tx="27.75" ty="50.4"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="71.65" y="105.5"/>
@@ -2543,7 +2543,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="29.8" centerPoint3DY="77.65">
                                              <matrix>
-                                                  <Matrix a="0.188934326171875" b="0.100738525390625" c="-0.0608062744140625" d="0.186477661132812" tx="23" ty="50.75"/>
+                                                  <Matrix a="0.188934326171875" b="0.100738525390625" c="-0.0608062744140625" d="0.18646240234375" tx="23" ty="50.75"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="71.55" y="105.6"/>
@@ -2567,7 +2567,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="32.25" centerPoint3DY="70">
                                              <matrix>
-                                                  <Matrix a="0.195480346679688" b="0.0913238525390625" c="-0.0479278564453125" d="0.195144653320312" tx="23.6" ty="42.75"/>
+                                                  <Matrix a="0.195480346679688" b="0.0913238525390625" c="-0.0479278564453125" d="0.19512939453125" tx="23.6" ty="42.75"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="71.85" y="105.25"/>
@@ -2579,7 +2579,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="37.5" centerPoint3DY="59.15">
                                              <matrix>
-                                                  <Matrix a="0.18365478515625" b="0.118316650390625" c="-0.07080078125" d="0.195816040039062" tx="31.9" ty="29.65"/>
+                                                  <Matrix a="0.18365478515625" b="0.118316650390625" c="-0.07080078125" d="0.19580078125" tx="31.9" ty="29.65"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="71.7" y="105.55"/>
@@ -2603,7 +2603,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="30.6" centerPoint3DY="65.75">
                                              <matrix>
-                                                  <Matrix a="0.189834594726562" b="0.0990142822265625" c="-0.059112548828125" d="0.18701171875" tx="23.15" ty="38.4"/>
+                                                  <Matrix a="0.1898193359375" b="0.0990142822265625" c="-0.059112548828125" d="0.18701171875" tx="23.15" ty="38.4"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="71.9" y="105.75"/>
@@ -2615,7 +2615,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="30.7" centerPoint3DY="66.55">
                                              <matrix>
-                                                  <Matrix a="0.190139770507812" b="0.0990753173828125" c="-0.0593414306640625" d="0.1871337890625" tx="23.25" ty="39.2"/>
+                                                  <Matrix a="0.19012451171875" b="0.0990753173828125" c="-0.0593414306640625" d="0.1871337890625" tx="23.25" ty="39.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="71.9" y="105.7"/>
@@ -2627,10 +2627,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="30.8" centerPoint3DY="67.8">
                                              <matrix>
-                                                  <Matrix a="0.202407836914062" b="0.0699920654296875" c="-0.0316009521484375" d="0.193649291992188" tx="19.45" ty="41.85"/>
+                                                  <Matrix a="0.202392578125" b="0.0699920654296875" c="-0.0316009521484375" d="0.193649291992188" tx="19.45" ty="41.85"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="72.1" y="105.9"/>
+                                                  <Point x="72.1" y="105.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -2639,7 +2639,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="29.3" centerPoint3DY="69.5">
                                              <matrix>
-                                                  <Matrix a="0.173294067382812" b="0.020599365234375" c="0.0107879638671875" d="0.196029663085938" tx="15.5" ty="46.6"/>
+                                                  <Matrix a="0.17327880859375" b="0.020599365234375" c="0.0107879638671875" d="0.196029663085938" tx="15.5" ty="46.6"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="71.6" y="105.7"/>
@@ -2679,10 +2679,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/leg" centerPoint3DX="20.15" centerPoint3DY="104.65">
                                              <matrix>
-                                                  <Matrix a="0.139846801757812" b="0.07147216796875" c="-0.07147216796875" d="0.139846801757812" tx="21.25" ty="87.65"/>
+                                                  <Matrix a="0.13983154296875" b="0.07147216796875" c="-0.07147216796875" d="0.13983154296875" tx="21.25" ty="87.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="45.85" y="98.1"/>
+                                                  <Point x="45.85" y="98.15"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -2691,7 +2691,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/leg" centerPoint3DX="20.65" centerPoint3DY="103.35">
                                              <matrix>
-                                                  <Matrix a="0.150955200195312" b="0.0440826416015625" c="-0.0440826416015625" d="0.150955200195312" tx="18.55" ty="86.5"/>
+                                                  <Matrix a="0.15093994140625" b="0.0440826416015625" c="-0.0440826416015625" d="0.15093994140625" tx="18.55" ty="86.5"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="45.75" y="97.6"/>
@@ -2739,7 +2739,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/leg" centerPoint3DX="24.55" centerPoint3DY="96.3">
                                              <matrix>
-                                                  <Matrix a="0.156585693359375" b="-0.013763427734375" c="0.0188140869140625" d="0.213760375976562" tx="15.75" ty="75.4"/>
+                                                  <Matrix a="0.156585693359375" b="-0.013763427734375" c="0.0188140869140625" d="0.2137451171875" tx="15.75" ty="75.4"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="46.1" y="97.45"/>
@@ -2751,7 +2751,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/leg" centerPoint3DX="26.75" centerPoint3DY="97.2">
                                              <matrix>
-                                                  <Matrix a="0.144973754882812" b="-0.060882568359375" c="0.0973663330078125" d="0.231613159179688" tx="10.65" ty="76.95"/>
+                                                  <Matrix a="0.14495849609375" b="-0.060882568359375" c="0.0973663330078125" d="0.231613159179688" tx="10.65" ty="76.95"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="45.9" y="97.55"/>
@@ -2803,7 +2803,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 28" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.664260864257812" b="-0.251327514648438" c="0.251327514648438" d="0.664260864257812" tx="17.35" ty="124.25"/>
+                                                  <Matrix a="0.66424560546875" b="-0.251327514648438" c="0.251327514648438" d="0.66424560546875" tx="17.35" ty="124.25"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -2827,7 +2827,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 28" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.710159301757812" b="0.0088348388671875" c="-0.0088348388671875" d="0.710159301757812" tx="17.75" ty="125.75"/>
+                                                  <Matrix a="0.71014404296875" b="0.0088348388671875" c="-0.0088348388671875" d="0.71014404296875" tx="17.75" ty="125.75"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -2839,7 +2839,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 28" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.561050415039062" b="0.464370727539062" c="-0.457046508789062" d="0.542709350585938" tx="14.9" ty="123.55"/>
+                                                  <Matrix a="0.56103515625" b="0.46435546875" c="-0.45703125" d="0.542709350585938" tx="14.9" ty="123.55"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -2851,7 +2851,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 28" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.106094360351562" b="0.750900268554688" c="-0.702224731445312" d="-0.113449096679688" tx="10.75" ty="120.2"/>
+                                                  <Matrix a="-0.1060791015625" b="0.750900268554688" c="-0.70220947265625" d="-0.113449096679688" tx="10.75" ty="120.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -2975,7 +2975,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 1" centerPoint3DX="13.4" centerPoint3DY="117.35">
                                              <matrix>
-                                                  <Matrix a="0.0583038330078125" b="0.09027099609375" c="-0.0873260498046875" d="0.05908203125" tx="14.8" ty="111.35"/>
+                                                  <Matrix a="0.0583038330078125" b="0.09027099609375" c="-0.0873260498046875" d="0.0590667724609375" tx="14.8" ty="111.35"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="22.35" y="16.65"/>
@@ -3023,7 +3023,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 1" centerPoint3DX="36.75" centerPoint3DY="123.05">
                                              <matrix>
-                                                  <Matrix a="0.102798461914062" b="-0.022003173828125" c="0.022003173828125" d="0.102798461914062" tx="31.9" ty="119.8"/>
+                                                  <Matrix a="0.102783203125" b="-0.022003173828125" c="0.022003173828125" d="0.102783203125" tx="31.9" ty="119.8"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="21.5" y="17.75"/>
@@ -3087,7 +3087,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 3" centerPoint3DX="33.4" centerPoint3DY="86.55">
                                              <matrix>
-                                                  <Matrix a="-0.417877197265625" b="-0.0460357666015625" c="-0.0395355224609375" d="0.391616821289062" tx="55.1" ty="63.65"/>
+                                                  <Matrix a="-0.417877197265625" b="-0.0460357666015625" c="-0.0395355224609375" d="0.3916015625" tx="55.1" ty="63.65"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="41.55" y="70.25"/>
@@ -3111,7 +3111,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 3" centerPoint3DX="36.75" centerPoint3DY="79.1">
                                              <matrix>
-                                                  <Matrix a="-0.420303344726562" b="-0.0204010009765625" c="-0.012451171875" d="0.4041748046875" tx="56.6" ty="53.9"/>
+                                                  <Matrix a="-0.4202880859375" b="-0.0204010009765625" c="-0.012451171875" d="0.4041748046875" tx="56.6" ty="53.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="41.6" y="70"/>
@@ -3123,7 +3123,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 3" centerPoint3DX="40.95" centerPoint3DY="68.85">
                                              <matrix>
-                                                  <Matrix a="-0.41497802734375" b="-0.0730133056640625" c="-0.0599517822265625" d="0.416091918945312" tx="63.35" ty="45.35"/>
+                                                  <Matrix a="-0.41497802734375" b="-0.0730133056640625" c="-0.0599517822265625" d="0.41607666015625" tx="63.35" ty="45.35"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="41.55" y="70.25"/>
@@ -3171,7 +3171,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 3" centerPoint3DX="36.3" centerPoint3DY="76.25">
                                              <matrix>
-                                                  <Matrix a="-0.420166015625" b="0.0169677734375" c="0.0207366943359375" d="0.393081665039062" tx="53.25" ty="49.6"/>
+                                                  <Matrix a="-0.420166015625" b="0.0169677734375" c="0.0207366943359375" d="0.39306640625" tx="53.25" ty="49.6"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="41.45" y="70.35"/>
@@ -3183,7 +3183,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 3" centerPoint3DX="38.5" centerPoint3DY="76.65">
                                              <matrix>
-                                                  <Matrix a="-0.406326293945312" b="0.108444213867188" c="0.10540771484375" d="0.37933349609375" tx="49.1" ty="47.15"/>
+                                                  <Matrix a="-0.40631103515625" b="0.108444213867188" c="0.10540771484375" d="0.37933349609375" tx="49.1" ty="47.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="41.4" y="70.4"/>
@@ -3211,7 +3211,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="leg2" centerPoint3DX="34.4" centerPoint3DY="103.15">
                                              <matrix>
-                                                  <Matrix a="-0.116653442382812" b="-0.09033203125" c="-0.09033203125" d="0.116653442382812" tx="49" ty="96.2"/>
+                                                  <Matrix a="-0.11663818359375" b="-0.09033203125" c="-0.09033203125" d="0.11663818359375" tx="49" ty="96.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="47.65" y="97.35"/>
@@ -3235,7 +3235,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="leg2" centerPoint3DX="38.1" centerPoint3DY="104.2">
                                              <matrix>
-                                                  <Matrix a="-0.116653442382812" b="-0.09033203125" c="-0.09033203125" d="0.116653442382812" tx="52.7" ty="97.25"/>
+                                                  <Matrix a="-0.11663818359375" b="-0.09033203125" c="-0.09033203125" d="0.11663818359375" tx="52.7" ty="97.25"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="47.65" y="97.35"/>
@@ -3283,7 +3283,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="leg2" centerPoint3DX="35.6" centerPoint3DY="98.3">
                                              <matrix>
-                                                  <Matrix a="-0.146011352539062" b="0.020660400390625" c="0.020660400390625" d="0.146011352539062" tx="40.45" ty="83.6"/>
+                                                  <Matrix a="-0.14599609375" b="0.020660400390625" c="0.020660400390625" d="0.14599609375" tx="40.45" ty="83.6"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="48.05" y="97.65"/>
@@ -3307,7 +3307,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="leg2" centerPoint3DX="45.35" centerPoint3DY="101.35">
                                              <matrix>
-                                                  <Matrix a="-0.132644653320312" b="0.064178466796875" c="0.064178466796875" d="0.132644653320312" tx="45.35" ty="86.05"/>
+                                                  <Matrix a="-0.13262939453125" b="0.064178466796875" c="0.064178466796875" d="0.13262939453125" tx="45.35" ty="86.05"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="47.6" y="97.6"/>
@@ -3359,7 +3359,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="sleeve2" centerPoint3DX="50.65" centerPoint3DY="72.9">
                                              <matrix>
-                                                  <Matrix a="0.141433715820312" b="-0.0414276123046875" c="0.0414276123046875" d="0.141433715820312" tx="43.35" ty="69.15"/>
+                                                  <Matrix a="0.14141845703125" b="-0.0414276123046875" c="0.0414276123046875" d="0.14141845703125" tx="43.35" ty="69.15"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="39.9" y="36.45"/>
@@ -3383,10 +3383,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="sleeve2" centerPoint3DX="51.1" centerPoint3DY="59.65">
                                              <matrix>
-                                                  <Matrix a="0.0133209228515625" b="-0.150772094726562" c="0.147186279296875" d="0.0116119384765625" tx="44.9" ty="64.6"/>
+                                                  <Matrix a="0.0133209228515625" b="-0.1507568359375" c="0.147186279296875" d="0.0116119384765625" tx="44.9" ty="64.6"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="39.6" y="36.5"/>
+                                                  <Point x="39.65" y="36.5"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -3467,7 +3467,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="sleeve2" centerPoint3DX="48.7" centerPoint3DY="73.05">
                                              <matrix>
-                                                  <Matrix a="0.0997314453125" b="0.108352661132812" c="-0.108352661132812" d="0.0997314453125" tx="49.3" ty="65.55"/>
+                                                  <Matrix a="0.0997314453125" b="0.10833740234375" c="-0.10833740234375" d="0.0997314453125" tx="49.3" ty="65.55"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="39.5" y="36.8"/>
@@ -3493,9 +3493,9 @@
                               </DOMFrame>
                               <DOMFrame index="2" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="arm" centerPoint3DX="55.7" centerPoint3DY="75.25">
+                                        <DOMSymbolInstance libraryItemName="arm" centerPoint3DX="55.5" centerPoint3DY="75.25">
                                              <matrix>
-                                                  <Matrix a="0.0540771484375" b="-0.130020141601562" c="0.14495849609375" d="0.0409393310546875" tx="41.4" ty="78.75"/>
+                                                  <Matrix a="0.0540771484375" b="-0.1300048828125" c="0.14495849609375" d="0.0409393310546875" tx="41.2" ty="78.75"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="43.85" y="78.15"/>
@@ -3579,7 +3579,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="arm" centerPoint3DX="48.05" centerPoint3DY="65">
                                              <matrix>
-                                                  <Matrix a="0.10308837890625" b="-0.095794677734375" c="0.115127563476562" d="0.096923828125" tx="33.85" ty="62.2"/>
+                                                  <Matrix a="0.10308837890625" b="-0.095794677734375" c="0.1151123046875" d="0.096923828125" tx="33.85" ty="62.2"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="43.65" y="78.2"/>
@@ -3613,13 +3613,13 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="Layer 38" color="#808080">
+                    <DOMLayer name="Layer 38" color="#808080" current="true" isSelected="true">
                          <frames>
                               <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.687576293945312" b="0.178024291992188" c="-0.178024291992188" d="-0.687576293945312" tx="45.1" ty="99.85"/>
+                                                  <Matrix a="-0.68756103515625" b="0.178024291992188" c="-0.178024291992188" d="-0.68756103515625" tx="45.1" ty="99.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -3631,7 +3631,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.108291625976562" b="0.70159912109375" c="-0.70159912109375" d="-0.108291625976562" tx="59.55" ty="78.9"/>
+                                                  <Matrix a="-0.1082763671875" b="0.70159912109375" c="-0.70159912109375" d="-0.1082763671875" tx="66.45" ty="83.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -3655,7 +3655,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.663360595703125" b="0.25177001953125" c="-0.255905151367188" d="0.682693481445312" tx="74.35" ty="44.9"/>
+                                                  <Matrix a="0.663360595703125" b="0.25177001953125" c="-0.255905151367188" d="0.68267822265625" tx="74.35" ty="44.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -3691,7 +3691,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="0.634231567382812" b="0.317550659179688" c="-0.317550659179688" d="0.634231567382812" tx="73.8" ty="50.55"/>
+                                                  <Matrix a="0.63421630859375" b="0.317550659179688" c="-0.317550659179688" d="0.63421630859375" tx="73.8" ty="50.55"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -3715,7 +3715,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.199066162109375" b="0.681106567382812" c="-0.681106567382812" d="-0.199066162109375" tx="54.65" ty="76.85"/>
+                                                  <Matrix a="-0.199066162109375" b="0.68109130859375" c="-0.68109130859375" d="-0.199066162109375" tx="54.65" ty="76.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -3727,7 +3727,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="-0.705520629882812" b="0.081573486328125" c="-0.081573486328125" d="-0.705520629882812" tx="22.2" ty="80.4"/>
+                                                  <Matrix a="-0.70550537109375" b="0.081573486328125" c="-0.081573486328125" d="-0.70550537109375" tx="22.2" ty="80.4"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -3749,7 +3749,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="Symbol 1" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="Symbol 1" color="#4F80FF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
                                    <elements>
@@ -3803,7 +3803,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 1" centerPoint3DX="22.7" centerPoint3DY="114.75">
                                              <matrix>
-                                                  <Matrix a="0.0424346923828125" b="0.102798461914062" c="-0.09613037109375" d="0.045379638671875" tx="25.05" ty="108.7"/>
+                                                  <Matrix a="0.0424346923828125" b="0.102783203125" c="-0.09613037109375" d="0.045379638671875" tx="25.05" ty="108.7"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="23.6" y="18.2"/>
@@ -3839,10 +3839,10 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 1" centerPoint3DX="52.65" centerPoint3DY="113.5">
                                              <matrix>
-                                                  <Matrix a="0.100845336914062" b="-0.0294036865234375" c="0.0294036865234375" d="0.100845336914062" tx="47.4" ty="111.4"/>
+                                                  <Matrix a="0.100830078125" b="-0.0294036865234375" c="0.0294036865234375" d="0.100830078125" tx="47.4" ty="111.4"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="23.55" y="17.8"/>
+                                                  <Point x="23.6" y="17.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -3875,7 +3875,7 @@
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 1" centerPoint3DX="36.25" centerPoint3DY="118.95">
                                              <matrix>
-                                                  <Matrix a="0.104019165039062" b="0.0146942138671875" c="-0.0146942138671875" d="0.104019165039062" tx="32.25" ty="114.9"/>
+                                                  <Matrix a="0.10400390625" b="0.0146942138671875" c="-0.0146942138671875" d="0.10400390625" tx="32.25" ty="114.9"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="23.15" y="17.4"/>
