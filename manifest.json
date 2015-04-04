@@ -4,18 +4,14 @@
 		"background2": "img/background2.png",
 		"block-cookie": "img/block-cookie.png",
 		"block": "img/block-sand.png",
-		"block-cracked": "img/block-sand-cracked.png",
 		"block-sand2": "img/block-sand2.png",
-		"block-sand2-cracked": "img/block-sand2-cracked.png",
 		"block-sand3": "img/block-sand3.png",
-		"block-sand3-cracked": "img/block-sand3-cracked.png",
 		"block-stone": "img/block-stone.png",
 		"block-stone2": "img/block-stone2.png",
 		"controls": "img/controls.png",
 		"doorway": "img/doorway.png",
 		"gamedevlou": "img/gamedevlou.png",
 		"log": "img/log.png",
-		"log-cracked": "img/log-cracked.png",
 		"rock1": "img/rock-particle1.png",
 		"rock2": "img/rock-particle2.png",
 		"rock3": "img/rock-particle3.png",
@@ -44,10 +40,20 @@
 	"fonts": {
 	},
 	"animations": {
-		"block-sand-glow-f5": {
-			"strip": "img/block-sand-glow-f5.png",
-			"frames": 5,
-			"msPerFrame": 300
+		"block-glow": {
+			"strip": "img/block-sand-glow-f20.png",
+			"frames": 20,
+			"msPerFrame": 100
+		},
+		"block-sand2-glow": {
+			"strip": "img/block-sand2-glow-f20.png",
+			"frames": 20,
+			"msPerFrame": 100
+		},
+		"block-sand3-glow": {
+			"strip": "img/block-sand3-glow-f20.png",
+			"frames": 20,
+			"msPerFrame": 100
 		},
 		"burrito-podium-green": {
 			"strip": "img/burrito-podium-green.png",
@@ -59,10 +65,10 @@
 			"frames": 20,
 			"msPerFrame": 80
 		},
-		"spawn": {
-			"strip": "img/door.png",
-			"frames": 9,
-			"msPerFrame": 80
+		"log-glow": {
+			"strip": "img/log-glow-f20.png",
+			"frames": 20,
+			"msPerFrame": 100
 		},
 		"player-enter-door": {
 			"strip": "img/enter-door.png",
@@ -117,6 +123,11 @@
 			"frames": 20,
 			"msPerFrame": 100,
 			"repeatAt": 19
+		},
+		"spawn": {
+			"strip": "img/door.png",
+			"frames": 9,
+			"msPerFrame": 80
 		},
 	}
 }
