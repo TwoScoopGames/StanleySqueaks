@@ -44,6 +44,11 @@
 	"fonts": {
 	},
 	"animations": {
+		"block-sand-glow-f5": {
+			"strip": "img/block-sand-glow-f5.png",
+			"frames": 5,
+			"msPerFrame": 300
+		},
 		"burrito-podium-green": {
 			"strip": "img/burrito-podium-green.png",
 			"frames": 20,

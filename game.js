@@ -470,13 +470,20 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			this.timers.death.start();
 		}
 	}
+
+	["block-sand-glow-f5"].map(game.animations.get.bind(game.animations)).forEach(function(anim) {
+		anim.move(elapsedMillis);
+	});
+
 	if (!this.hitGoal) {
 		var touchedSomething = false;
 		for (var i = 0; i < this.blocks.length; i++) {
 			var block = this.blocks[i];
 			if (block.touched === undefined && this.player.collides(block)) {
 				if (unbreakableBlocks.indexOf(block.type) === -1) {
-					block.sprite = game.images.get(block.type + "-cracked");
+					block.sprite = game.animations.get("block-sand-glow-f5");
+					block.spriteOffsetX = -8;
+					block.spriteOffsetY = -20;
 				}
 				block.touched = this.touched;
 				touchedSomething = true;
