@@ -461,11 +461,12 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		}
 
 		this.player.move(elapsedMillis);
-		this.player.vy += 0.1;
+		this.player.vy += 0.02;
 	}
 	if (this.player.y > 1000) {
 		// death!
 		if (!this.timers.death.running) {
+			console.log("death");
 			game.sounds.play("hamster-fall");
 			this.timers.death.start();
 		}

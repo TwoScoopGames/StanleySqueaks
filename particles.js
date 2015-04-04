@@ -14,7 +14,7 @@ function Particles(max, setupParticle, drawParticle) {
 		this.setupParticle(particle);
 		this.particles.push(particle);
 	}
-	this.gravity = 0.1;
+	this.gravity = 0.01;
 	this.maxAge = 1000;
 }
 Particles.prototype.move = function(elapsedMillis) {
