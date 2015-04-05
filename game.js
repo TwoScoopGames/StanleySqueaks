@@ -292,11 +292,11 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.timers.expire.start();
 }, function() {
 }, function(context) {
-	context.fillStyle = "#049fc6";
+	context.fillStyle = "#57AEC5";
 	context.fillRect(0, 0, canvas.width, canvas.height);
 
-	var gdl = game.images.get("gamedevlou");
-	context.drawImage(gdl, (canvas.width / 2) - (gdl.width / 2), (canvas.height / 2) - (gdl.height / 2));
+	var twoscooplogo = game.images.get("twoscooplogo");
+	context.drawImage(twoscooplogo, (canvas.width / 2) - (twoscooplogo.width / 2), (canvas.height / 2) - (twoscooplogo.height / 2));
 }));
 
 game.scenes.add("start", new Splat.Scene(canvas, function() {
