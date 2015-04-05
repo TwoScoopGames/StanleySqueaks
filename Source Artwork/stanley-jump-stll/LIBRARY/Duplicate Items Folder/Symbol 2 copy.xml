@@ -1,0 +1,38 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Duplicate Items Folder/Symbol 2 copy" itemID="550f39d3-00000206" lastModified="1423346723">
+  <timeline>
+    <DOMTimeline name="Symbol 2 copy">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFCC99"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#F5C396"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!2 435[#14.C7 #1C1.64 36 468!36 468[56 493 84 506!84 506[151 538 220 560!220 560[228 563 236 564!236 564[275 566 314 564!314 564[336 563 358 562!358 562[364 562 369 562!369 562[377 563 385 562!385 562[402 560 416 566!416 566[423 568 431
+ 569!431 569[460 570 492 569!492 569[498 569 503 569!503 569[509 571 515 571!515 571[521 572 526 572!526 572[555 571 583 580!583 580[618 591 661 583!661 583[688 577 715 570!715 570[729 567 742 561!742 561[752 558 763 554!763 554[790 546
+ 816 535!816 535[824 532 832 527!832 527[842 521 853 517!853 517[914 498 967 462!967 462[1048 407 1125 348!1125 348[1203 288 1239 194!1239 194[1243 185 1245 175!1245 175[#4DD.4 #AD.C 1245.5 172.5"/>
+                    <Edge fillStyle0="1" edges="
+!1245.5 172.5[#4AB.7C #62.A2 1089.5 54.5!1089.5 54.5[#378.BE #FFFFE2.EB 487 -58!487 -58[#55.43 #FFFFA9.15 42.5 84!42.5 84[-0.09375 #FE.F8 0 403!0 403[0 #1A3.25 2 435"/>
+                    <Edge fillStyle1="2" edges="
+!1245.5 172.5[#50A.0A #EE.67 1290 328!1290 328[1290 479 1195 591!1195 591[1030 785 625 785!625 785[242 785 85 606!85 606[#C.F2 #20B.C6 2 435"/>
+                    <Edge cubics="!1290 328(;1290,420 1258,785 625,785q1290 328Q1290 479q1195 591Q1030 785q625 785);"/>
+                    <Edge cubics="!625 785(;18,785 0,435 0,403q625 785Q242 785q85 606Q0 509q0 403);"/>
+                    <Edge cubics="!0 403(;0,-10 1290,-212 1290,328q0 403Q0 255q202 141Q387 36q645 8Q911 -20q1088 54Q1290 138q1290 328);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

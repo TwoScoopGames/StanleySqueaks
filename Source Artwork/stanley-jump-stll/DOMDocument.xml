@@ -1,0 +1,817 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00CC00" width="94.25" height="131.15" frameRate="30" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" snapAlign="false" objectsSnapTo="false" timelineLabelWidth="172" viewAngle3D="2.92762152348951" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveIntervalMinutes="1">
+     <folders>
+          <DOMFolderItem name="Duplicate Items Folder" itemID="550f39d0-000001d4"/>
+     </folders>
+     <media>
+          <DOMBitmapItem name="Bitmap 3" itemID="53f8b2f8-0000013d" sourceExternalFilepath="../stanley-run-right/LIBRARY/Bitmap 3" sourceLastImported="1408807672" sourcePlatform="macintosh" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 3" bitmapDataHRef="M 3 1408807672.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+          <DOMBitmapItem name="Bitmap 4" itemID="53f8b2f8-0000013f" sourceExternalFilepath="../stanley-run-right/LIBRARY/Bitmap 4" sourceLastImported="1408807672" sourcePlatform="macintosh" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 4" bitmapDataHRef="M 4 1408807672.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+          <DOMBitmapItem name="Bitmap 5" itemID="53f8b2f8-00000141" sourceExternalFilepath="../stanley-run-right/LIBRARY/Bitmap 5" sourceLastImported="1408807672" sourcePlatform="macintosh" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 5" bitmapDataHRef="M 5 1408807672.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+          <DOMBitmapItem name="Bitmap 6" itemID="53f8b2f8-00000143" sourceExternalFilepath="../stanley-run-right/LIBRARY/Bitmap 6" sourceLastImported="1408807672" sourcePlatform="macintosh" externalFileCRC32="1719847367" externalFileSize="20367" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 6" bitmapDataHRef="M 6 1408807672.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+          <DOMBitmapItem name="Bitmap 6 copy" itemID="550f4a66-0000038d" sourceExternalFilepath="../../../../../../Library/Caches/TemporaryItems/FlashPNG" sourceLastImported="1427065432" sourcePlatform="macintosh" originalCompressionType="lossless" quality="50" href="Bitmap 6 copy" bitmapDataHRef="M 6 1427065434.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+          <DOMBitmapItem name="tumblr_m7nk3w0Trb1rbmom3o1_400.gif" itemID="53f8b2f8-0000013b" sourceExternalFilepath="../stanley-run-right/LIBRARY/tumblr_m7nk3w0Trb1rbmom3o1_400.gif" sourceLastImported="1408807632" sourcePlatform="macintosh" externalFileCRC32="1719847367" externalFileSize="20367" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="tumblr_m7nk3w0Trb1rbmom3o1_400.gif" bitmapDataHRef="M 2 1408807672.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+          <DOMBitmapItem name="Untitled-1.jpg" itemID="550f822d-00000514" sourceExternalFilepath="../stanley-jump-right/LIBRARY/Untitled-1.jpg" sourceLastImported="1427079579" sourcePlatform="macintosh" externalFileCRC32="1959105309" externalFileSize="52353" originalCompressionType="lossless" quality="50" href="Untitled-1.jpg" bitmapDataHRef="M 7 1427079668.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+     </media>
+     <symbols>
+          <Include href="arm.xml" loadImmediate="false" itemID="54cc3cfd-0000033c" lastModified="1423348270"/>
+          <Include href="Duplicate Items Folder/leg.xml" loadImmediate="false" itemID="550f39d3-00000205" lastModified="1427080960"/>
+          <Include href="Duplicate Items Folder/nose.xml" loadImmediate="false" itemID="550f39d3-00000200" lastModified="1423348513"/>
+          <Include href="Duplicate Items Folder/Symbol 1.xml" loadImmediate="false" itemID="54d66b46-0000006f" lastModified="1423346713"/>
+          <Include href="Duplicate Items Folder/Symbol 2.xml" loadImmediate="false" itemID="550f39d3-000001fe" lastModified="1423338943"/>
+          <Include href="Duplicate Items Folder/Symbol 2 copy.xml" loadImmediate="false" itemID="550f39d3-00000206" lastModified="1423346723"/>
+          <Include href="Duplicate Items Folder/Symbol 3.xml" loadImmediate="false" itemID="550f39d3-000001fd" lastModified="1423347436"/>
+          <Include href="Duplicate Items Folder/Symbol 3 copy.xml" loadImmediate="false" itemID="550f39d3-00000207" lastModified="1423346738"/>
+          <Include href="Duplicate Items Folder/Symbol 4.xml" loadImmediate="false" itemID="54d66b46-00000072" lastModified="1423346806"/>
+          <Include href="Duplicate Items Folder/Symbol 5.xml" loadImmediate="false" itemID="54d66b46-00000073" lastModified="1423346748"/>
+          <Include href="Duplicate Items Folder/Symbol 6.xml" loadImmediate="false" itemID="550f39d3-000001fc" lastModified="1423346774"/>
+          <Include href="Duplicate Items Folder/Symbol 7.xml" loadImmediate="false" itemID="550f39d3-00000204" lastModified="1408809861"/>
+          <Include href="Duplicate Items Folder/Tween 1.xml" itemIcon="1" loadImmediate="false" itemID="550f39d3-000001ff" lastModified="1408811008"/>
+          <Include href="Duplicate Items Folder/Tween 7.xml" itemIcon="1" loadImmediate="false" itemID="550f39d3-00000202" lastModified="1423347115"/>
+          <Include href="Duplicate Items Folder/Tween 13.xml" itemIcon="1" loadImmediate="false" itemID="550f39d3-00000201" lastModified="1427082104"/>
+          <Include href="face.xml" loadImmediate="false" itemID="53f8ab53-00000077" lastModified="1408809707"/>
+          <Include href="finger1.xml" loadImmediate="false" itemID="54cc3c2e-00000321" lastModified="1423338369"/>
+          <Include href="finger2.xml" loadImmediate="false" itemID="54cc3c36-00000325" lastModified="1423338393"/>
+          <Include href="finger3.xml" loadImmediate="false" itemID="54cc3c3b-00000329" lastModified="1423338399"/>
+          <Include href="hand pad.xml" loadImmediate="false" itemID="54cc3c43-00000331" lastModified="1423338357"/>
+          <Include href="hat.xml" loadImmediate="false" itemID="54cc4047-00000348" lastModified="1423338710"/>
+          <Include href="head.xml" loadImmediate="false" itemID="54cc3a22-000002fb" lastModified="1423347826"/>
+          <Include href="left ear.xml" loadImmediate="false" itemID="54cc36a3-000002f6" lastModified="1427082133"/>
+          <Include href="leg.xml" loadImmediate="false" itemID="53f8a527-00000063" lastModified="1408804135"/>
+          <Include href="leg2.xml" loadImmediate="false" itemID="54cc488e-0000035a" lastModified="1427080946"/>
+          <Include href="lower arm.xml" loadImmediate="false" itemID="54cc4e58-000003b1" lastModified="1423348253"/>
+          <Include href="mouth2.xml" loadImmediate="false" itemID="54cc50ce-000003ca" lastModified="1422676193"/>
+          <Include href="nose.xml" loadImmediate="false" itemID="53f8a311-00000056" lastModified="1408811320"/>
+          <Include href="sleeve2.xml" loadImmediate="false" itemID="54cc45f1-00000353" lastModified="1423338955"/>
+          <Include href="Symbol 1.xml" loadImmediate="false" itemID="53f8a4de-0000005f" lastModified="1408804854"/>
+          <Include href="Symbol 2.xml" loadImmediate="false" itemID="53f8a706-00000067" lastModified="1408804614"/>
+          <Include href="Symbol 3.xml" loadImmediate="false" itemID="53f8a7b4-0000006b" lastModified="1408806456"/>
+          <Include href="Symbol 4.xml" loadImmediate="false" itemID="53f8ac6d-0000007b" lastModified="1408806423"/>
+          <Include href="Symbol 5.xml" loadImmediate="false" itemID="53f8ad2f-0000007f" lastModified="1408806326"/>
+          <Include href="Symbol 6.xml" loadImmediate="false" itemID="53f8b848-0000025e" lastModified="1408809032"/>
+          <Include href="Symbol 7.xml" loadImmediate="false" itemID="53f8bb85-00000287" lastModified="1408809861"/>
+          <Include href="Symbol 8.xml" loadImmediate="false" itemID="54d66c52-00000075" lastModified="1423346606"/>
+          <Include href="Symbol 9.xml" loadImmediate="false" itemID="54d66c68-0000007a" lastModified="1423346689"/>
+          <Include href="Symbol 10.xml" loadImmediate="false" itemID="54d66c7b-0000007e" lastModified="1423346623"/>
+          <Include href="Symbol 11.xml" loadImmediate="false" itemID="54d66c89-00000082" lastModified="1423346634"/>
+          <Include href="Symbol 12.xml" loadImmediate="false" itemID="54d66c97-00000086" lastModified="1423346646"/>
+          <Include href="Symbol 13.xml" loadImmediate="false" itemID="54d66ca1-0000008a" lastModified="1423346659"/>
+          <Include href="Symbol 14.xml" loadImmediate="false" itemID="54d69888-00000141" lastModified="1423349971"/>
+          <Include href="Symbol 15.xml" loadImmediate="false" itemID="550f5769-00000475" lastModified="1427068777"/>
+          <Include href="thumb.xml" loadImmediate="false" itemID="54cc3c3f-0000032d" lastModified="1423338459"/>
+          <Include href="Tween 1.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000b3" lastModified="1408811008"/>
+          <Include href="Tween 2.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000b5" lastModified="1408806817"/>
+          <Include href="Tween 3.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000b7" lastModified="1408806817"/>
+          <Include href="Tween 4.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000b9" lastModified="1408810907"/>
+          <Include href="Tween 5.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000bb" lastModified="1408806817"/>
+          <Include href="Tween 6.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000bd" lastModified="1408806817"/>
+          <Include href="Tween 7.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000bf" lastModified="1408809751"/>
+          <Include href="Tween 8.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000c1" lastModified="1408806817"/>
+          <Include href="Tween 9.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000c3" lastModified="1408806817"/>
+          <Include href="Tween 10.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000c5" lastModified="1408806817"/>
+          <Include href="Tween 11.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000c7" lastModified="1408806817"/>
+          <Include href="Tween 12.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000c9" lastModified="1408806817"/>
+          <Include href="Tween 13.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000cb" lastModified="1408815696"/>
+          <Include href="Tween 14.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000cd" lastModified="1408806817"/>
+          <Include href="Tween 15.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000cf" lastModified="1408806817"/>
+          <Include href="Tween 16.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000d1" lastModified="1408806817"/>
+          <Include href="Tween 17.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000d3" lastModified="1408806817"/>
+          <Include href="Tween 18.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000d5" lastModified="1408806817"/>
+          <Include href="Tween 19.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000d7" lastModified="1408806817"/>
+          <Include href="Tween 20.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000d9" lastModified="1408806817"/>
+          <Include href="Tween 21.xml" itemIcon="1" loadImmediate="false" itemID="53f8afa1-000000db" lastModified="1408806817"/>
+          <Include href="Tween 22.xml" itemIcon="1" loadImmediate="false" itemID="53f8b899-0000027c" lastModified="1408809145"/>
+          <Include href="Tween 23.xml" itemIcon="1" loadImmediate="false" itemID="53f8b899-0000027e" lastModified="1408809113"/>
+          <Include href="Tween 24.xml" itemIcon="1" loadImmediate="false" itemID="53f8b8d4-00000283" lastModified="1408809172"/>
+          <Include href="Tween 25.xml" itemIcon="1" loadImmediate="false" itemID="53f8b8d4-00000285" lastModified="1408809172"/>
+          <Include href="Tween 26.xml" itemIcon="1" loadImmediate="false" itemID="550f3ae2-00000294" lastModified="1427061474"/>
+          <Include href="Tween 27.xml" itemIcon="1" loadImmediate="false" itemID="550f3ae2-00000296" lastModified="1427061474"/>
+          <Include href="Tween 28.xml" itemIcon="1" loadImmediate="false" itemID="550f3ae2-00000298" lastModified="1427061474"/>
+          <Include href="Tween 29.xml" itemIcon="1" loadImmediate="false" itemID="550f3ae2-0000029a" lastModified="1427061474"/>
+          <Include href="upper arm.xml" loadImmediate="false" itemID="54cc4e5e-000003b5" lastModified="1423348240"/>
+          <Include href="vest front.xml" loadImmediate="false" itemID="54cc438b-0000034c" lastModified="1423338933"/>
+          <Include href="vest sleeve.xml" loadImmediate="false" itemID="54cc3c87-00000338" lastModified="1423338962"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="vest sleeve" color="#4FFFFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="vest sleeve" centerPoint3DX="52.4" centerPoint3DY="45.55">
+                                             <matrix>
+                                                  <Matrix a="0.0915985107421875" b="-0.117279052734375" c="-0.13031005859375" d="-0.116455078125" tx="53.4" ty="53.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="lower arm" color="#FF4FFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="lower arm" centerPoint3DX="39.25" centerPoint3DY="35.15">
+                                             <matrix>
+                                                  <Matrix a="0.0950469970703125" b="-0.12066650390625" c="-0.11285400390625" d="-0.10162353515625" tx="41.65" ty="43.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="39.25" y="90.2"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 13" color="#4FFFFF">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Tween 27" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.261505126953125" b="-0.7060546875" c="-0.660308837890625" d="-0.279632568359375" tx="33.6" ty="27.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="upper arm" color="#808080" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="upper arm" centerPoint3DX="48.8" centerPoint3DY="42.2">
+                                             <matrix>
+                                                  <Matrix a="0.1180419921875" b="-0.0945892333984375" c="-0.0884552001953125" d="-0.126220703125" tx="47.9" ty="54.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="83.1" y="22.1"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#9933CC">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Tween 26" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.082672119140625" b="0.7542724609375" c="0.70538330078125" d="-0.0883941650390625" tx="73.1" ty="122.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Tween 1" color="#FF800A" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.329071044921875" b="-0.0990447998046875" c="-0.091796875" d="0.347625732421875" tx="38.65" ty="30.6"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="mouth2" color="#FF4FFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="mouth2" centerPoint3DX="34" centerPoint3DY="41.95">
+                                             <matrix>
+                                                  <Matrix a="-0.175445556640625" b="0.0345458984375" c="-0.0421905517578125" d="-0.2447509765625" tx="37.95" ty="42.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="20.5" y="5.95"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Symbol 7" color="#FF800A" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="5.5" centerPoint3DY="22.9">
+                                             <matrix>
+                                                  <Matrix a="-0.31976318359375" b="-0.109100341796875" c="-0.1339111328125" d="0.4202880859375" tx="24.05" ty="24.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="3.7" y="13.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Symbol 7" color="#FF4FFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 7" centerPoint3DX="54.15" centerPoint3DY="41.1">
+                                             <matrix>
+                                                  <Matrix a="0.458419799804688" b="0.17388916015625" c="-0.0702056884765625" d="0.532516479492188" tx="31.95" ty="26.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.95" y="13.7"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Tween 7" color="#4FFF4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 7" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.40350341796875" b="0.22021484375" c="-0.189697265625" d="0.397613525390625" tx="56.1" ty="26.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Tween 13" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 13" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.343414306640625" b="0.22052001953125" c="-0.201644897460938" d="0.3433837890625" tx="60.4" ty="25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-8.4" y="8.3"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="nose" color="#FF800A" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/nose" centerPoint3DX="27.05" centerPoint3DY="30.15">
+                                             <matrix>
+                                                  <Matrix a="0.52947998046875" b="0.207565307617188" c="-0.1820068359375" d="0.530563354492188" tx="24.05" ty="25.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="8.4" y="6.25"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="hat" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="hat" selected="true" centerPoint3DX="40.7" centerPoint3DY="13.05">
+                                             <matrix>
+                                                  <Matrix a="-0.188095092773438" b="-0.0409393310546875" c="-0.02886962890625" d="0.169479370117188" tx="68.9" ty="8.3"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="134.75" y="95.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Tween 1" color="#4FFFFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Tween 1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.329071044921875" b="-0.0990447998046875" c="-0.091796875" d="0.347625732421875" tx="26" ty="27.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="head" color="#808080" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="head" centerPoint3DX="38.4" centerPoint3DY="30.6">
+                                             <matrix>
+                                                  <Matrix a="-0.168121337890625" b="-0.0637969970703125" c="-0.059661865234375" d="0.179779052734375" tx="65.5" ty="17.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="117.2" y="115.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="left ear" color="#4F80FF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="left ear" centerPoint3DX="27.35" centerPoint3DY="16.65">
+                                             <matrix>
+                                                  <Matrix a="-0.16278076171875" b="-0.03558349609375" c="-0.030731201171875" d="0.16094970703125" tx="36.25" ty="10.65"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="20.05" y="58.15"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Symbol 2" color="#FF4F4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 2" centerPoint3DX="37.55" centerPoint3DY="67.75">
+                                             <matrix>
+                                                  <Matrix a="0.1575927734375" b="-0.028472900390625" c="0.061370849609375" d="0.415939331054688" tx="33.4" ty="53.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="14.6" y="35"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="vest front" color="#4FFF4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="vest front" centerPoint3DX="56.7" centerPoint3DY="59.15">
+                                             <matrix>
+                                                  <Matrix a="-0.18365478515625" b="0.118316650390625" c="0.07080078125" d="0.19580078125" tx="62.3" ty="29.65"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="71.7" y="105.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="leg" color="#FF4F4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/leg" centerPoint3DX="67.6" centerPoint3DY="87.9">
+                                             <matrix>
+                                                  <Matrix a="-0.14501953125" b="0.0650634765625" c="0.09698486328125" d="0.247177124023438" tx="64.35" ty="60.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="45.95" y="97.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 17" color="#4FFF4F">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Tween 28" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.1060791015625" b="0.750900268554688" c="0.70220947265625" d="-0.113449096679688" tx="83.45" ty="120.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Symbol 1" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 1" centerPoint3DX="81.25" centerPoint3DY="112.15">
+                                             <matrix>
+                                                  <Matrix a="-0.0408782958984375" b="0.103561401367188" c="0.0968475341796875" d="0.0437164306640625" tx="78.5" ty="106.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="22.25" y="18.15"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Symbol 3" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 3" centerPoint3DX="53.25" centerPoint3DY="68.85">
+                                             <matrix>
+                                                  <Matrix a="0.41497802734375" b="-0.0730133056640625" c="0.0599517822265625" d="0.41607666015625" tx="30.85" ty="45.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="41.55" y="70.25"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="leg2" color="#FF800A" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="leg2" centerPoint3DX="63.45" centerPoint3DY="97.65">
+                                             <matrix>
+                                                  <Matrix a="0.121490478515625" b="-0.0894927978515625" c="0.0836944580078125" d="0.129913330078125" tx="49.35" ty="89.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="47.85" y="97.25"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="sleeve2" color="#FF4FFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="sleeve2" centerPoint3DX="41.15" centerPoint3DY="45.45">
+                                             <matrix>
+                                                  <Matrix a="0.0316009521484375" b="-0.154052734375" c="-0.144073486328125" d="-0.0337982177734375" tx="45.65" ty="52.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="40" y="36.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="arm" color="#4FFFFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="arm" centerPoint3DX="28.3" centerPoint3DY="36.4">
+                                             <matrix>
+                                                  <Matrix a="0.116729736328125" b="-0.0844879150390625" c="-0.06878662109375" d="-0.1434326171875" tx="28.25" ty="52"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="43.4" y="78"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 38" color="#808080">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Tween 29" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.708953857421875" b="0.045623779296875" c="0.04266357421875" d="0.758087158203125" tx="19.15" ty="25.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Symbol 1" color="#4F80FF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Duplicate Items Folder/Symbol 1" centerPoint3DX="71.5" centerPoint3DY="114.75">
+                                             <matrix>
+                                                  <Matrix a="-0.0424346923828125" b="0.102783203125" c="0.09613037109375" d="0.045379638671875" tx="69.15" ty="108.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="23.6" y="18.2"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <swatchLists>
+          <swatchList>
+               <swatches>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#003300" hue="80" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#006600" hue="80" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009900" hue="80" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC00" hue="80" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330000" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#333300" hue="40" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#336600" hue="60" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#339900" hue="67" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#33CC00" hue="70" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#33FF00" hue="72" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#660000" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663300" hue="20" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#666600" hue="40" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#669900" hue="53" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#66CC00" hue="60" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#66FF00" hue="64" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#333333" brightness="48"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000033" hue="160" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#003333" hue="120" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#006633" hue="100" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009933" hue="93" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC33" hue="90" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF33" hue="88" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330033" hue="200" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#333333" brightness="48"/>
+                    <SolidSwatchItem color="#336633" hue="80" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#339933" hue="80" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC33" hue="80" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF33" hue="80" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660033" hue="220" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663333" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#666633" hue="40" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#669933" hue="60" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#66CC33" hue="67" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#66FF33" hue="70" saturation="239" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#666666" brightness="96"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000066" hue="160" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#003366" hue="140" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#006666" hue="120" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009966" hue="107" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC66" hue="100" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF66" hue="96" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330066" hue="180" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#333366" hue="160" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#336666" hue="120" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#339966" hue="100" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC66" hue="93" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF66" hue="90" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660066" hue="200" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663366" hue="200" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#666666" brightness="96"/>
+                    <SolidSwatchItem color="#669966" hue="80" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#66CC66" hue="80" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FF66" hue="80" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#999999" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000099" hue="160" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#003399" hue="147" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#006699" hue="133" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#009999" hue="120" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC99" hue="110" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF99" hue="104" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330099" hue="173" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#333399" hue="160" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#336699" hue="140" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#339999" hue="120" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC99" hue="107" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF99" hue="100" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660099" hue="187" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#663399" hue="180" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#666699" hue="160" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#669999" hue="120" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#66CC99" hue="100" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FF99" hue="93" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000CC" hue="160" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0033CC" hue="150" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0066CC" hue="140" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0099CC" hue="130" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00CCCC" hue="120" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FFCC" hue="112" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3300CC" hue="170" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#3333CC" hue="160" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#3366CC" hue="147" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#3399CC" hue="133" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33CCCC" hue="120" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FFCC" hue="110" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6600CC" hue="180" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#6633CC" hue="173" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#6666CC" hue="160" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#6699CC" hue="140" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66CCCC" hue="120" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FFCC" hue="107" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0033FF" hue="152" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0066FF" hue="144" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0099FF" hue="136" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#00CCFF" hue="128" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3300FF" hue="168" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3333FF" hue="160" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#3366FF" hue="150" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#3399FF" hue="140" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#33CCFF" hue="130" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#33FFFF" hue="120" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6600FF" hue="176" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#6633FF" hue="170" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6666FF" hue="160" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#6699FF" hue="147" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#66CCFF" hue="133" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#66FFFF" hue="120" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990000" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993300" hue="13" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#996600" hue="27" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#999900" hue="40" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#99CC00" hue="50" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#99FF00" hue="56" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#CC0000" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3300" hue="10" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC6600" hue="20" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC9900" hue="30" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CCCC00" hue="40" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CCFF00" hue="48" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3300" hue="8" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF6600" hue="16" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF9900" hue="24" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFCC00" hue="32" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990033" hue="227" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993333" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996633" hue="20" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#999933" hue="40" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#99CC33" hue="53" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#99FF33" hue="60" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#CC0033" hue="230" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3333" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6633" hue="13" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC9933" hue="27" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CCCC33" hue="40" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CCFF33" hue="50" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF0033" hue="232" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3333" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6633" hue="10" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF9933" hue="20" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FFCC33" hue="30" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FFFF33" hue="40" saturation="239" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990066" hue="213" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993366" hue="220" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996666" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#999966" hue="40" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#99CC66" hue="60" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#99FF66" hue="67" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#CC0066" hue="220" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3366" hue="227" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6666" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC9966" hue="20" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CCCC66" hue="40" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CCFF66" hue="53" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF0066" hue="224" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3366" hue="230" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6666" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF9966" hue="13" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FFCC66" hue="27" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FFFF66" hue="40" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990099" hue="200" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993399" hue="200" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996699" hue="200" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#999999" brightness="144"/>
+                    <SolidSwatchItem color="#99CC99" hue="80" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99FF99" hue="80" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC0099" hue="210" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3399" hue="213" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6699" hue="220" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC9999" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCCC99" hue="40" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCFF99" hue="60" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FF0099" hue="216" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3399" hue="220" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6699" hue="227" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF9999" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCC99" hue="20" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFFF99" hue="40" saturation="239" brightness="192"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#9900CC" hue="190" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#9933CC" hue="187" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#9966CC" hue="180" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#9999CC" hue="160" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99CCCC" hue="120" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99FFCC" hue="100" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC00CC" hue="200" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC33CC" hue="200" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC66CC" hue="200" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC99CC" hue="200" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
+                    <SolidSwatchItem color="#CCFFCC" hue="80" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FF00CC" hue="208" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF33CC" hue="210" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF66CC" hue="213" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF99CC" hue="220" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCCCC" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FFFFCC" hue="40" saturation="239" brightness="216"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#9900FF" hue="184" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#9933FF" hue="180" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#9966FF" hue="173" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#9999FF" hue="160" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#99CCFF" hue="140" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#99FFFF" hue="120" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC00FF" hue="192" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#CC33FF" hue="190" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#CC66FF" hue="187" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#CC99FF" hue="180" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CCCCFF" hue="160" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#CCFFFF" hue="120" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF33FF" hue="200" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF66FF" hue="200" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF99FF" hue="200" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCCFF" hue="200" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
+                    <SolidSwatchItem color="#D59595" saturation="103" brightness="170"/>
+                    <SolidSwatchItem color="#DA803A" hue="17" saturation="164" brightness="130"/>
+                    <SolidSwatchItem color="#483722" hue="22" saturation="86" brightness="50"/>
+                    <SolidSwatchItem color="#67553F" hue="22" saturation="58" brightness="78"/>
+                    <SolidSwatchItem color="#C68383" saturation="88" brightness="155"/>
+                    <SolidSwatchItem color="#D19191" saturation="100" brightness="167"/>
+                    <SolidSwatchItem color="#BDBDBD" brightness="178"/>
+                    <SolidSwatchItem color="#DDDCDC" saturation="4" brightness="208"/>
+                    <SolidSwatchItem color="#ECECEC" brightness="222"/>
+                    <SolidSwatchItem color="#493622" hue="21" saturation="88" brightness="51"/>
+                    <SolidSwatchItem color="#F1F0F0" saturation="9" brightness="227"/>
+                    <SolidSwatchItem color="#264E2A" hue="84" saturation="81" brightness="55"/>
+                    <SolidSwatchItem color="#D89595" saturation="110" brightness="172"/>
+                    <SolidSwatchItem color="#F7C5C5" saturation="179" brightness="209"/>
+                    <SolidSwatchItem color="#E5C1C1" saturation="100" brightness="199"/>
+                    <SolidSwatchItem color="#241A0E" hue="21" saturation="107" brightness="24"/>
+                    <SolidSwatchItem color="#2F2314" hue="22" saturation="95" brightness="32"/>
+                    <SolidSwatchItem color="#463623" hue="22" saturation="80" brightness="50"/>
+                    <SolidSwatchItem color="#B78829" hue="27" saturation="151" brightness="106"/>
+                    <SolidSwatchItem color="#CF9636" hue="25" saturation="148" brightness="123"/>
+                    <SolidSwatchItem color="#171515" saturation="11" brightness="21"/>
+                    <SolidSwatchItem color="#100F0F" saturation="8" brightness="15"/>
+                    <SolidSwatchItem color="#232121" saturation="8" brightness="32"/>
+                    <SolidSwatchItem color="#AE7F20" hue="27" saturation="166" brightness="97"/>
+                    <SolidSwatchItem color="#C08E2A" hue="27" saturation="153" brightness="111"/>
+                    <SolidSwatchItem color="#CD902D" hue="25" saturation="154" brightness="118"/>
+               </swatches>
+          </swatchList>
+     </swatchLists>
+     <PrinterSettings platform="macintosh"/>
+     <publishHistory/>
+</DOMDocument>

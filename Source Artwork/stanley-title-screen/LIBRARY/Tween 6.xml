@@ -1,0 +1,75 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Tween 6" itemID="53f8afa1-000000bd" symbolType="graphic" lastModified="1408806817">
+  <timeline>
+    <DOMTimeline name="Tween 6">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup selected="true">
+                  <transformationPoint>
+                    <Point y="0.05"/>
+                  </transformationPoint>
+                  <members>
+                    <DOMShape selected="true">
+                      <transformationPoint>
+                        <Point y="0.05"/>
+                      </transformationPoint>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor/>
+                        </FillStyle>
+                        <FillStyle index="2">
+                          <SolidColor color="#FFFFFF"/>
+                        </FillStyle>
+                        <FillStyle index="3">
+                          <SolidColor color="#171515"/>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle0="1" fillStyle1="2" edges="!0 -16S3[-17 1 -27 1!-27 1[-35 1 -36 -7!-36 -7[-36 -14 -36 -15!-36 -15[-36 -34 -30 -46!-30 -46[-20 -71 1 -62!1 -62[14 -45 14 -34!14 -34[13 -31 0 -16!23 -3[20 -7 19 -8!19 -8[18 -10 19 -12!19 -12[19 -16 20 -17!20 -17|21 -17!21 -17[27 -12
+ 26 -8!26 -8[24 -4 23 -3!5 -5[6 -4 6 0!6 0[6 6 5 5!5 5[3 7 1 7!1 7|-4 1!-4 1[-4 -10 5 -6!5 -6|5 -5"/>
+                        <Edge fillStyle1="1" edges="
+!40 -39S2[54 -5 52 33!52 33[52 42 43 57!43 57[40 62 37 68!37 68[22 90 -7 89!-7 89[-38 88 -49 50!-49 50[-51 39 -51 25!-51 25[-52 13 -52 12!-52 12[-51 -2 -49 -13!-49 -13[-44 -59 -29 -77!-29 -77[-14 -96 6 -83!6 -83[26 -71 40 -39"/>
+                        <Edge fillStyle0="1" fillStyle1="3" edges="
+!32 24S3[32 28 31 35!31 35[31 46 23 56!23 56[13 70 -4 69!-4 69[-17 69 -27 60!-27 60[-35 53 -35 50!-35 50[-34 43 -30 38!-30 38[-26 33 -19 40!-19 40|7 42!7 42[9 38 18 30!18 30[27 23 32 24"/>
+                        <Edge cubics="!-7 89(;-57,87 -52,14 -52,12q-7 89Q-38 88q-49 50Q-51 39q-51 25Q-52 13q-52 12);"/>
+                        <Edge cubics="!-52 12(;-51,3 -50,-5 -49,-13q-52 12 -49 -13);"/>
+                        <Edge cubics="!1 -62(;8,-54 14,-42 14,-34q1 -62Q14 -45q14 -34);"/>
+                        <Edge cubics="!14 -34(;14,-33 -10,2 -27,1q14 -34Q13 -31q0 -16Q-17 1q-27 1);"/>
+                        <Edge cubics="!-27 1(;-39,0 -37,-14 -36,-15q-27 1Q-35 1q-36 -7Q-36 -14q-36 -15);"/>
+                        <Edge cubics="!-36 -15(;-36,-23 -32,-76 1,-62q-36 -15Q-36 -34q-30 -46Q-20 -71q1 -62);"/>
+                        <Edge cubics="!21 -17(;24,-14 27,-11 26,-8q21 -17Q27 -12q26 -8);"/>
+                        <Edge cubics="!26 -8(;26,-7 25,-5 23,-3q26 -8Q24 -4q23 -3);"/>
+                        <Edge cubics="!23 -3(;19,-8 18,-8 19,-12q23 -3Q20 -7q19 -8Q18 -10q19 -12);"/>
+                        <Edge cubics="!19 -12(;19,-18 21,-17 21,-17q19 -12Q19 -16q20 -17Q21 -17q21 -17);"/>
+                        <Edge cubics="!5 -6(;5,-4 6,-6 6,0q5 -6Q5 -6q5 -5Q6 -4q6 0);"/>
+                        <Edge cubics="!6 0(;6,6 5,5 5,5q6 0Q6 6q5 5);"/>
+                        <Edge cubics="!5 5(;5,5 3,7 1,7q5 5Q3 7q1 7);"/>
+                        <Edge cubics="!1 7(;-3,2 -4,1 -4,1q1 7Q-4 1q-4 1);"/>
+                        <Edge cubics="!-4 1(;-4,-2 -3,-10 5,-6q-4 1Q-4 -10q5 -6);"/>
+                        <Edge cubics="!32 24(;32,28 32,28 31,35q32 24Q32 28q31 35);"/>
+                        <Edge cubics="!31 35(;31,45 22,70 -4,69q31 35Q31 46q23 56Q13 70q-4 69);"/>
+                        <Edge cubics="!-4 69(;-24,68 -35,51 -35,50q-4 69Q-17 69q-27 60Q-35 53q-35 50);"/>
+                        <Edge cubics="!-35 50(;-34,44 -29,28 -19,40q-35 50Q-34 43q-30 38Q-26 33q-19 40);"/>
+                        <Edge cubics="!-19 40(;-19,40 7,42 7,42q-19 40 7 42);"/>
+                        <Edge cubics="!7 42(;9,37 25,22 32,24q7 42Q9 38q18 30Q27 23q32 24);"/>
+                        <Edge cubics="!-49 -13(;-46,-44 -39,-65 -29,-77q-49 -13Q-44 -59q-29 -77);"/>
+                        <Edge cubics="!6 -83(;20,-75 31,-60 40,-39q6 -83Q26 -71q40 -39);"/>
+                        <Edge cubics="!-29 -77(;-20,-89 -8,-91 6,-83q-29 -77Q-14 -96q6 -83);"/>
+                        <Edge cubics="!43 57(;41,61 39,64 37,68q43 57Q40 62q37 68);"/>
+                        <Edge cubics="!52 33(;52,39 49,47 43,57q52 33Q52 42q43 57);"/>
+                        <Edge cubics="!37 68(;26,83 12,90 -7,89q37 68Q22 90q-7 89);"/>
+                        <Edge cubics="!40 -39(;50,-16 54,8 52,33q40 -39Q54 -5q52 33);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
