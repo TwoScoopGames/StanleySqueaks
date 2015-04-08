@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="mouth2" itemID="54cc50ce-000003ca" lastModified="1428273943">
+  <timeline>
+    <DOMTimeline name="mouth2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#333333"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-80 -16|-91 18!-91 18[328 -74 417 208!417 208[408 -227 -80 -16"/>
+                    <Edge cubics="!-91 18(;-91,18 -80,-16 -80,-16q-91 18 -80 -16);"/>
+                    <Edge cubics="!417 208(;358,20 188,-43 -91,18q417 208Q328 -74q-91 18);"/>
+                    <Edge cubics="!417 208(;411,-82 245,-157 -80,-16q417 208Q408 -227q-80 -16);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

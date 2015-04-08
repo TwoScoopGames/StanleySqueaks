@@ -1,0 +1,31 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 18" itemID="5521bd02-0000007e" lastModified="1428274477">
+  <timeline>
+    <DOMTimeline name="Symbol 18">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#2D2929"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!38 4[55 -5 101 5!101 5|115 13!115 13|65 9!65 9|0 21!0 21|38 4"/>
+                    <Edge cubics="!41 4(;50,-2 70,-2 101,5q41 4Q55 -5q101 5);"/>
+                    <Edge cubics="!115 13(;115,13 61,7 61,7q115 13 61 7);"/>
+                    <Edge cubics="!61 7(;61,7 0,21 0,21q61 7 0 21);"/>
+                    <Edge cubics="!0 21(;0,21 41,4 41,4q0 21 41 4);"/>
+                    <Edge cubics="!101 5(;101,5 115,13 115,13q101 5 115 13);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

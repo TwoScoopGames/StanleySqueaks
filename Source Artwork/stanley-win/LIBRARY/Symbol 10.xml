@@ -1,0 +1,38 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 10" itemID="54d66c7b-0000007e" lastModified="1423346623">
+  <timeline>
+    <DOMTimeline name="Symbol 10">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFCA9A"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#F5C396"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!2 187[#5.27 #AB.B 12 154!12 154[28 111 57 95!57 95[78 84 119 72!119 72[153 62 169 49!169 49[182 30 190 20!190 20[204 0 225 0!225 0[255 0 279 96!279 96[#128.02 #A3.2D 298.5 214.5"/>
+                    <Edge fillStyle1="2" edges="!298.5 214.5[299 #DF.78 299 232!299 232[299 290 283 332!283 332[249 420 154 420!154 420[52 420 16 315!16 315[0 210 0 208!0 208[0 #C6.2 2 187"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!2 187[#B.88 #CF.E7 20 232!20 232[22 236 24 240!24 240[29 253 38 260!38 260[41 263 43 267!43 267[61 293 90 306!90 306[104 312 115 320!115 320[118 322 121 323!121 323[131 327 137 328!137 328[147 330 157 330!157 330[171 330 184 329!184
+ 329[192 328 197 323!197 323[200 320 204 318!204 318[226 306 251 279!251 279[260 270 268 256!268 256[271 252 275 248!275 248[#120.BD #E8.78 298.5 214.5"/>
+                    <Edge cubics="!299 232(;299,248 304,420 154,420q299 232Q299 290q283 332Q249 420q154 420);"/>
+                    <Edge cubics="!154 420(;-9,420 0,211 0,208q154 420Q52 420q16 315Q0 210q0 208);"/>
+                    <Edge cubics="!0 208(;0,190 12,120 57,95q0 208Q0 185q12 154Q28 111q57 95);"/>
+                    <Edge cubics="!57 95(;104,70 139,73 169,49q57 95Q78 84q119 72Q153 62q169 49);"/>
+                    <Edge cubics="!169 49(;184,36 190,0 225,0q169 49Q182 30q190 20Q204 0q225 0);"/>
+                    <Edge cubics="!225 0(;271,0 299,178 299,232q225 0Q255 0q279 96Q299 175q299 232);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
