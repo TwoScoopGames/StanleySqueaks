@@ -435,7 +435,8 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	var playerFrozen = this.timers.trap.running || this.timers.skull.running || this.timers.blockCrumble.running || this.timers.enter.running || this.timers.exit.running;
 	if (!playerFrozen) {
-		if (game.keyboard.consumePressed("space")) {
+		if (canJump && game.keyboard.consumePressed("space")) {
+			canJump = false;
 			this.camera.adjusted = false;
 			if (this.player.direction === "left") {
 				setSprite(this.player, "player-jump-left");
@@ -444,10 +445,8 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 				setSprite(this.player, "player-jump-right");
 				this.player.sprite.reset();
 			}
-			if (canJump) {
-				game.sounds.play("jump");
-				this.player.vy = -1.2;
-			}
+			game.sounds.play("jump");
+			this.player.vy = -1.2;
 		}
 		var movement = 0.6;
 		if (game.keyboard.isPressed("right")) {
@@ -526,26 +525,22 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 				setSprite(this.player, "player-idle-right");
 			}
 		}
-		if (!canJump) {
-			playRandomSound(squeaks);
-		}
+	} else {
+		canJump = false;
 	}
 
-	canJump = false;
 	var b;
 	for (var j = 0; j < involved.length; j++) {
 		b = involved[j];
-		if (b.y + b.height >= this.player.y) {
+		if (b.y === this.player.y + this.player.height) {
 			canJump = true;
 		}
 	}
-	if (!canJump) {
-		for (j = 0; j < this.blocks.length; j++) {
-			b = this.blocks[j];
-			if (b.y === this.player.y + this.player.height) {
-				canJump = true;
-			}
-		}
+
+	// FIXME: this doesn't work
+	var newlyCollidedWithSomethingForReal = false;
+	if (newlyCollidedWithSomethingForReal) {
+		playRandomSound(squeaks);
 	}
 
 	if (editable) {
