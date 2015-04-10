@@ -60,11 +60,6 @@
 			"frames": 20,
 			"msPerFrame": 80
 		},
-		"burrito-podium-ghost": {
-			"strip": "img/burrito-podium-ghost.png",
-			"frames": 20,
-			"msPerFrame": 80
-		},
 		"log-glow": {
 			"strip": "img/log-glow-f20.png",
 			"frames": 20,
