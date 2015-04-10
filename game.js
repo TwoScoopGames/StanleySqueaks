@@ -394,18 +394,22 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			scene.camera.height = 100;
 			return;
 		}
-		for (var i = 0; i < scene.blocks.length; i++) {
-			var block = scene.blocks[i];
-			if (willBlockCrumble(scene, block)) {
-				var x = block.x + (block.width / 2);
-				var y = block.y + (block.height / 2);
-				particles.spray(10, x, y, 1);
-				scene.blocks.splice(i, 1);
-				playRandomSound(crumbleSounds);
-				i--;
+		var foundSomething = false;
+		while (!foundSomething && scene.touched >= 0) {
+			for (var i = 0; i < scene.blocks.length; i++) {
+				var block = scene.blocks[i];
+				if (willBlockCrumble(scene, block)) {
+					var x = block.x + (block.width / 2);
+					var y = block.y + (block.height / 2);
+					particles.spray(10, x, y, 1);
+					scene.blocks.splice(i, 1);
+					playRandomSound(crumbleSounds);
+					i--;
+					foundSomething = true;
+				}
 			}
+			scene.touched--;
 		}
-		scene.touched--;
 		this.reset();
 		this.start();
 	});
