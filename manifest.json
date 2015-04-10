@@ -71,8 +71,8 @@
 			"msPerFrame": 100
 		},
 		"player-enter-door": {
-			"strip": "img/enter-door.png",
-			"frames": 9,
+			"strip": "img/enter-door-f14.png",
+			"frames": 14,
 			"msPerFrame": 50,
 			"repeatAt": 8
 		},

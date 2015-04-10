@@ -1,0 +1,33 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Tween 2" itemID="55271721-000003a6" symbolType="graphic" lastModified="1428625185">
+  <timeline>
+    <DOMTimeline name="Tween 2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix tx="-1148.2" ty="-610.25"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#827440"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!22953 12208S2[22957 12197 22972 12201!22972 12201[22974 12202 22976 12203!22976 12203|22976 12211!22976 12211|22953 12208"/>
+                    <Edge cubics="!22953 12208(;22956,12200 22962,12198 22972,12201q22953 12208Q22957 12197q22972 12201);"/>
+                    <Edge cubics="!22976 12211(;22976,12211 22953,12208 22953,12208q22976 12211 22953 12208);"/>
+                    <Edge cubics="!22972 12201(;22973,12202 22975,12202 22976,12203q22972 12201Q22974 12202q22976 12203);"/>
+                    <Edge cubics="!22976 12203(;22976,12203 22976,12211 22976,12211q22976 12203 22976 12211);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

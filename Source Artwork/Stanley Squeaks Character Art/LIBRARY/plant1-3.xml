@@ -24,11 +24,11 @@
                     <Edge fillStyle0="1" fillStyle1="2" edges="!1457 865S3|1462 882!1462 882|597 923"/>
                     <Edge fillStyle0="1" fillStyle1="3" edges="!597 923S3|576 968"/>
                     <Edge fillStyle0="1" edges="!576 968S1|1243 1769"/>
-                    <Edge fillStyle1="2" edges="!888 123S2|1457 865"/>
-                    <Edge fillStyle0="1" fillStyle1="2" edges="!947 521S3|964 610!964 610|985 582!985 582|947 521"/>
-                    <Edge fillStyle1="1" edges="!850 81S2|888 123"/>
-                    <Edge fillStyle0="1" fillStyle1="3" edges="!850 81S3|839 145"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!839 145S3|888 123"/>
+                    <Edge fillStyle0="1" edges="!888 123S1|850 81"/>
+                    <Edge fillStyle0="1" fillStyle1="3" edges="!850 81S3|839 145"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!947 521S3|964 610!964 610|985 582!985 582|947 521"/>
+                    <Edge fillStyle1="2" edges="!888 123S2|1457 865"/>
                     <Edge fillStyle1="3" edges="!576 968S2|149 1777!149 1777|0 398!0 398|59 0!59 0|786 0!786 0|850 81"/>
                     <Edge fillStyle0="2" fillStyle1="3" edges="!839 145S3|597 923"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!1509 2345S3|1519 2299!1519 2299|1502 2278"/>
