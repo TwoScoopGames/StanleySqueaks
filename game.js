@@ -284,6 +284,7 @@ function draw(context, entity, color) {
 
 var currentLevel = 1;
 var canJump = true;
+var isJumping = false;
 
 game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.timers.expire = new Splat.Timer(undefined, 2000, function() {
@@ -435,7 +436,15 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 
 	var playerFrozen = this.timers.trap.running || this.timers.skull.running || this.timers.blockCrumble.running || this.timers.enter.running || this.timers.exit.running;
 	if (!playerFrozen) {
+		if (isJumping) {
+			if (this.player.direction === "left") {
+				setSprite(this.player, "player-jump-left");
+			} else {
+				setSprite(this.player, "player-jump-right");
+			}
+		}
 		if (canJump && game.keyboard.consumePressed("space")) {
+			isJumping = true;
 			canJump = false;
 			this.camera.adjusted = false;
 			if (this.player.direction === "left") {
@@ -534,6 +543,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		b = involved[j];
 		if (b.y === this.player.y + this.player.height) {
 			canJump = true;
+			isJumping = false;
 		}
 	}
 
