@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 20" itemID="552741c7-00000673" lastModified="1428636103">
+  <timeline>
+    <DOMTimeline name="Symbol 20">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#F6C393"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!167 36S2[170 44 170 72!170 72[113 254 42 254!42 254[19 254 8 231!8 231[0 215 0 201!0 201[0 164 46 92!46 92[89 24 123 0!123 0[159 19 167 36"/>
+                    <Edge cubics="!123 0(;177,28 170,45 170,72q123 0Q159 19q167 36Q170 44q170 72);"/>
+                    <Edge cubics="!170 72(;170,84 113,254 42,254q170 72Q113 254q42 254);"/>
+                    <Edge cubics="!42 254(;6,254 0,209 0,201q42 254Q19 254q8 231Q0 215q0 201);"/>
+                    <Edge cubics="!0 201(;0,149 81,30 123,0q0 201Q0 164q46 92Q89 24q123 0);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

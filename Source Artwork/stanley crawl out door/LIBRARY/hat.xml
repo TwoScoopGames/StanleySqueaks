@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hat" itemID="54cc4047-00000348" lastModified="1428635701">
+  <timeline>
+    <DOMTimeline name="hat">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 17" centerPoint3DX="133.6" centerPoint3DY="61.15">
+                  <transformationPoint>
+                    <Point x="133.6" y="61.15"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.39" tintColor="#0B0A09"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

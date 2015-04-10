@@ -77,8 +77,8 @@
 			"repeatAt": 8
 		},
 		"player-exit-door": {
-			"strip": "img/exit-door.png",
-			"frames": 9,
+			"strip": "img/exit-door-f14.png",
+			"frames": 14,
 			"msPerFrame": 100,
 			"repeatAt": 8
 		},

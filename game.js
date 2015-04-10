@@ -567,7 +567,7 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 	if (this.timers.enter.running) {
 		game.animations.get("player-enter-door").draw(context, this.spawn.x - 5, this.spawn.y + 38);
 	} else if (this.timers.exit.running) {
-		game.animations.get("player-exit-door").draw(context, this.spawn.x, this.spawn.y);
+		game.animations.get("player-exit-door").draw(context, this.spawn.x - 5, this.spawn.y + 38);
 	} else {
 		draw(context, this.player, "blue");
 	}
