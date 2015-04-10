@@ -290,8 +290,12 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 	this.timers.expire = new Splat.Timer(undefined, 2000, function() {
 		game.scenes.switchTo("start");
 	});
-	this.timers.expire.start();
+	// this.timers.expire.start();
 }, function() {
+	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.mouse.consumePressed(0)) {
+		game.sounds.play("call-to-adventure", true);
+		game.scenes.switchTo("start");
+	}
 }, function(context) {
 	context.fillStyle = "#57AEC5";
 	context.fillRect(0, 0, canvas.width, canvas.height);

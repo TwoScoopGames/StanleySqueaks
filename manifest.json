@@ -21,6 +21,7 @@
 	},
 	"sounds": {
 		"bump": "audio/bump.mp3",
+		"call-to-adventure": "audio/Kevin_MacLeod_-_Call_to_Adventure.mp3",
 		"crumble1": "audio/crumble1.mp3",
 		"crumble2": "audio/crumble2.mp3",
 		"crumble3": "audio/crumble3.mp3",
