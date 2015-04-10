@@ -80,7 +80,7 @@
 		"player-exit-door": {
 			"strip": "img/exit-door-f14.png",
 			"frames": 14,
-			"msPerFrame": 100,
+			"msPerFrame": 80,
 			"repeatAt": 8
 		},
 		"player-idle-left": {
