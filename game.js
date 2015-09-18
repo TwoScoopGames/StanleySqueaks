@@ -111,7 +111,7 @@ function findBlockIndex(scene, x, y) {
 	return -1;
 }
 
-var currentLevel = 0;
+var currentLevel = 1;
 var blockToDraw = "block";
 var unbreakableBlocks = [
 	"block-cookie",
@@ -281,8 +281,41 @@ function draw(context, entity, color) {
 	}
 }
 
+function risingEdge(func) {
+	var last = false;
+	return function() {
+		var curr = func();
+		var ret = curr && !last;
+		last = curr;
+		return ret;
+	};
+}
+var gamepadLeft = function() {
+	return game.keyboard.isPressed("left") ||
+		game.gamepad.isPressed(0, "dpad left") ||
+		game.gamepad.isPressed(0, "left stick left");
+};
+var gamepadRight = function() {
+	return game.keyboard.isPressed("right") ||
+		game.gamepad.isPressed(0, "dpad right") ||
+		game.gamepad.isPressed(0, "left stick right");
+};
+var gamepadJump = risingEdge(function() {
+	return game.keyboard.isPressed("space") ||
+		game.mouse.isPressed(0) ||
+		game.gamepad.isPressed(0, "a") ||
+		game.gamepad.isPressed(0, "b") ||
+		game.gamepad.isPressed(0, "x") ||
+		game.gamepad.isPressed(0, "y");
+});
+var gamepadBack = risingEdge(function() {
+	return game.gamepad.isPressed(0, "back");
+});
+var gamepadStart = risingEdge(function() {
+	return game.keyboard.isPressed("r") ||
+		game.gamepad.isPressed(0, "start");
+});
 
-var currentLevel = 1;
 var canJump = true;
 
 game.scenes.add("title", new Splat.Scene(canvas, function() {
@@ -290,6 +323,7 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 		game.scenes.switchTo("start");
 	});
 	this.timers.expire.start();
+	currentLevel = 1;
 }, function() {
 }, function(context) {
 	context.fillStyle = "#57AEC5";
@@ -301,7 +335,10 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 
 game.scenes.add("start", new Splat.Scene(canvas, function() {
 }, function() {
-	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.mouse.consumePressed(0)) {
+	if (gamepadBack()) {
+		game.scenes.switchTo("title");
+	}
+	if (gamepadJump() || gamepadStart()) {
 		game.scenes.switchTo("controls");
 	}
 }, function(context) {
@@ -311,7 +348,10 @@ game.scenes.add("start", new Splat.Scene(canvas, function() {
 
 game.scenes.add("controls", new Splat.Scene(canvas, function() {
 }, function() {
-	if (game.keyboard.consumePressed("space") || game.keyboard.consumePressed("left") || game.keyboard.consumePressed("right") || game.mouse.consumePressed(0)) {
+	if (gamepadBack()) {
+		game.scenes.switchTo("title");
+	}
+	if (gamepadJump() || gamepadStart()) {
 		game.scenes.switchTo("main");
 	}
 }, function(context) {
@@ -429,13 +469,16 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 		editable = !editable;
 	}
 
-	if (game.keyboard.consumePressed("r")) {
+	if (gamepadBack()) {
+		game.scenes.switchTo("title");
+	}
+	if (gamepadStart()) {
 		game.scenes.switchTo("main");
 	}
 
 	var playerFrozen = this.timers.trap.running || this.timers.skull.running || this.timers.blockCrumble.running || this.timers.enter.running || this.timers.exit.running;
 	if (!playerFrozen) {
-		if (game.keyboard.consumePressed("space")) {
+		if (gamepadJump()) {
 			this.camera.adjusted = false;
 			if (this.player.direction === "left") {
 				setSprite(this.player, "player-jump-left");
@@ -450,11 +493,11 @@ game.scenes.add("main", new Splat.Scene(canvas, function() {
 			}
 		}
 		var movement = 0.6;
-		if (game.keyboard.isPressed("right")) {
+		if (gamepadRight()) {
 			this.camera.adjusted = false;
 		 	this.player.vx = movement; //how fast he moves
 			this.player.direction = "right";
-		} else if (game.keyboard.isPressed("left")) {
+		} else if (gamepadLeft()) {
 			this.camera.adjusted = false;
 			this.player.vx = -movement; //how fast he moves
 			this.player.direction = "left";
@@ -623,6 +666,9 @@ function line(context, x1, y1, x2, y2, color, width) {
 
 game.scenes.add("win", new Splat.Scene(canvas, function() {
 }, function() {
+	if (gamepadBack() || gamepadStart()) {
+		game.scenes.switchTo("title");
+	}
 }, function(context) {
 	var image = game.images.get("win-screen");
 	context.drawImage(image, 0, 0);

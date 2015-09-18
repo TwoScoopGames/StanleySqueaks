@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"private": true,
 	"dependencies": {
-		"splatjs": "~3.0.2"
+		"splatjs": "~3.1.0"
 	},
 	"devDependencies": {
 		"browserify": "^4.1.8",
